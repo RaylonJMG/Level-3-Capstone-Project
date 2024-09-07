@@ -11,26 +11,45 @@ curl -sS https://webi.sh/gh | sh
 git push -u origin main
 
 
-//
+
+//SYNCS CHANGES IN FILES AND FOLDERS TO GITHUB SPECIFYING THE ORIGIN AND MAIN BRANCH FOR STORAGE 
+git push -u origin main
+
+//SYNCS CHANGES TO GITHUB
+git push
+
+//COPIES FILES FROM GITHUB
+git pull --set-upstream origin main
+
+//COPIES FILES FROM GITHUB WITH THE DEFAULT PARAMETERS
+git pull
+
+//CHANGES ALL FILES AND FOLDERS
 git add .
 
-//
-git 
+//CREATES SAVE POINT AND ATTACHES A MEMO DESCRIBING THE CHANGES --ADD USER INFO TO README
+git commit -m "I added user info to README"
 
-//
-git
+//VIEW THE VALUE OF ORIGIN
+git remote -v
 
-//
-n
+//DECLARES AND SETS THE ORIGIN
+git remote add origin
 
-//
-nkjh
+//CHANGES THE VALUE OF THE ORIGIN VARIABLE
+git remote set-url origin https://github.com/repositoryName
 
-//
-hkjh
+//ACTIVATES OR INITIALIZES GIT SOURCE CONTROL
+git init
 
-//
-hkhk
+//RENAMES THE CURRENT BRANCH TO MAIN
+git branch -M main
 
-//
-jljl
+//SHOWS CURRENT VERSION OF GIT
+git --version
+
+//ADDS USERNAME TO SAVE POINT
+git config user.name "myName"
+
+//ADDS USER EMAIL TO SAVE POINT
+git config user.email "my@email.com"
