@@ -16,7 +16,7 @@
         <a class="nav-link active" href="contact.html">CONTACT</a>
       </nav>
     </header>
-    <main>
+    <main id="mainTag" class="m-3">
       <h1>Good Food</h1>
       <h2>Contact Us!</h2>
       <p>
@@ -24,10 +24,13 @@
         suggestions, or ask any inquiries in the form below. Thanks in advance.
       </p>
       <form>
-        Name:<br><input type="text"><br>
-        Email:<br><input type="text"><br>
-        Comments:<br><textarea></textarea><br>
-        <button class="rounded-5">Submit</button>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name"><br>
+        <label for="email">Email:</label><br>
+        <input type="text" id="email"><br>
+        <label for="message">Comments:</label><br>
+        <textarea id="message"></textarea><br>
+        <button class="rounded-5">Submit</button><br>
       </form>
     </main>
     <hr>
