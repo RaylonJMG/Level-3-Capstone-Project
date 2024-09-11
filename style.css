@@ -1,20 +1,17 @@
 img {
   width:100%;
 }
+
 #email {
   width:100%;
 }
+
 #message {
   width:100%;
 }
 
 html{
   background-color: #218892;
-  font-family:fantasy;
-}
-
-footer {
-  text-align:center;
 }
 
 h1 {
@@ -22,5 +19,6 @@ h1 {
 }
 
 body {
-  background-color: #f1c40f;
+  background-color: #f1c40f;  
+  font-family:serif;
 }
