@@ -7,10 +7,7 @@ img {
 #message {
   width:100%;
 }
-h6 {
-  font-style: serif;
-  font-weight: bold;
-}
+
 html{
   background-color: #218892;
   font-family:fantasy;
@@ -18,11 +15,14 @@ html{
 
 footer {
   text-align:center;
-
+  font-weight:bold;
+  font-style:italic;
 }
+
 h1 {
   text-align: center;
 }
+
 body {
   background-color: #f1c40f;
 }
