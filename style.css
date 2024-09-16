@@ -2,11 +2,7 @@ img {
   width:100%;
 }
 
-#email {
-  width:100%;
-}
-
-#message {
+#email, #message {
   width:100%;
 }
 
