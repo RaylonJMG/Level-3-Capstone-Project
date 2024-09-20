@@ -22,3 +22,6 @@ hr {
 .border-dashed {
   border-style:dashed !important;
 }
+.border-dotted {
+  border-style:dotted !important;
+}
