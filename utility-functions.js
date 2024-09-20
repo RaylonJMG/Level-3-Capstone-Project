@@ -7,3 +7,20 @@ function createColumns(contentsArray){
   } 
   return columnString;
 }
+
+ //CREATES ROWS FROM AN ARRAY OF COLUMNS
+function createRows( columnsArray) {
+  let myRows = "";
+  for (let position = 0; position < columnsArray.length; position++) {
+    const columns = columnsArray[position];
+    myRows += createRows( columns );
+  }
+  return myRows;
+}
+
+function createContainer(rowString){
+  const containerString = `<div class="container">
+    ${rowString}
+  </div>`;
+  return containerString;
+}
