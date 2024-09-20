@@ -44,12 +44,10 @@
       }
     ];
        
-      const myColumns = createColumnGroups( myContents, 3 );
-     
-      const myRows = createRows( myColumns );
-    
-      const myContainer = createContainer( myRows );
-      mainTag.innerHTML += myContainer;
+      const myColumnStrings = createColumns( myContents );
+      const rowStrings = createRow( myColumnStrings );
+      const myContainerStrings = createContainer( rowStrings );
+      mainTag.innerHTML += myContainerStrings;
     }
 </script>  
 </body>
