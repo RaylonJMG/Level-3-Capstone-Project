@@ -19,3 +19,6 @@ hr {
 #email, #message {
   width:100%;
 }
+.border-dashed {
+  border-style:dashed !important;
+}
