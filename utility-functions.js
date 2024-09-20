@@ -14,3 +14,13 @@ function createColumnGroups( contentsArray, grouping) {
   } while (position < contentsArray.length);  
   return myColumns;
 }
+
+//CREATES COLUMNS FROM ARRAYS
+function createColumns(contentsArray){
+  let columnString = "";
+  for (let position=0; position < contentsArray.length; position++) {
+    const content = contentsArray[position];
+    columnString += createColumn( content );   
+  } 
+  return columnString;
+}
