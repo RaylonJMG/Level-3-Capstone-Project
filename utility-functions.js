@@ -18,9 +18,3 @@ function createRows( columnsArray) {
   return myRows;
 }
 
-function createContainer(rowString){
-  const containerString = `<div class="container">
-    ${rowString}
-  </div>`;
-  return containerString;
-}
