@@ -25,3 +25,6 @@ hr {
 .border-dotted {
   border-style:dotted !important;
 }
+p {
+  font-family: sans-serif;
+}
