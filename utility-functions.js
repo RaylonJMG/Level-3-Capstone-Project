@@ -1,7 +1,11 @@
+function display(){
+  document.write();
+}
+
 //CONVERTS BOOSTSTRAP OBJECT CARDS INTO A STRING
 function convertCard(cardObject) {
-} return cardString
-
+ return cardString
+}
 
 
 //CREATES COLUMNS FROM ARRAYS

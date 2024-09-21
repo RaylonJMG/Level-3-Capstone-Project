@@ -12,8 +12,6 @@
     <h2>JavaScript</h2>
     <script id="cards">
       //OBJECTS WITH PROPERTIES IN A CARD W/ IMAGE
-      {
-        const cards = [
           const card1 = {
             src: "https://preview.redd.it/i-ate-fried-seafood-platter-v0-7747apv88fta1.jpg?width=1080&crop=smart&auto=webp&s=e08c9217fed766d3a6cabb738cb0ef3f5e52787e",
             title: "Fried Fish Basket",
@@ -45,16 +43,14 @@
             alt: "bowl of seafood gumbo",
           },
         ];
- 
+      const cards = [card1, card2, card3, card4, card5, card6]
        const cardString = convertCard( cards );
-       const cards = [card1, card2, card3, card4, card5, card6]
-      
+       
        for (position = 0; position < cards.length; position++ ) {
         const cards = cards [position];
-        mainTag.innerHTML = mainTag.innerHTML + cardString;
-        
-        }      
-      }  
+        display (cardString);
+       }      
+   
     </script>
   </main>
 </body>
