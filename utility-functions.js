@@ -4,7 +4,7 @@ const cardString =  `<div class="card">
             <img
               class="card-body"
               alt="${cardObject.alt}"
-              height="500px" width="350px"
+              height="500px"
               src="${cardObject.src}"
             />
             <h3 class="card-title">${cardObject.title}</h3>   
