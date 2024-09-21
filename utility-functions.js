@@ -4,7 +4,8 @@ function display(){
 
 //CONVERTS BOOSTSTRAP OBJECT CARDS INTO A STRING
 function convertCard(cardObject) {
-} return cardString
+  return card;
+} 
 
 
 
@@ -44,3 +45,10 @@ function createContainer(rowString){
   </div>`;
   return containerString;
 }
+function display(message){
+    
+  }
+    //STEP: Let it display the message. 
+    //PSEUDO: Display myMessage
+    document.write(message);
+  }
