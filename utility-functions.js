@@ -5,9 +5,10 @@ const cardString =  `<div class="card">
               class="card-body"
               alt="${cardObject.alt}"
               src="${cardObject.src}"
-              height="450px" width="500px"
+              height="500px" width="500px"
             />
-            <h3 class="card-title">${cardObject.title}</h3>   
+            <h3 class="card-title">${cardObject.title}</h3> 
+            <h4 class="card-summary">${cardObject.summary}</h4>
           </div>`
    
   return cardString;
