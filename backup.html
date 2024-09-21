@@ -43,14 +43,15 @@
             alt: "bowl of seafood gumbo",
           },
         ];
-      const cards = [card1, card2, card3, card4, card5, card6]
-       const cardString = convertCard( cards );
-       
-       for (position = 0; position < cards.length; position++ ) {
-        const cards = cards [position];
+      
+      const cardsArray = [card1, card2, card3, card4, card5, card6]
+      
+
+       for (position = 0; position < cardsArray.length; position++ ) {
+        const card = cardsArray [position];
+        const cardString = convertCard( card ); 
         display (cardString);
-       }      
-   
+       }
     </script>
   </main>
 </body>
