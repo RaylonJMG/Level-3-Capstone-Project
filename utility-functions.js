@@ -1,3 +1,9 @@
+//CONVERTS BOOSTSTRAP OBJECT CARDS INTO A STRING
+function convertCard(cardObject) {
+} return cardString
+
+
+
 //CREATES COLUMNS FROM ARRAYS
 function createColumns(contentsArray){
   let columnString = "";
@@ -17,4 +23,5 @@ function createRows( columnsArray) {
   }
   return myRows;
 }
+
 
