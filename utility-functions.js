@@ -24,4 +24,19 @@ function createRows( columnsArray) {
   return myRows;
 }
 
+function createColumn(contentString) {
+  const myColumnString = `<div class="col">${contentString}</div>`;
+  return myColumnString;
+}
 
+function createRow(columnString) {
+  const rowString = `<div class="row">
+      ${columnString}</div>`;
+  return rowString;
+}
+function createContainer(rowString){
+  const containerString = `<div class="container">
+    ${rowString}
+  </div>`;
+  return containerString;
+}
