@@ -1,12 +1,10 @@
-
-
 //CONVERTS BOOSTSTRAP OBJECT CARDS INTO A STRING
 function convertCard(cardObject) {
 const cardString =  `<div class="card">
             <img
               class="card-body"
               alt="${cardObject.alt}"
-              height="350px"
+              height="500px" width="350px"
               src="${cardObject.src}"
             />
             <h3 class="card-title">${cardObject.title}</h3>   
