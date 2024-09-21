@@ -4,25 +4,32 @@ html{
 
 h1, h3 {
   text-align: center;
+  color:#0000cc
 }
 
 body {
   background-color: #f1c40f;  
   font-family:serif;
 }
+
 .baskets{
  font-style:underline; 
 }
+
 #email, #message {
   width:100%;
 }
+
 .border-dashed {
   border-style:dashed !important;
 }
+
 .border-dotted {
   border-style:dotted !important;
 }
 
 h4 {
-  color:rgb(0,0,);
+  color:rgb(0,0,204);
+  text-align:center;
+  font-weight:bold;
 }
