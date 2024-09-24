@@ -35,7 +35,11 @@ h4 {
   font-weight:bold;
 }
 
-h2{
+h2 {
   color:rgb(0,0,204);
   font-weight:bold;
+}
+
+h2:hover {
+  color:rgb(12,167,113)
 }
