@@ -64,7 +64,7 @@
 
 
       <script>
-        function runButton(); {
+        //function runButton(); {
           debugger;
           myVariable = myOutput.innerHTML;
           window.myOutput.innerHTML = "We have received your message! Have a great day!!";
@@ -89,7 +89,7 @@
 //PSEUDO: if (true){
   if (result === true){
   //display "You guessed myNumber.";
-    document.write(result + "You guessed my number and win" + "<br>");
+    document.write(const myResult + "YAYYY! You guessed the correct number and win 15% off of your meal price today!" + "<br>");
   } 
   
 //STEP: otherwise
@@ -98,33 +98,10 @@
     
   //STEPS: display "You did not guess my number.";
   //PSEUDO: display "You did not guess my number.";
-    document.write(result + "You did not guess my mumber." + "<br>");
+    document.write(const myResult + "You did not guess my mumber." + "<br>");
   }
   
-//STEP: Compare if userNumber is less than myNumber. Store it in theComparison.
-//PSEUDO: theComparison = userNumber < myNumber
-theComparison = userNumber < myNumber;
 
-//STEP: if theComparison is "yes"
-//PSEUDO: if (theComparison = true) {
-if (theComparison === true) {
-
-  //STEP: display "Your number is lower than mine."
-  //PSEUDO: display "Your number is lower than mine."
-   document.write(result + "You won 10% off of meal price." + "<br>"); 
-}
-  
-//STEP: otherwise
-//PSEUDO: } else {
-else {
-  
-    //STEP: display "Your number is higher than mine."
-    //PSEUDO: display "Your number is higher than mine." 
-    document.write(result + "Your won 10% off of meal price." + "<br>");
-    } 
-
-        
-        
       </script>
     </main>
     <hr />
