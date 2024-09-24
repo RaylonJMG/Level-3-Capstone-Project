@@ -18,6 +18,6 @@ function display(message){
     document.write(message);
   }
 
-function output(message) {
-  window.outputTag.innerHTML = window.outputTag.innerHTML + message;
+function output(myMessage) {
+  window.outputTag.innerHTML = window.outputTag.innerHTML + myMessage;
 }
