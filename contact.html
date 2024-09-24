@@ -69,6 +69,62 @@
           myVariable = myOutput.innerHTML;
           window.myOutput.innerHTML = "We have received your message! Have a great day!!";
         }
+        
+
+  let myNumber = 8;
+  
+  //STEP: ask user for a number. Store it in userText.
+  //PSEUDO: userText <= prompt("Guess my number.")
+  const userText = prompt("Guess my number.");
+
+  //STEP: Convert userText to a number. Store it in userNumber.
+  //PSEUDO: userNumber <= convert userText to a number
+  const userNumber === Number(userText);
+
+  //STEP: compare if userNumber equals myNumber. store the result.
+  //PSEUDO: if result = does userNumber === myNumber
+  const myResult = userNumber === 8;
+  
+//STEP: if "yes"
+//PSEUDO: if (true){
+  if (result === true){
+  //display "You guessed myNumber.";
+    document.write(result + "You guessed my number and win" + "<br>");
+  } 
+  
+//STEP: otherwise
+//PSEUDO: otherwise
+  else {
+    
+  //STEPS: display "You did not guess my number.";
+  //PSEUDO: display "You did not guess my number.";
+    document.write(result + "You did not guess my mumber." + "<br>");
+  }
+  
+//STEP: Compare if userNumber is less than myNumber. Store it in theComparison.
+//PSEUDO: theComparison = userNumber < myNumber
+theComparison = userNumber < myNumber;
+
+//STEP: if theComparison is "yes"
+//PSEUDO: if (theComparison = true) {
+if (theComparison === true) {
+
+  //STEP: display "Your number is lower than mine."
+  //PSEUDO: display "Your number is lower than mine."
+   document.write(result + "You won 10% off of meal price." + "<br>"); 
+}
+  
+//STEP: otherwise
+//PSEUDO: } else {
+else {
+  
+    //STEP: display "Your number is higher than mine."
+    //PSEUDO: display "Your number is higher than mine." 
+    document.write(result + "Your won 10% off of meal price." + "<br>");
+    } 
+
+        
+        
       </script>
     </main>
     <hr />
@@ -84,6 +140,3 @@
 </html>
 
 <div id="outputTag"></div>
-
-function display1(myMessage) { document.write("We have received your message!
-Have a great day!"); }
