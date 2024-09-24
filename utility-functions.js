@@ -17,3 +17,7 @@ const cardString =  `<div class="card">
 function display(message){
     document.write(message);
   }
+
+function submit(message) {
+document.write("");
+}
