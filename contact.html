@@ -50,23 +50,24 @@
         We love hearing from our customers. Please feel free to leave a rating,
         comments, suggestions, or ask any inquiries in the form below. Thank you
         in advance. We look forward to serving you again soon.
-      </p><br>
-      
+      </p>
+      <br />
+
       <form>
         <label for="name">Name:</label><br />
-          <input type="text" id="name" /><br />
+        <input type="text" id="name" /><br />
         <label for="email">Email:</label><br />
-          <input type="text" id="email" /><br />
-        <label for="message">Message:</label><br/>
-          <textarea id="message"></textarea><br />
-        <button onclick="output()" class="btn btn-sm rounded-5 bg-primary">Submit</button><br /> 
+        <input type="text" id="email" /><br />
+        <label for="message">Message:</label><br />
+        <textarea id="message"></textarea><br />
+        <button
+          onclick="output('We have received your message!')"
+          class="btn btn-sm rounded-5 bg-primary"
+        >
+          Submit</button
+        ><br />
       </form>
-         <div id="outputTag">"We have received your message!"</div>
-      <script>
-      
-       const myOutput =  ;
-      </script>
-    
+      <div id="outputTag"></div>
     </main>
     <hr />
     <footer class="text-center fs-6">
@@ -79,4 +80,3 @@
     </footer>
   </body>
 </html>
-
