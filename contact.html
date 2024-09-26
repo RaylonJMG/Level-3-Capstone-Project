@@ -9,6 +9,7 @@
       crossorigin="anonymous"
     />
     <link href="style.css" rel="stylesheet" />
+    <script src="utility-functions.js"></script>
   </head>
   <body class="m-4 p-4">
     <header>
@@ -49,20 +50,21 @@
         We love hearing from our customers. Please feel free to leave a rating,
         comments, suggestions, or ask any inquiries in the form below. Thank you
         in advance. We look forward to serving you again soon.
-      </p>
+      </p><br>
+      
       <form>
         <label for="name">Name:</label><br />
-        <input type="text" id="name" /><br />
+          <input type="text" id="name" /><br />
         <label for="email">Email:</label><br />
-        <input type="text" id="email" /><br />
-        <label for="message">Message:</label><br />
-        <textarea id="message"></textarea><br />
+          <input type="text" id="email" /><br />
+        <label for="message">Message:</label><br/>
+          <textarea id="message"></textarea><br />
         <button onclick="output()" class="btn btn-sm rounded-5 bg-primary">Submit</button><br /> 
       </form>
-         <div id="myOutput"></div>
+         <div id="outputTag">"We have received your message!"</div>
       <script>
       
-       output("We have received your message!" + "<br>");
+       const myOutput =  ;
       </script>
     
     </main>
