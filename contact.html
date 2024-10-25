@@ -5,7 +5,7 @@
     <title>Good Food Hut</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
     <link href="style.css" rel="stylesheet" />
-    <script src="utility-functions.js"></script>
+    <script src="contact.js"></script>
 </head>
 
 <body class="m-4 p-4">
@@ -20,49 +20,38 @@
         </nav>
     </header>
     <main id="mainTag" class="m-3">
-        <h1 class="p-6 m-5">Contact Us!</h1>
-
-        <form style="padding: 10px" class="text-center border border-5 border-dotted border-primary">
-            <section id="radio-buttons">
-                <h5>Rate your food experience</h5>
-                <input id="hated it" type="radio" name="rating" />
-                <label for="hated it">🤢Hated it!</label><br />
-                <input id="disliked" type="radio" name="rating" />
-                <label for="disliked">😓Disliked it.</label><br />
-                <input id="okay" type="radio" name="rating" />
-                <label for="okay">😔Meh...it was just okay.</label><br />
-                <input id="liked" type="radio" name="rating" />
-                <label for="liked">😋Liked it.</label><br />
-                <input id="loved" type="radio" name="rating" />
-                <label for="loved">😍 Loved it!</label><br />
-            </section>
+        <h1>Contact Us!</h1>
+        <hr>
+        <p class="fw-bold text-center fs-4" style="color:blue">Looking to eat Good Food at your next family, corporate, or festival event?</p>
+        <p class="text-center fs-5" style="color:blue">We offer catering services for events of any size!<br> Schedule a phone appointment today to book with our <b>Good Food Hosts</b>.</p>
+        <hr>
+        <form onsubmit="processForm(event)">
+            <label for="firstName"> First Name:</label><br />
+            <input required name="firstName" type="text" id="firstName" placeholder="Enter First Name" /><br />
+            <label for="lastName"> Last Name:</label><br />
+            <input required name="lastName" type="text" id="lastName" placeholder="Enter Last Name" /><br />
+            <label for="calendar">Phone Appointment :</label><br>
+            <input required name="calendar" type="datetime-local" id="calendar"><br>
+            <label for="phoneNumber">Phone Number:</label><br /><input required name="phoneNumber" type="tel" placeholder="###-###-####" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" id="phoneNumber" /><br />
+            <label for="email">Email:</label><br />
+            <input required name="email" type="text" id="email" placeholder="Enter Email Address" /><br />
+            <label for="message">Optional Message:</label><br />
+            <textarea name="message" id="message"></textarea><br />
+            <button onclick="output('You can expect a call at the scheduled time.<br>')" type="submit" class="btn btn-sm rounded-3 bg-primary">
+                    Submit</button>
+            <input type="reset" value="Reset form" class="btn btn-sm rounded-3 bg-primary">
         </form>
+        <div id="outputTag"></div>
 
-        <p class="p-6 m-5 fw-bold text-center">
-            We love hearing from our customers. Please feel free to leave a rating, comments, suggestions, or ask any inquiries in the form below. Thank you in advance. We look forward to serving you again soon.
-        </p>
-        <br />
 
-        <form>
-            <label for="firstName"> First Name:</label><br /><input type="text" id="firstName" /><br />
-            <label for="lastName"> Last Name:</label><br /><input type="text" id="LastName" /><br />
-            <label for="email">Email:</label><br /><input type="text" id="email" /><br />
-            <label for="message">Message:</label><br /><textarea id="message"></textarea><br />
-            <button onclick="output('We have received your message!')" class="btn btn-sm rounded-5 bg-primary">
-          Submit</button
-        ><br />
-      </form>
-      <output></output>
-      <div id="outputTag"></div>
-    </main>
-    <hr />
-    <footer class="text-center fs-6">
-      <br />
-      <br />
-      Good Food Hut❃12345 Big Bird Ave, Sesame Street, LA 12345 ❃
-      337-555-5432❃<br />
+        <hr />
+        <footer class="text-center fs-6">
+            <br />
+            <br /> Good Food Hut❃12345 Big Bird Ave, Sesame Street, LA 12345 ❃ 337-555-5432❃
+            <br />
 
-      <h6>Website Created by RaylonJMG 2024</h6>
-    </footer> 
-  </body>
+            <h6>Website Created by RaylonJMG 2024</h6>
+        </footer>
+</body>
+
 </html>

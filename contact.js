@@ -1,7 +1,7 @@
-function myProcessForm(event) {
-    debugger;
-    event.preventDefault(); //prevents the page from refreshing
+function processForm(event) {
+    event.preventDefault();
     const form = event.target;
-    const phoneNumber = phoneNumber.value;
-    output(`Your phone number is ${phoneNumber}.<br>`);
+    const phoneNumberInput = form[2];
+    const phoneNumber = phoneNumberInput.value;
+    output(`You can expect a call at the scheduled time at ${phoneNumber}.<br>`);
 }
