@@ -1,7 +1,8 @@
 function processForm(event) {
+    debugger;
     event.preventDefault();
     const form = event.target;
-    const phoneNumberInput = form[2];
-    const phoneNumber = phoneNumberInput.value;
-    output(`You can expect a call at the scheduled time at ${phoneNumber}.<br>`);
+    const input = form;
+    const value = input.value;
+    output("Your appointment has been scheduled!");
 }
