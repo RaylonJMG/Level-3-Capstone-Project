@@ -8,5 +8,5 @@ function processForm(event) {
     const phoneNumber = phoneNumberInput.value;
     const firstName = firstNameInput.value;
     const calendar = calendarInput.value;
-    output(`Thank you, ${firstName}. <br> Your phone appointment is scheduled for ${calendar}.<br> Expect a call at ${phoneNumber}.`);
+    output(`Thank you, ${firstName}. <br> Your phone appointment is scheduled for ${calendar}.<br> You can expect a call at ${phoneNumber}. Have a great day.`);
 }
