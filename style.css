@@ -14,6 +14,26 @@
   color: rgba(101, 224, 101, 0.74);
 }
 
+.bg-image {
+  background-image: url("sun.png");
+}
+
+.width {
+  width: 100vw;
+}
+
+.height {
+  height: 70vw;
+}
+
+.size10 {
+  background-size: 10%;
+}
+
+.opacity25 {
+  opacity: 0.25;
+}
+
 html {
   background-color: rgb(33, 136, 145);
 }

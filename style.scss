@@ -50,6 +50,28 @@ $secondaryFont: serif;
     }
 }
 
+//BACKGROUND IMAGE
+$sun:url("sun.png");
+.bg-image {
+    background-image: $sun;
+}
+
+.width {
+    width: 100vw;
+}
+
+.height {
+    height: 70vw;
+}
+
+.size10 {
+    background-size: 10%;
+}
+
+.opacity25 {
+    opacity: 0.25;
+}
+
 html {
     background-color: $myTeal;
 }
