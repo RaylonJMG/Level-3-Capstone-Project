@@ -19,19 +19,19 @@
 }
 
 .width {
-  width: 100vw;
+  width: 50vw;
 }
 
 .height {
-  height: 70vw;
+  height: 25vw;
 }
 
-.size10 {
-  background-size: 10%;
+.size {
+  background-size: 7vw;
 }
 
-.opacity25 {
-  opacity: 0.25;
+.opacity55 {
+  opacity: 0.55;
 }
 
 html {
@@ -69,8 +69,12 @@ p {
   border-style: dashed !important;
 }
 
-.border-dotted {
-  border-style: dotted !important;
+.border-ridge {
+  border-style: ridge !important;
+}
+
+.border-groove {
+  border-style: groove !important;
 }
 
 h4 {
