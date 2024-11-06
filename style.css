@@ -19,19 +19,15 @@
 }
 
 .width {
-  width: 50vw;
-}
-
-.height {
-  height: 25vw;
+  width: 10vw;
 }
 
 .size {
-  background-size: 7vw;
+  background-size: 1vw;
 }
 
-.opacity55 {
-  opacity: 0.55;
+.opacity15 {
+  opacity: 0.15;
 }
 
 html {
