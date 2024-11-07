@@ -23,7 +23,10 @@
     <main id="mainTag" class="m-3">
         <h1>Contact Us!</h1>
         <hr>
-        <form style="padding: 10px" class="text-center border border-5 border-dotted border-primary">
+        <p class="p-6 m-5 fw-bold text-center">
+            We love hearing from our customers. Please feel free to leave a rating, comments, suggestions, or ask any inquiries in the form below. Thank you in advance. We look forward to serving you again soon.
+        </p>
+        <form style="padding: 10px" class="text-center border border-5 border-dotted border-danger bg-dark">
             <section id="radio-buttons">
                 <h5>Rate your food experience</h5>
                 <input id="hated it" type="radio" name="rating" />
@@ -38,16 +41,14 @@
                 <label for="loved">😍 Loved it!</label><br />
             </section>
         </form>
-
-        <p class="p-6 m-5 fw-bold text-center">
-            We love hearing from our customers. Please feel free to leave a rating, comments, suggestions, or ask any inquiries in the form below. Thank you in advance. We look forward to serving you again soon.
-        </p><br />
-
         <form>
-            <label for="fullName">Full Name:</label><br><input type="text" id="fullName" placeholder="Enter First and Last Name"><br>
-            <label for="email">Email Address:</label><br><input type="email" id="email" placeholder="Enter Email Address"><br>
-            <label for="message">Message:</label><br><textarea id="message"></textarea>
-            <button type="submit" onclick="output('We have recieved your message!')" class="btn btn-sm rounded-5 bg-primary">Send A Message</button>
+            <label for="fullName">Full Name:</label><br>
+            <input type="text" id="fullName" placeholder="Enter First & Last Name"><br>
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" placeholder="Enter Email Address"><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message"></textarea><br>
+            <button onclick="display('Thanks! We have received your message!')" class="btn btn-sm rounded-3 bg-primary" id="mixin-button"></button>
         </form>
         <hr>
         <div class="bg-image size opacity5 border border-5 border-groove">
@@ -77,7 +78,7 @@
         <hr />
         <footer class="text-center fs-6">
             <br />
-            <br /> Good Food Hut❃12345 Big Bird Ave, Sesame Street, LA 12345 ❃ 337-555-5432❃
+            <br /> Good Food Hut❃12345 Big Bird Ave, Sesame Street, LA 12345 ❃ 337-555-4321❃
             <br />
 
             <h6>Website Created by RaylonJMG 2024</h6>
