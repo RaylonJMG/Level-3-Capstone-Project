@@ -36,7 +36,7 @@ $secondaryFont: serif;
 }
 
 @mixin animation2 {
-    transform: scale(2) rotate(20deg);
+    transform: scale(2) rotate(5deg);
     transition: transform 2s;
 }
 
@@ -65,7 +65,7 @@ $sun:url("sun.png");
 }
 
 .opacity88 {
-    opacity: 0.88;
+    opacity: 0.10;
 }
 
 html {

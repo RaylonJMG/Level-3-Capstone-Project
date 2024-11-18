@@ -9,7 +9,7 @@
   transition: transform 1s;
 }
 #mixin-button:hover {
-  transform: scale(2) rotate(20deg);
+  transform: scale(2) rotate(5deg);
   transition: transform 2s;
   color: rgba(101, 224, 101, 0.74);
 }
@@ -27,7 +27,7 @@
 }
 
 .opacity88 {
-  opacity: 0.88;
+  opacity: 0.1;
 }
 
 html {
