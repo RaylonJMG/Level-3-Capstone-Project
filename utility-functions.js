@@ -13,11 +13,13 @@ function convertCard(cardObject) {
 
     return cardString;
 }
-//ACCEPTS, THEN DISPLAYS A MESSAGE
+
+
 function display(message) {
     document.write(message);
 }
-//OUTPUT MESSAGE
+
+
 function output(myMessage) {
     window.outputTag.innerHTML += window.outputTag.innerHTML + myMessage;
 }
