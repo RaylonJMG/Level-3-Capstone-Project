@@ -26,6 +26,7 @@ function handleSubmit(event) {
 //PARSE :ANALYZE/CONVERT DATA TO USABLE FORMAT
 function serverResponse() {
     display("Thanks! We have received your message!");
+}
     //PARSE RESPONSE: 
     function parseResponse(resolveValue) {
         debugger;
@@ -34,14 +35,11 @@ function serverResponse() {
         const message = response.message;
         display(resolveValue);
     }
-}
 
 //RATING FORM PROCESSING
 function handleRating() {
-    setTimeout(getServerResponse, 5000);
-}    
-function serverResponse2() {
-    display("Mesage successfully sent.");
+    setTimeout(serverResponse, 5000);
+    display("Submitting Rating now...");
 }
 
 //SERVER SIMULATION
@@ -52,7 +50,7 @@ function getServerResponse(resolve){
         debugger;
         //SIMULATE A SERVER BY SENDING A STRINGIFIED OBJECT
         const response = { 
-            message: "Successfully processed.Thanks for your rating. See you soon!"
+            message: "Successfully processed.Thanks for your rating. See you next time!"
         };
         //JSON.STRINGIFY: CONVERTS STRING OBJ TO ACTUAL OBJ
     const resolveValue = JSON.stringify(response);
