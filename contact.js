@@ -9,20 +9,19 @@ function processForm(event) {
     const phoneNumber = phoneNumberInput.value;
     const firstName = firstNameInput.value;
     const calendar = calendarInput.value;
+    setTimeout(serverResponse3, 3000);
+    
+    function serverResponse3() {
+        display("Appointment scheduling in progress...")
+    }
     output(`Thank you, ${firstName}. <br> Your phone appointment is scheduled for ${calendar}.<br> You can expect a call at ${phoneNumber}. Have a great rest of your day.`);
-
 }
 
-function appointmentMsg() {
-    display("Appointment scheduling in progress...")
-}
 
-function asynchronous() {
-    document.write();
-    setTimeout(5000);
-}
+
 //CONTACT FORM PROCESSING
 function handleSubmit(event) {
+    event.preventDefault();
     const inputs = event.target;
     const emailInput = inputs[1];
     const email = emailInput.value;
@@ -30,16 +29,18 @@ function handleSubmit(event) {
     setTimeout(serverResponse, 3000);
     promise.then(parseResponse);
 }
-//CONTACT FORM PROCESSING
+
+//PARSE :ANALYZE/CONVERT DATA TO USABLE FORMAT
 function serverResponse() {
     display("Thanks! We have received your message!");
-}
-
-function parseResponse(resolveValue){
-    debugger;
-    const response = JSON.parse(resolveValue);
-    const message = response.message;
-    display(resolveValue);
+    //PARSE RESPONSE: 
+    function parseResponse(resolveValue) {
+        debugger;
+        //JSON.PARSE: CONVERTS STRING OBJECT INTO ACTUAL OBJECT
+        const response = JSON.parse(resolveValue);
+        const message = response.message;
+        display(resolveValue);
+    }
 }
 
 //RATING FORM PROCESSING
@@ -48,18 +49,19 @@ function handleClick() {
     
     function serverResponse2() {
         display("Thanks! We have received your message!");
-}
+    }
 }
 //SERVER SIMULATION
 function getServerResponse(resolve){
     setTimeout(activateResolve, 5000);
-
+    //RESOLVE FUNCTION:CHANGES THE PROMISE STATUS TO FULFILLED
     function activateResolve(){
         debugger;
         //SIMULATE A SERVER BY SENDING A STRINGIFIED OBJECT
         const response = { 
             message: "Successfully processed.Thanks for your rating. See you soon!"
         };
+        //JSON.STRINGIFY: CONVERTS STRING OBJ TO ACTUAL OBJ
     const resolveValue = JSON.stringify(response);
     resolve(resolveValue);
     }
