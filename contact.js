@@ -9,12 +9,7 @@ function processForm(event) {
     const phoneNumber = phoneNumberInput.value;
     const firstName = firstNameInput.value;
     const calendar = calendarInput.value;
-    setTimeout(serverResponse3, 3000);
-      output(`Thank you, ${firstName}. <br> Your phone appointment is scheduled for ${calendar}.<br> You can expect a call at ${phoneNumber}. Have a great rest of your day.`);
-}
-    
-function serverResponse3() {
-    display("Appointment scheduling in progress...")
+    output(`Thank you, ${firstName}. <br> Your phone appointment is scheduled for ${calendar}.<br> You can expect a call at ${phoneNumber}. Have a great rest of your day.`);
 }
 
 //CONTACT FORM PROCESSING
@@ -24,7 +19,7 @@ function handleSubmit(event) {
     const emailInput = inputs[1];
     const email = emailInput.value;
     document.write("Submitting form for <br>" + email + "...");
-    setTimeout(serverResponse, 3000);
+    setTimeout(serverResponse, 5000);
     promise.then(parseResponse);
 }
 
@@ -42,16 +37,16 @@ function serverResponse() {
 }
 
 //RATING FORM PROCESSING
-function handleClick() {
-    setTimeout(serverResponse2, 5000);
-    
-    function serverResponse2() {
-        display("Thanks! We have received your message!");
-    }
+function handleRating() {
+    setTimeout(getServerResponse, 5000);
+}    
+function serverResponse2() {
+    display("Mesage successfully sent.");
 }
+
 //SERVER SIMULATION
 function getServerResponse(resolve){
-    setTimeout(activateResolve, 5000);
+   setTimeout(activateResolve, 5000);
     //RESOLVE FUNCTION:CHANGES THE PROMISE STATUS TO FULFILLED
     function activateResolve(){
         debugger;
@@ -66,7 +61,7 @@ function getServerResponse(resolve){
 }
 
 //FETCH FUNCTION
-function handleClick(event){
+function handleAClick(event){
     debugger;
     const promise = fetch("https://api.adviceslip.com/advice");
     promise.then(parseResponse);
