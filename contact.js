@@ -10,14 +10,12 @@ function processForm(event) {
     const firstName = firstNameInput.value;
     const calendar = calendarInput.value;
     setTimeout(serverResponse3, 3000);
-    
-    function serverResponse3() {
-        display("Appointment scheduling in progress...")
-    }
-    output(`Thank you, ${firstName}. <br> Your phone appointment is scheduled for ${calendar}.<br> You can expect a call at ${phoneNumber}. Have a great rest of your day.`);
+      output(`Thank you, ${firstName}. <br> Your phone appointment is scheduled for ${calendar}.<br> You can expect a call at ${phoneNumber}. Have a great rest of your day.`);
 }
-
-
+    
+function serverResponse3() {
+    display("Appointment scheduling in progress...")
+}
 
 //CONTACT FORM PROCESSING
 function handleSubmit(event) {
