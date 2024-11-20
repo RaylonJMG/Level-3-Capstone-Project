@@ -59,10 +59,10 @@ function getServerResponse(resolve){
 }
 
 //FETCH FUNCTION
-function handleAClick(event){
+function handleAdvice1(){
     debugger;
-    const promise = fetch("https://api.adviceslip.com/advice");
-    promise.then(parseResponse);
+    const promise = fetch("https://api.adviceslip.com/daily_adviceslip.rss");
+    display(promise);
 }
 function handleAdvice(){
     debugger;
