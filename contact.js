@@ -57,28 +57,23 @@ function getServerResponse(resolve){
     resolve(resolveValue);
     }
 }
-
-//FETCH FUNCTION
-function handleAdvice1(){
+//FETCH FUNCTION sends request to API URL and returns a promise
+function handleClickAdvice(){
     debugger;
-    const promise = fetch("https://api.adviceslip.com/daily_adviceslip.rss");
-    display(promise);
-}
-function handleAdvice(){
-    debugger;
-    const baseURL = "https://api.adviceslip.com";
-    const endPoint = "/advice";
-    const URL = (baseURL + endPoint);
-    const promise = fetch(URL);
+    const promise = fetch("https://api.adviceslip.com/advice");
     promise.then(extractResponse);
 }
-//<input onclick="handleAdvice()"></input>
 
+//Resolve value is a special object created by the fetch function
+//Text Method extracts stringified object
 function extractResponse(resolveValue){
     const promise = resolveValue.text();
-    promise.then(parseAdviceResponse);
-}
-function parseAdviceResponse(resolveValue){
+    promise.then(viewAdviceResponse);
+} 
+//JSON.parse function to convert special object to a stringified object
+//parse method generates an object from the string
+function viewAdviceResponse(resolveValue){
     debugger;
-    const response = JSON.parse();
+    const advice = JSON.stringify(resolveValue);
+    output(advice);
 }

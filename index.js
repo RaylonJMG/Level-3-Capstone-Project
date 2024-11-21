@@ -3,7 +3,7 @@ function handleAdvice(){
     const baseURL = "https://api.adviceslip.com";
     const endPoint = "/advice";
     const URL = (baseURL + endPoint);
-    const promise = fetch(baseURL);
+    const promise = fetch(URL);
     promise.then(extractResponse);
 }
 //<input onclick="handleAdvice()"></input>
