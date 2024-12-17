@@ -1,4 +1,4 @@
-import { outputModule } from "./outputModule.js";
+import { outputModule } from "../utils/outputModule.js";
 
 //PARSE :ANALYZE/CONVERT DATA TO USABLE FORMAT
 export function parseResponse(resolveValue) {
