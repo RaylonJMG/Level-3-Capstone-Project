@@ -1,8 +1,8 @@
 import { outputModule } from "../utils/outputModule.js";
 
-
+window.handleA
 //FETCH FUNCTION sends request to API URL and returns a promise
-export function handleClickAdvice(){
+export function handleAdvice(){
     debugger;
     const promise = fetch("	https://api.adviceslip.com/advice");
     promise.then(extractAdvice);
