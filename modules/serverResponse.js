@@ -1,7 +1,7 @@
-import { outputModule } from "../utils/outputModule.js";
+import { output } from "../utils/output.js";
 
 window.serverResponse = serverResponse;
 
 export function serverResponse() {
-    outputModule("Thanks! We have received your message!");
+    output("Thanks! We have received your message!");
 }

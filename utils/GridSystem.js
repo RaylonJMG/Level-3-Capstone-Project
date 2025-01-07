@@ -10,6 +10,6 @@ export class GridSystem {
     }
 
     toString() {
-        return `${this.openingTag}${this.innerHTML}${this.closingTag}`
-    }
+        return `${this.openingTag}${this.innerHTML}${this.closingTag}`;
+    };
 }

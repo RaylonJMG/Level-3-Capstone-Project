@@ -1,9 +1,9 @@
-import { outputModule } from "../utils/outputModule.js";
+import { output } from "../utils/output.js";
 
 window.processForm = processForm;
 
 //PHONE APPOINTMENT FORM PROCESSING
-function processForm(event = new Event()) {
+export function processForm(event = new Event()) {
     debugger;
     event.preventDefault();
     const form = event.target;
@@ -12,7 +12,7 @@ function processForm(event = new Event()) {
     const phoneNumber = phoneNumberInput.value;
     const firstName = firstNameInput.value;
     const calendar = calendarInput.value;
-    outputModule(`Thank you, ${firstName}. <br> Your phone appointment is scheduled for ${calendar}.<br> You can expect a call at ${phoneNumber}. Have a great rest of your day.`);
+    output(`Thank you, ${firstName}. <br> Your phone appointment is scheduled for ${calendar}.<br> You can expect a call at ${phoneNumber}. Have a great rest of your day.`);
 }
 
 

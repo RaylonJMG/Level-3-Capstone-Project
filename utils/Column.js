@@ -1,7 +1,7 @@
 export class Column{
-    openingTag = `"<div class='col' >"`;
-    closingTag = `"</div>"`;
-    innerHTML = `""`;
+    openingTag = "<div class='col' >";
+    closingTag = "</div>";
+    innerHTML = "";
 
     constructor(content = "") {
         this.innerHTML = content;

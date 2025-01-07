@@ -1,6 +1,6 @@
 import { Column } from "../utils/Column.js";
 import { GridSystem } from "../utils/gridSystem.js";
-import { outputModule } from "../utils/outputModule.js";
+import { output } from "../utils/output.js";
 import { Row } from "../utils/Row.js";
 
 window.gridSystem = gridSystem;
@@ -18,5 +18,5 @@ export function gridSystem() {
 
          gridSystem.addRow(row);
     }
-    outputModule(gridSystem);
+    output(gridSystem);
 }
