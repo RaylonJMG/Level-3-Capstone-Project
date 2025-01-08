@@ -1,6 +1,9 @@
-import { outputModule } from "../utils/outputModule.js";
+/*
+import { output } from "../utils/output.js"; 
+import { extractAdvice } from "../modules/extractAdvice.js"; 
 
-window.handleA
+window.handleAdvice = handleAdvice;
+
 //FETCH FUNCTION sends request to API URL and returns a promise
 export function handleAdvice(){
     debugger;
@@ -22,5 +25,6 @@ export function viewAdviceResponse(resolveValue){
     debugger;
     const result = JSON.parse(resolveValue);
     const advice = result.slip.advice;
-    outputModule(advice);
-};
+    output(advice);
+}
+*/

@@ -1,11 +1,11 @@
-import { outputModule } from "../utils/outputModule";
+import { output } from "../utils/output.js"; 
 
-window.viewAdviceResponse = viewAdviceResponse;
+window.viewAdvice = viewAdvice;
 
 //JSON.parse function to convert special object to a stringified object
 //parse method generates an object from the string
-export function viewAdviceResponse(resolveValue){
+export function viewAdvice(resolveValue){
     debugger;
     const advice = JSON.stringify(resolveValue);
-    outputModule(advice);
+    output(advice);
 }
