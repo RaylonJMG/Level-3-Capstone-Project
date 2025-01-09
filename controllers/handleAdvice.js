@@ -1,5 +1,4 @@
 import { output } from "../utils/output.js"; 
-import { extractAdvice } from "../modules/extractAdvice.js"; 
 
 window.handleAdvice = handleAdvice;
 
