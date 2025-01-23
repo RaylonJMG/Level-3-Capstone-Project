@@ -1,5 +1,10 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
-import { BrowserRouter, Route, Routes } from "react-router";
+
 const root = createRoot(window.bodyTag);
-root.render();
+root.render(
+	<main>
+		<h1>Hello world! </h1>
+		<p>Command line is tedious!!!!!</p>
+	</main>
+);
