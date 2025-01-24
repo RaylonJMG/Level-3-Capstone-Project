@@ -1,6 +1,8 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
 import { BrowserRouter, Route, Routes } from "react-router";
+import { Home } from "./Views/Home";
+
 const root = createRoot(window.bodyTag);
 root.render(
 	<BrowserRouter>
@@ -11,5 +13,6 @@ root.render(
 			<Route path="/menus" element={<Menus />} />
 			<Route path="/contact" element={<Contact />} />
 		</Routes>
-	</BrowserRouter>
+	</BrowserRouter>,
+	<></>
 );
