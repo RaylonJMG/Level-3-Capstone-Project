@@ -5,6 +5,7 @@ import { Home } from "./Views/Home";
 import { Menus } from "./Views/Menus";
 import { Photos } from "./Views/Photos";
 import { Contact } from "./Views/Contact";
+import { About } from "./Views/About";
 
 const root = createRoot(window.bodyTag);
 root.render(
