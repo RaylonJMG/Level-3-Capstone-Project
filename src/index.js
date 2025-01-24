@@ -17,6 +17,5 @@ root.render(
 			<Route path="/menus" element={<Menus />} />
 			<Route path="/contact" element={<Contact />} />
 		</Routes>
-	</BrowserRouter>,
-	<></>
+	</BrowserRouter>
 );

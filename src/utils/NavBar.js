@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router";
 import { Home } from "../Views/Home";
 import { About } from "../Views/About";
 import { Photos } from "../Views/Photos";
