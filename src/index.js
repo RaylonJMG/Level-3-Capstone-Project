@@ -12,6 +12,7 @@ root.render(
 		<BrowserRouter>
 			<Routes>
 				<Route path="/" element={<Home />} />
+				<Route path="/Level-3-Capstone-Project" element={<Home />} />
 				<Route path="/about" element={<About />} />
 				<Route path="/photos" element={<Photos />} />
 				<Route path="/menus" element={<Menus />} />
