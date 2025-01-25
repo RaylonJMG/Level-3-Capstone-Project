@@ -12330,6 +12330,9 @@ root.render(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_
   path: "/",
   element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Views_Home_js__WEBPACK_IMPORTED_MODULE_2__.Home, null)
 }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router__WEBPACK_IMPORTED_MODULE_7__.Route, {
+  path: "/home",
+  element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Views_Home_js__WEBPACK_IMPORTED_MODULE_2__.Home, null)
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router__WEBPACK_IMPORTED_MODULE_7__.Route, {
   path: "/index.html",
   element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Views_Home_js__WEBPACK_IMPORTED_MODULE_2__.Home, null)
 }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router__WEBPACK_IMPORTED_MODULE_7__.Route, {
