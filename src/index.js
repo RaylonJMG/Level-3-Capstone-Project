@@ -9,7 +9,6 @@ import { Contact } from "./Views/Contact.js";
 const root = createRoot(window.bodyTag);
 root.render(
 	<>
-		<h1>Hello World!</h1>
 		<BrowserRouter>
 			<Routes>
 				<Route path="/" element={<Home />} />
