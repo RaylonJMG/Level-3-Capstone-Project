@@ -1,5 +1,6 @@
 import React from "react";
 import { NavBar } from "../utils/NavBar.js";
+import { Footer } from "../utils/Footer.js";
 
 export function About() {
 	return (

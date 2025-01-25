@@ -52,7 +52,7 @@ export function Home() {
 						Get Random Advice Here
 					</button>
 				</div>
-				<div id="outputTag"></div>
+				<output id="outputTag"></output>
 			</main>
 			<Footer />
 		</>
