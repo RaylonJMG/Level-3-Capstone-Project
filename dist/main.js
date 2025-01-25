@@ -1,5 +1,4 @@
 /******/ (() => { // webpackBootstrap
-/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
 /***/ "./node_modules/cookie/dist/index.js":
@@ -8,6 +7,7 @@
   \*******************************************/
 /***/ ((__unused_webpack_module, exports) => {
 
+"use strict";
 
 
 Object.defineProperty(exports, "__esModule", ({
@@ -246,6 +246,7 @@ function isDate(val) {
   \********************************************************************/
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
+"use strict";
 /**
  * @license React
  * react-dom-client.development.js
@@ -266,6 +267,7 @@ function isDate(val) {
   \*************************************************************/
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
+"use strict";
 /**
  * @license React
  * react-dom.development.js
@@ -456,6 +458,7 @@ function isDate(val) {
   \******************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+"use strict";
 
 
 function checkDCE() {
@@ -494,6 +497,7 @@ if (false) {} else {
   \*****************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+"use strict";
 
 
 function checkDCE() {
@@ -532,6 +536,7 @@ if (false) {} else {
   \*****************************************************/
 /***/ ((module, exports, __webpack_require__) => {
 
+"use strict";
 /* module decorator */ module = __webpack_require__.nmd(module);
 /**
  * @license React
@@ -1504,6 +1509,7 @@ if (false) {} else {
   \*************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+"use strict";
 
 
 if (false) {} else {
@@ -1518,6 +1524,7 @@ if (false) {} else {
   \*************************************************************/
 /***/ ((__unused_webpack_module, exports) => {
 
+"use strict";
 /**
  * @license React
  * scheduler.development.js
@@ -1793,6 +1800,7 @@ if (false) {} else {
   \*****************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+"use strict";
 
 
 if (false) {} else {
@@ -1807,6 +1815,7 @@ if (false) {} else {
   \**********************************************************/
 /***/ ((module) => {
 
+"use strict";
 
 
 var defaultParseOptions = {
@@ -2004,6 +2013,7 @@ module.exports.splitCookiesString = splitCookiesString;
   \***********************************************************************/
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   Action: () => (/* binding */ Action),
@@ -11006,6 +11016,7 @@ function deserializeErrors2(errors) {
   \*********************************************************/
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   decode: () => (/* binding */ decode),
@@ -11624,6 +11635,397 @@ function raceSignal(promise, signal) {
 }
 
 
+/***/ }),
+
+/***/ "./src/Views/About.js":
+/*!****************************!*\
+  !*** ./src/Views/About.js ***!
+  \****************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   About: () => (/* binding */ About)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _utils_NavBar_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../utils/NavBar.js */ "./src/utils/NavBar.js");
+
+
+function About() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("header", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+    width: "100%",
+    alt: "fried seafood platter",
+    src: "https://cdn.glitch.global/cbca519c-2e2c-44e5-a058-374e1c8be1a2/Screenshot%202024-08-03%20021209.jpg?v=1722669203847"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_utils_NavBar_js__WEBPACK_IMPORTED_MODULE_1__.NavBar, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("main", {
+    class: "container"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", null, "About Us"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+    class: "card-body",
+    alt: "America's Best Food Award logo",
+    height: "500px",
+    width: "100%",
+    src: "https://cdn.glitch.global/82eb993a-bf96-4031-9a18-ee851469bb49/americasbestfoodaward4M11%2Bcopy-4133607208.jpg?v=1726742656338"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", {
+    class: "text-center fs-2"
+  }, "Philosophy: Good Food Matters!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
+    class: "fs-3"
+  }, "Hey there, mon chere'! We live for and love to eat Good Food! It makes", " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("b", null, "ZERO"), " sense to us to plate ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("i", null, "something"), " that tastes anything short of absolutely delicious and looks like meh...What a wasted dish! \uD83D\uDE4A\uD83D\uDE49\uD83D\uDE48 We don't do that 'round these parts!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+    class: "card-body",
+    alt: "chef trophy winner",
+    width: "100%",
+    src: "https://cdn.glitch.global/82eb993a-bf96-4031-9a18-ee851469bb49/trophy-chef.jpg?v=1726742667968"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", {
+    class: "text-center fs-2"
+  }, "Who We Are"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
+    class: "fs-3"
+  }, "We are a multi-award winning restaurant where folks are greeted with the heart of the South...it's simply Good Food. Food so good, you wanna tell the world how darn good it is! Food so good, you'll want a second helping, or a third, or a fourth! No worries, we got you covered there!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
+    class: "fs-3"
+  }, "As you can see, we are proud to have been supported as a local fan favorite for over 20 years. Thank you so much to all the people from around the world that have swung by to see us and share in our Good Food Philosophy."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h4", null, "Come on back now, ya' hear?"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, " ", "Site Inspiration: Love of GOOD FOOD! \uD83D\uDE0D I believe that potential employers will wish to hire me based on this website because it pretty much is a functional, informational website. Most people who have no idea about software development may even think that this site represents a real business, even though this is my imagination at work. It shows that I can manage projects until completion, adhering to detailed instruction from leadership, but allows my personality, style, and flair to also be showcased in the work."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "Site Features: This website was created using HTML, CSS, Bootstrap, and Javascript. In Level 1, we learned to create and style basic websites, run functions, attach images/videos, create grids and cards. In Level 2 of the course, we have expanded our knowledgebase; we can attach and create image maps, process forms, simulate server responses, extract data from REST APIs, and use SASS styling upgrades, including mixins, transitions and animations --all of which has been integrated into this website.", " ")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(Footer, null));
+}
+
+/***/ }),
+
+/***/ "./src/Views/Contact.js":
+/*!******************************!*\
+  !*** ./src/Views/Contact.js ***!
+  \******************************/
+/***/ (() => {
+
+throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nSyntaxError: C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\src\\Views\\Contact.js: Expected corresponding JSX closing tag for <input>. (48:8)\n\n\u001b[0m \u001b[90m 46 |\u001b[39m             \u001b[33m<\u001b[39m\u001b[33mtextarea\u001b[39m id\u001b[33m=\u001b[39m\u001b[32m\"message\"\u001b[39m\u001b[33m>\u001b[39m\u001b[33m<\u001b[39m\u001b[33m/\u001b[39m\u001b[33mtextarea\u001b[39m\u001b[33m>\u001b[39m\u001b[33m<\u001b[39m\u001b[33mbr\u001b[39m\u001b[33m>\u001b[39m\n \u001b[90m 47 |\u001b[39m             \u001b[33m<\u001b[39m\u001b[33minput\u001b[39m type\u001b[33m=\u001b[39m\u001b[32m\"submit\"\u001b[39m value\u001b[33m=\u001b[39m\u001b[32m\"Submit Message\"\u001b[39m \u001b[36mclass\u001b[39m\u001b[33m=\u001b[39m\u001b[32m\"btn btn-sm rounded-3 bg-primary\"\u001b[39m id\u001b[33m=\u001b[39m\u001b[32m\"mixin-button\"\u001b[39m\u001b[33m>\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 48 |\u001b[39m         \u001b[33m<\u001b[39m\u001b[33m/\u001b[39m\u001b[33mform\u001b[39m\u001b[33m>\u001b[39m\n \u001b[90m    |\u001b[39m         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 49 |\u001b[39m         \u001b[33m<\u001b[39m\u001b[33mhr\u001b[39m\u001b[33m>\u001b[39m\n \u001b[90m 50 |\u001b[39m         \u001b[33m<\u001b[39m\u001b[33mdiv\u001b[39m \u001b[36mclass\u001b[39m\u001b[33m=\u001b[39m\u001b[32m\"bg-image size opacity border border-5 border-groove\"\u001b[39m\u001b[33m>\u001b[39m\n \u001b[90m 51 |\u001b[39m             \u001b[33m<\u001b[39m\u001b[33mp\u001b[39m \u001b[36mclass\u001b[39m\u001b[33m=\u001b[39m\u001b[32m\"fw-bold text-center fs-4\"\u001b[39m\u001b[33m>\u001b[39m\u001b[33mLooking\u001b[39m to eat \u001b[33mGood\u001b[39m \u001b[33mFood\u001b[39m at your next family\u001b[33m,\u001b[39m corporate\u001b[33m,\u001b[39m or festival event\u001b[33m?\u001b[39m\u001b[33m<\u001b[39m\u001b[33m/\u001b[39m\u001b[33mp\u001b[39m\u001b[33m>\u001b[39m\u001b[0m\n    at constructor (C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\node_modules\\@babel\\parser\\lib\\index.js:359:19)\n    at JSXParserMixin.raise (C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\node_modules\\@babel\\parser\\lib\\index.js:3327:19)\n    at JSXParserMixin.jsxParseElementAt (C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\node_modules\\@babel\\parser\\lib\\index.js:6900:16)\n    at JSXParserMixin.jsxParseElementAt (C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\node_modules\\@babel\\parser\\lib\\index.js:6871:32)\n    at JSXParserMixin.jsxParseElementAt (C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\node_modules\\@babel\\parser\\lib\\index.js:6871:32)\n    at JSXParserMixin.jsxParseElementAt (C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\node_modules\\@babel\\parser\\lib\\index.js:6871:32)\n    at JSXParserMixin.jsxParseElementAt (C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\node_modules\\@babel\\parser\\lib\\index.js:6871:32)\n    at JSXParserMixin.jsxParseElementAt (C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\node_modules\\@babel\\parser\\lib\\index.js:6871:32)\n    at JSXParserMixin.jsxParseElementAt (C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\node_modules\\@babel\\parser\\lib\\index.js:6871:32)\n    at JSXParserMixin.jsxParseElementAt (C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\node_modules\\@babel\\parser\\lib\\index.js:6871:32)\n    at JSXParserMixin.jsxParseElementAt (C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\node_modules\\@babel\\parser\\lib\\index.js:6871:32)\n    at JSXParserMixin.jsxParseElementAt (C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\node_modules\\@babel\\parser\\lib\\index.js:6871:32)\n    at JSXParserMixin.jsxParseElementAt (C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\node_modules\\@babel\\parser\\lib\\index.js:6871:32)\n    at JSXParserMixin.jsxParseElementAt (C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\node_modules\\@babel\\parser\\lib\\index.js:6871:32)\n    at JSXParserMixin.jsxParseElementAt (C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\node_modules\\@babel\\parser\\lib\\index.js:6871:32)\n    at JSXParserMixin.jsxParseElementAt (C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\node_modules\\@babel\\parser\\lib\\index.js:6871:32)\n    at JSXParserMixin.jsxParseElement (C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\node_modules\\@babel\\parser\\lib\\index.js:6922:17)\n    at JSXParserMixin.parseExprAtom (C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\node_modules\\@babel\\parser\\lib\\index.js:6932:19)\n    at JSXParserMixin.parseExprSubscripts (C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\node_modules\\@babel\\parser\\lib\\index.js:10734:23)\n    at JSXParserMixin.parseUpdate (C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\node_modules\\@babel\\parser\\lib\\index.js:10719:21)\n    at JSXParserMixin.parseMaybeUnary (C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\node_modules\\@babel\\parser\\lib\\index.js:10699:23)\n    at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\node_modules\\@babel\\parser\\lib\\index.js:10553:61)\n    at JSXParserMixin.parseExprOps (C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\node_modules\\@babel\\parser\\lib\\index.js:10558:23)\n    at JSXParserMixin.parseMaybeConditional (C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\node_modules\\@babel\\parser\\lib\\index.js:10535:23)\n    at JSXParserMixin.parseMaybeAssign (C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\node_modules\\@babel\\parser\\lib\\index.js:10498:21)\n    at C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\node_modules\\@babel\\parser\\lib\\index.js:10468:39\n    at JSXParserMixin.allowInAnd (C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\node_modules\\@babel\\parser\\lib\\index.js:12069:12)\n    at JSXParserMixin.parseMaybeAssignAllowIn (C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\node_modules\\@babel\\parser\\lib\\index.js:10468:17)\n    at JSXParserMixin.parseParenAndDistinguishExpression (C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\node_modules\\@babel\\parser\\lib\\index.js:11328:28)\n    at JSXParserMixin.parseExprAtom (C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\node_modules\\@babel\\parser\\lib\\index.js:10982:23)\n    at JSXParserMixin.parseExprAtom (C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\node_modules\\@babel\\parser\\lib\\index.js:6937:20)\n    at JSXParserMixin.parseExprSubscripts (C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\node_modules\\@babel\\parser\\lib\\index.js:10734:23)\n    at JSXParserMixin.parseUpdate (C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\node_modules\\@babel\\parser\\lib\\index.js:10719:21)\n    at JSXParserMixin.parseMaybeUnary (C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\node_modules\\@babel\\parser\\lib\\index.js:10699:23)\n    at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\node_modules\\@babel\\parser\\lib\\index.js:10553:61)\n    at JSXParserMixin.parseExprOps (C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\node_modules\\@babel\\parser\\lib\\index.js:10558:23)\n    at JSXParserMixin.parseMaybeConditional (C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\node_modules\\@babel\\parser\\lib\\index.js:10535:23)\n    at JSXParserMixin.parseMaybeAssign (C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\node_modules\\@babel\\parser\\lib\\index.js:10498:21)\n    at JSXParserMixin.parseExpressionBase (C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\node_modules\\@babel\\parser\\lib\\index.js:10452:23)\n    at C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\node_modules\\@babel\\parser\\lib\\index.js:10448:39\n    at JSXParserMixin.allowInAnd (C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\node_modules\\@babel\\parser\\lib\\index.js:12064:16)\n    at JSXParserMixin.parseExpression (C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\node_modules\\@babel\\parser\\lib\\index.js:10448:17)\n    at JSXParserMixin.parseReturnStatement (C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\node_modules\\@babel\\parser\\lib\\index.js:12755:28)\n    at JSXParserMixin.parseStatementContent (C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\node_modules\\@babel\\parser\\lib\\index.js:12406:21)\n    at JSXParserMixin.parseStatementLike (C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\node_modules\\@babel\\parser\\lib\\index.js:12375:17)\n    at JSXParserMixin.parseStatementListItem (C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\node_modules\\@babel\\parser\\lib\\index.js:12355:17)\n    at JSXParserMixin.parseBlockOrModuleBlockBody (C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\node_modules\\@babel\\parser\\lib\\index.js:12929:61)\n    at JSXParserMixin.parseBlockBody (C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\node_modules\\@babel\\parser\\lib\\index.js:12922:10)\n    at JSXParserMixin.parseBlock (C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\node_modules\\@babel\\parser\\lib\\index.js:12910:10)\n    at JSXParserMixin.parseFunctionBody (C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\node_modules\\@babel\\parser\\lib\\index.js:11752:24)");
+
+/***/ }),
+
+/***/ "./src/Views/Home.js":
+/*!***************************!*\
+  !*** ./src/Views/Home.js ***!
+  \***************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   Home: () => (/* binding */ Home)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _utils_GrowSpinner_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../utils/GrowSpinner.js */ "./src/utils/GrowSpinner.js");
+/* harmony import */ var _utils_NavBar_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../utils/NavBar.js */ "./src/utils/NavBar.js");
+
+
+
+function Home() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("header", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+    width: "100%",
+    alt: "fried seafood platter",
+    src: "https://cdn.glitch.global/cbca519c-2e2c-44e5-a058-374e1c8be1a2/Screenshot%202024-08-03%20021209.jpg?v=1722669203847"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_utils_NavBar_js__WEBPACK_IMPORTED_MODULE_2__.NavBar, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("article", {
+    class: "container"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", {
+    class: "p-1 fs-1 text-center"
+  }, "Good Food Hut"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    class: "p-1 fs-2 text-center"
+  }, "Swing On By and Taste Our Good Food!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", {
+    class: "p-1 text-center"
+  }, "Delighting Tastebuds since 1988"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_utils_GrowSpinner_js__WEBPACK_IMPORTED_MODULE_1__.GrowSpinner, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
+    class: "text-start fs-3"
+  }, "Visit our Sesame Street Location and try all that the Good Food Hut has to offer. We have been sharing our Good Food Philosophy for over 20 years and you haven't seen nor tasted anything yet!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("hr", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+    src: "https://cdn.glitch.global/82eb993a-bf96-4031-9a18-ee851469bb49/restaurant%20interior.jpg?v=1726951573166",
+    width: "100%"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("hr", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "So whether it's for some quality time with the family, \"chillaxation\" time with your friends, or decompression time with the colleagues...we have created a space that honors a relaxed and authentic vibe that'll make you feel like you belong here, because you do!\uD83D\uDE09"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h4", null, "Welcome home, Suga'!")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    class: "text-center",
+    style: "padding: 10px"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
+    onclick: "handleAdvice()",
+    class: "btn btn-sm rounded-3 bg-primary",
+    id: "mixin-button"
+  }, "Get Random Advice Here")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    id: "outputTag"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h6", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("footer", {
+    class: "text-center"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "Good Food Hut\u274312345 Big Bird Ave, Sesame Street, LA 12345\u2743 337-555-4321\u2743", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "Website Created by RaylonJMG 2024")));
+}
+
+/***/ }),
+
+/***/ "./src/Views/Menus.js":
+/*!****************************!*\
+  !*** ./src/Views/Menus.js ***!
+  \****************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   Menus: () => (/* binding */ Menus)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+function Menus() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("body", {
+    class: "m-4 p-4"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("header", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+    width: "100%",
+    alt: "fried seafood platter",
+    src: "https://cdn.glitch.global/cbca519c-2e2c-44e5-a058-374e1c8be1a2/Screenshot%202024-08-03%20021209.jpg?v=1722669203847"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("nav", {
+    class: "nav nav-fill nav-pills"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
+    class: "nav-link",
+    href: "index.html"
+  }, "HOME"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
+    class: "nav-link",
+    href: "about.html"
+  }, "ABOUT"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
+    class: "nav-link active",
+    "aria-current": "page",
+    href: "menus.html"
+  }, "MENU"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
+    class: "nav-link",
+    href: "photos.html"
+  }, "PHOTOS"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
+    class: "nav-link",
+    href: "contact.html"
+  }, "CONTACT"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", null, "Full Menu"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    class: "alert alert-primary alert-dismissible ",
+    role: "alert"
+  }, "ASK ABOUT OUR DAILY SPECIALS!", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
+    type: "button",
+    class: "btn-close",
+    "data-bs-dismiss": "alert",
+    "aria-label": "Close"
+  }, "Close")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", {
+    id: "soups"
+  }, "Soups, Salads, and Gumbos"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
+    class: "text-center fs-6"
+  }, "All Soups/Gumbos served with Potato Salad or Side Salad and Crackers"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("ul", {
+    class: "list-group text-primary border border-5 border-primary"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
+    class: "list-group-item"
+  }, "Shrimp Salad"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
+    class: "list-group-item"
+  }, "Grilled Chicken Salad"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
+    class: "list-group-item",
+    "aria-current": "true"
+  }, "Chef's Kiss Salad", " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
+    class: "text-end badge bg-success"
+  }, " ", "Customer Rated 10/10 \uD83D\uDE0D")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
+    class: "list-group-item"
+  }, "Creole Shrimp and Tomato Soup"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
+    class: "list-group-item"
+  }, "Seafood Gumbo"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
+    class: "list-group-item"
+  }, "Chicken and Sausage Gumbo")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("hr", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", {
+    id: "poboys"
+  }, "Overstuffed Po-Boys", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), " (Half or Whole)"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("ul", {
+    class: "list-group text-primary border border-5 border-primary"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
+    class: "list-group-item"
+  }, "Oyster"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
+    class: "list-group-item"
+  }, "Shrimp"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
+    class: "list-group-item"
+  }, "Crawfish"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
+    class: "list-group-item"
+  }, "Fish"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
+    class: "list-group-item"
+  }, "Seafood Platter Po-Boy: contains shrimp, crawfish, catfish and oysters", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
+    class: "badge bg-success"
+  }, " Customer Rated 10/10 \uD83D\uDE0D")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
+    class: "list-group-item"
+  }, "Roast Beef"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
+    class: "list-group-item"
+  }, "Ham and Swiss Cheese"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
+    class: "list-group-item"
+  }, "Grilled Chicken Breast"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
+    class: "list-group-item"
+  }, "Hamburger"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
+    class: "list-group-item"
+  }, "Cheeseburger")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("hr", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", {
+    id: "baskets"
+  }, "Baskets"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("ul", {
+    class: "list-group text-primary border border-5 border-primary"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
+    class: "list-group-item"
+  }, "Shrimp Basket"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
+    class: "list-group-item"
+  }, "Crawfish Basket"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
+    class: "list-group-item"
+  }, "Catfish Basket"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
+    class: "list-group-item"
+  }, "Oyster Basket"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
+    class: "list-group-item"
+  }, "Seafood Combo Basket"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
+    class: "list-group-item"
+  }, "Chicken Tender Basket"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
+    class: "list-group-item"
+  }, "Kid's Basket (with fries and roll)")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("hr", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", {
+    id: "burgers"
+  }, "Burgers"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
+    class: "text-center fs-6"
+  }, "Served with choice of Fries, Onion Rings, or Tater tots"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("ul", {
+    class: "list-group text-primary border border-5 border-primary"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
+    class: "badge bg-primary"
+  }, "Gluten Free Buns available by Request"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
+    class: "list-group-item"
+  }, "Hamburger"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
+    class: "list-group-item"
+  }, "Cheeseburger"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
+    class: "list-group-item"
+  }, "1/4 lb Hamburger"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
+    class: "list-group-item"
+  }, "1/4 lb Cheeseburger", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
+    class: "badge bg-success"
+  }, " Customer Rated 10/10 \uD83D\uDE0D")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
+    class: "list-group-item"
+  }, "Shrimp, Catfish, or Crawfish Burger")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("hr", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", {
+    id: "snacks",
+    class: "text-center"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("u", null, "Snack Bites")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("ul", {
+    class: "list-group text-primary border border-5 border-primary"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
+    class: "list-group-item"
+  }, "Fries"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
+    class: "list-group-item"
+  }, "Chicken Tenders"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
+    class: "list-group-item"
+  }, "Tater Tots"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
+    class: "list-group-item"
+  }, "Onion Rings")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("hr", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", {
+    id: "drinks",
+    class: "text-center"
+  }, "Beverages"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    class: "container"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    class: "row gap-3"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    class: "col border border-primary text-center"
+  }, "Coke"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    class: "col border border-primary text-center"
+  }, "Diet Coke"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    class: "col border border-primary text-center"
+  }, "Root Beer"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    class: "container"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    class: "row gap-3"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    class: "col border border-primary text-center"
+  }, "Sprite"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    class: "col border border-primary text-center"
+  }, "Mr. Pibb"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    class: "col border border-primary text-center"
+  }, "Strawberry Iced Tea"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", null, "Beer"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    class: "container"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    class: "row gap-3"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    class: "col border border-primary text-center"
+  }, "Coors Lite"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    class: "col border border-primary text-center"
+  }, "Miller Lite"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    class: "col border border-primary text-center"
+  }, "Bud Lite"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    class: "container"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    class: "row gap-3"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    class: "col border border-primary text-center"
+  }, "Budweiser"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    class: "col border border-primary text-center"
+  }, "Heineken"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    class: "col border border-primary text-center"
+  }, "Corona"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    class: "container"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    class: "row gap-3"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    class: "col border border-primary text-center"
+  }, "Dos Equis"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    class: "col border border-primary text-center"
+  }, "Stella Artois"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    class: "col border border-primary text-center"
+  }, "Modelo"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("hr", null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("footer", {
+    class: "text-center border border-5 border-dashed border-primary"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("b", null, "Menu Map"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("nav", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
+    href: "#soups"
+  }, "Soups/Salads/Gumbo"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
+    href: "#poboys"
+  }, "Overstuffed Poboys"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
+    href: "#baskets"
+  }, "Baskets"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
+    href: "#burgers"
+  }, "Burgers"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
+    href: "#snacks"
+  }, "Snack Bites"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
+    href: "#drinks"
+  }, "Ice Cold Beverages")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), " Good Food Hut\u274312345 Big Bird Ave, Sesame Street, LA 12345\u2743 337-555-4321\u2743", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h6", null, "Website Created by RaylonJMG 2024"))));
+}
+
+/***/ }),
+
+/***/ "./src/Views/Photos.js":
+/*!*****************************!*\
+  !*** ./src/Views/Photos.js ***!
+  \*****************************/
+/***/ (() => {
+
+throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nSyntaxError: C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\src\\Views\\Photos.js: Unexpected token, expected \"}\" (21:19)\n\n\u001b[0m \u001b[90m 19 |\u001b[39m             \u001b[90m//OBJECTS WITH PROPERTIES IN A CARD W/ IMAGE\u001b[39m\n \u001b[90m 20 |\u001b[39m             \u001b[36mconst\u001b[39m card1 \u001b[33m=\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 21 |\u001b[39m                 src\u001b[33m:\u001b[39m \u001b[32m\"https://preview.redd.it/i-ate-fried-seafood-platter-v0-7747apv88fta1.jpg?width=1080&crop=smart&auto=webp&s=e08c9217fed766d3a6cabb738cb0ef3f5e52787e\"\u001b[39m\u001b[33m,\u001b[39m\n \u001b[90m    |\u001b[39m                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 22 |\u001b[39m                 title\u001b[33m:\u001b[39m \u001b[32m\"Fried Fish Basket\"\u001b[39m\u001b[33m,\u001b[39m\n \u001b[90m 23 |\u001b[39m                 alt\u001b[33m:\u001b[39m \u001b[32m\"fried fish basket\"\u001b[39m\u001b[33m,\u001b[39m\n \u001b[90m 24 |\u001b[39m                 summary\u001b[33m:\u001b[39m \u001b[32m\"Local, Wild-caught Catfish and Soft-Shelled Crabs fried to perfection. \"\u001b[39m\u001b[0m\n    at constructor (C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\node_modules\\@babel\\parser\\lib\\index.js:359:19)\n    at JSXParserMixin.raise (C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\node_modules\\@babel\\parser\\lib\\index.js:3327:19)\n    at JSXParserMixin.unexpected (C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\node_modules\\@babel\\parser\\lib\\index.js:3347:16)\n    at JSXParserMixin.expect (C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\node_modules\\@babel\\parser\\lib\\index.js:3657:12)\n    at JSXParserMixin.jsxParseExpressionContainer (C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\node_modules\\@babel\\parser\\lib\\index.js:6810:10)\n    at JSXParserMixin.jsxParseElementAt (C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\node_modules\\@babel\\parser\\lib\\index.js:6884:36)\n    at JSXParserMixin.jsxParseElementAt (C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\node_modules\\@babel\\parser\\lib\\index.js:6871:32)\n    at JSXParserMixin.jsxParseElementAt (C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\node_modules\\@babel\\parser\\lib\\index.js:6871:32)\n    at JSXParserMixin.jsxParseElement (C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\node_modules\\@babel\\parser\\lib\\index.js:6922:17)\n    at JSXParserMixin.parseExprAtom (C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\node_modules\\@babel\\parser\\lib\\index.js:6932:19)\n    at JSXParserMixin.parseExprSubscripts (C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\node_modules\\@babel\\parser\\lib\\index.js:10734:23)\n    at JSXParserMixin.parseUpdate (C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\node_modules\\@babel\\parser\\lib\\index.js:10719:21)\n    at JSXParserMixin.parseMaybeUnary (C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\node_modules\\@babel\\parser\\lib\\index.js:10699:23)\n    at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\node_modules\\@babel\\parser\\lib\\index.js:10553:61)\n    at JSXParserMixin.parseExprOps (C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\node_modules\\@babel\\parser\\lib\\index.js:10558:23)\n    at JSXParserMixin.parseMaybeConditional (C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\node_modules\\@babel\\parser\\lib\\index.js:10535:23)\n    at JSXParserMixin.parseMaybeAssign (C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\node_modules\\@babel\\parser\\lib\\index.js:10498:21)\n    at C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\node_modules\\@babel\\parser\\lib\\index.js:10468:39\n    at JSXParserMixin.allowInAnd (C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\node_modules\\@babel\\parser\\lib\\index.js:12069:12)\n    at JSXParserMixin.parseMaybeAssignAllowIn (C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\node_modules\\@babel\\parser\\lib\\index.js:10468:17)\n    at JSXParserMixin.parseParenAndDistinguishExpression (C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\node_modules\\@babel\\parser\\lib\\index.js:11328:28)\n    at JSXParserMixin.parseExprAtom (C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\node_modules\\@babel\\parser\\lib\\index.js:10982:23)\n    at JSXParserMixin.parseExprAtom (C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\node_modules\\@babel\\parser\\lib\\index.js:6937:20)\n    at JSXParserMixin.parseExprSubscripts (C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\node_modules\\@babel\\parser\\lib\\index.js:10734:23)\n    at JSXParserMixin.parseUpdate (C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\node_modules\\@babel\\parser\\lib\\index.js:10719:21)\n    at JSXParserMixin.parseMaybeUnary (C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\node_modules\\@babel\\parser\\lib\\index.js:10699:23)\n    at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\node_modules\\@babel\\parser\\lib\\index.js:10553:61)\n    at JSXParserMixin.parseExprOps (C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\node_modules\\@babel\\parser\\lib\\index.js:10558:23)\n    at JSXParserMixin.parseMaybeConditional (C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\node_modules\\@babel\\parser\\lib\\index.js:10535:23)\n    at JSXParserMixin.parseMaybeAssign (C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\node_modules\\@babel\\parser\\lib\\index.js:10498:21)\n    at JSXParserMixin.parseExpressionBase (C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\node_modules\\@babel\\parser\\lib\\index.js:10452:23)\n    at C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\node_modules\\@babel\\parser\\lib\\index.js:10448:39\n    at JSXParserMixin.allowInAnd (C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\node_modules\\@babel\\parser\\lib\\index.js:12064:16)\n    at JSXParserMixin.parseExpression (C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\node_modules\\@babel\\parser\\lib\\index.js:10448:17)\n    at JSXParserMixin.parseReturnStatement (C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\node_modules\\@babel\\parser\\lib\\index.js:12755:28)\n    at JSXParserMixin.parseStatementContent (C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\node_modules\\@babel\\parser\\lib\\index.js:12406:21)\n    at JSXParserMixin.parseStatementLike (C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\node_modules\\@babel\\parser\\lib\\index.js:12375:17)\n    at JSXParserMixin.parseStatementListItem (C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\node_modules\\@babel\\parser\\lib\\index.js:12355:17)\n    at JSXParserMixin.parseBlockOrModuleBlockBody (C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\node_modules\\@babel\\parser\\lib\\index.js:12929:61)\n    at JSXParserMixin.parseBlockBody (C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\node_modules\\@babel\\parser\\lib\\index.js:12922:10)\n    at JSXParserMixin.parseBlock (C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\node_modules\\@babel\\parser\\lib\\index.js:12910:10)\n    at JSXParserMixin.parseFunctionBody (C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\node_modules\\@babel\\parser\\lib\\index.js:11752:24)\n    at JSXParserMixin.parseFunctionBodyAndFinish (C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\node_modules\\@babel\\parser\\lib\\index.js:11738:10)\n    at C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\node_modules\\@babel\\parser\\lib\\index.js:13054:12\n    at JSXParserMixin.withSmartMixTopicForbiddingContext (C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\node_modules\\@babel\\parser\\lib\\index.js:12046:14)\n    at JSXParserMixin.parseFunction (C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\node_modules\\@babel\\parser\\lib\\index.js:13053:10)\n    at JSXParserMixin.parseFunctionStatement (C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\node_modules\\@babel\\parser\\lib\\index.js:12738:17)\n    at JSXParserMixin.parseStatementContent (C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\node_modules\\@babel\\parser\\lib\\index.js:12399:21)\n    at JSXParserMixin.parseStatementLike (C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\node_modules\\@babel\\parser\\lib\\index.js:12375:17)\n    at JSXParserMixin.parseStatementListItem (C:\\Users\\ryj22\\CodeX Academy\\CodeX Level 3\\Capstone Project Level 3\\node_modules\\@babel\\parser\\lib\\index.js:12355:17)");
+
+/***/ }),
+
+/***/ "./src/utils/GrowSpinner.js":
+/*!**********************************!*\
+  !*** ./src/utils/GrowSpinner.js ***!
+  \**********************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   GrowSpinner: () => (/* binding */ GrowSpinner)
+/* harmony export */ });
+class GrowSpinner {
+  openingTag = "<div class='spinner-grow text-primary'>";
+  closingTag = "</div>";
+  innerHTML = "";
+  constructor(content = "") {
+    this.innerHTML = content;
+  }
+  toString() {
+    return `${this.openingTag}${this.innerHTML}${this.closingTag}`;
+  }
+}
+
+/***/ }),
+
+/***/ "./src/utils/NavBar.js":
+/*!*****************************!*\
+  !*** ./src/utils/NavBar.js ***!
+  \*****************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   NavBar: () => (/* binding */ NavBar)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router */ "./node_modules/react-router/dist/development/chunk-SYFQ2XB5.mjs");
+
+
+function NavBar() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("header", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("nav", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router__WEBPACK_IMPORTED_MODULE_1__.Link, {
+    to: "/"
+  }, "HOME"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router__WEBPACK_IMPORTED_MODULE_1__.Link, {
+    to: "/about"
+  }, "ABOUT"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router__WEBPACK_IMPORTED_MODULE_1__.Link, {
+    to: "/photos"
+  }, "PHOTOS"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router__WEBPACK_IMPORTED_MODULE_1__.Link, {
+    to: "/menus"
+  }, "MENUS"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router__WEBPACK_IMPORTED_MODULE_1__.Link, {
+    to: "/contact"
+  }, "CONTACT"))));
+}
+
 /***/ })
 
 /******/ 	});
@@ -11695,19 +12097,20 @@ function raceSignal(promise, signal) {
 /******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
-// This entry needs to be wrapped in an IIFE because it needs to be isolated against other modules in the chunk.
+// This entry needs to be wrapped in an IIFE because it needs to be in strict mode.
 (() => {
+"use strict";
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react_dom_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom/client */ "./node_modules/react-dom/client.js");
-/* harmony import */ var react_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-router */ "./node_modules/react-router/dist/development/chunk-SYFQ2XB5.mjs");
-Object(function webpackMissingModule() { var e = new Error("Cannot find module './Views/Home'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
-Object(function webpackMissingModule() { var e = new Error("Cannot find module './Views/Menus'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
-Object(function webpackMissingModule() { var e = new Error("Cannot find module './Views/Photos'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
-Object(function webpackMissingModule() { var e = new Error("Cannot find module './Views/Contact'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
+/* harmony import */ var _Views_Home_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Views/Home.js */ "./src/Views/Home.js");
+/* harmony import */ var _Views_About_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Views/About.js */ "./src/Views/About.js");
+/* harmony import */ var _Views_Photos_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Views/Photos.js */ "./src/Views/Photos.js");
+/* harmony import */ var _Views_Menus_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Views/Menus.js */ "./src/Views/Menus.js");
+/* harmony import */ var _Views_Contact_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./Views/Contact.js */ "./src/Views/Contact.js");
 
 
 
@@ -11716,22 +12119,22 @@ Object(function webpackMissingModule() { var e = new Error("Cannot find module '
 
 
 const root = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_1__.createRoot)(window.bodyTag);
-root.render(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router__WEBPACK_IMPORTED_MODULE_3__.BrowserRouter, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router__WEBPACK_IMPORTED_MODULE_3__.Routes, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router__WEBPACK_IMPORTED_MODULE_3__.Route, {
+root.render(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(BrowserRouter, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(Routes, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(Route, {
   path: "/",
-  element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(Object(function webpackMissingModule() { var e = new Error("Cannot find module './Views/Home'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()), null)
-}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router__WEBPACK_IMPORTED_MODULE_3__.Route, {
+  element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Views_Home_js__WEBPACK_IMPORTED_MODULE_2__.Home, null)
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(Route, {
   path: "/about",
-  element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(About, null)
-}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router__WEBPACK_IMPORTED_MODULE_3__.Route, {
+  element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Views_About_js__WEBPACK_IMPORTED_MODULE_3__.About, null)
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(Route, {
   path: "/photos",
-  element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(Object(function webpackMissingModule() { var e = new Error("Cannot find module './Views/Photos'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()), null)
-}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router__WEBPACK_IMPORTED_MODULE_3__.Route, {
+  element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Views_Photos_js__WEBPACK_IMPORTED_MODULE_4__.Photos, null)
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(Route, {
   path: "/menus",
-  element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(Object(function webpackMissingModule() { var e = new Error("Cannot find module './Views/Menus'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()), null)
-}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router__WEBPACK_IMPORTED_MODULE_3__.Route, {
+  element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Views_Menus_js__WEBPACK_IMPORTED_MODULE_5__.Menus, null)
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(Route, {
   path: "/contact",
-  element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(Object(function webpackMissingModule() { var e = new Error("Cannot find module './Views/Contact'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()), null)
-}))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null));
+  element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Views_Contact_js__WEBPACK_IMPORTED_MODULE_6__.Contact, null)
+})))));
 })();
 
 /******/ })()
