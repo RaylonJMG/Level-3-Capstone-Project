@@ -1,5 +1,6 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
+import { BrowserRouter, Route, Routes } from "react-router";
 import { Home } from "./Views/Home.js";
 import { About } from "./Views/About.js";
 import { Photos } from "./Views/Photos.js";

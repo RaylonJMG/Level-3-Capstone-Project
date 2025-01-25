@@ -1,4 +1,4 @@
-export function output(
+export function Output(
 	message = "",
 	outputTag = "outputTag",
 	shouldAppend = true
