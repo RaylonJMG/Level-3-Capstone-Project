@@ -1,33 +1,17 @@
 import React from "react";
+import { GrowSpinner } from "../utils/GrowSpinner.js";
+import { NavBar } from "../utils/NavBar.js";
 
 export function Home() {
 	return (
-		<body
-			id="bodyTag"
-			class="m-5 p-4 border border-5 border-danger border-ridge">
+		<>
 			<header>
 				<img
 					width="100%"
 					alt="fried seafood platter"
 					src="https://cdn.glitch.global/cbca519c-2e2c-44e5-a058-374e1c8be1a2/Screenshot%202024-08-03%20021209.jpg?v=1722669203847"
 				/>
-				<nav class="nav nav-fill nav-pills">
-					<a class="nav-link active" aria-current="page" href="index.html">
-						HOME
-					</a>
-					<a class="nav-link" href="about.html">
-						ABOUT
-					</a>
-					<a class="nav-link" href="menus.html">
-						MENU
-					</a>
-					<a class="nav-link" href="photos.html">
-						PHOTOS
-					</a>
-					<a class="nav-link" href="contact.html">
-						CONTACT
-					</a>
-				</nav>
+				<NavBar />
 			</header>
 			<main>
 				<article class="container">
@@ -37,7 +21,7 @@ export function Home() {
 					</div>
 					<h3 class="p-1 text-center">Delighting Tastebuds since 1988</h3>
 					<br />
-					<div class="spinner-grow text-primary"></div>
+					<GrowSpinner />
 					<p class="text-start fs-3">
 						Visit our Sesame Street Location and try all that the Good Food Hut
 						has to offer. We have been sharing our Good Food Philosophy for over
@@ -49,7 +33,7 @@ export function Home() {
 						width="100%"
 					/>
 					<hr />
-					<p class="text-start fs-3">
+					<p>
 						So whether it's for some quality time with the family,
 						"chillaxation" time with your friends, or decompression time with
 						the colleagues...we have created a space that honors a relaxed and
@@ -79,6 +63,6 @@ export function Home() {
 					Website Created by RaylonJMG 2024
 				</footer>
 			</h6>
-		</body>
+		</>
 	);
 }
