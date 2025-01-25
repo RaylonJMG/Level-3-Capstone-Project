@@ -1,6 +1,7 @@
 import React from "react";
 import { GrowSpinner } from "../utils/GrowSpinner.js";
 import { NavBar } from "../utils/NavBar.js";
+import { Footer } from "../utils/Footer.js";
 
 export function Home() {
 	return (
@@ -53,16 +54,7 @@ export function Home() {
 				</div>
 				<div id="outputTag"></div>
 			</main>
-			<h6>
-				<footer class="text-center">
-					<br />
-					<br />
-					Good Food Hut❃12345 Big Bird Ave, Sesame Street, LA 12345❃
-					337-555-4321❃
-					<br />
-					Website Created by RaylonJMG 2024
-				</footer>
-			</h6>
+			<Footer />
 		</>
 	);
 }
