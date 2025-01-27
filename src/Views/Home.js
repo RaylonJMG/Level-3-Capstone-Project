@@ -2,6 +2,7 @@ import React from "react";
 // import { GrowSpinner } from "../utils/GrowSpinner.js";
 import { NavBar } from "../utils/NavBar.js";
 import { Footer } from "../utils/Footer.js";
+import { handleAdvice } from "../controllers/handleAdvice.js";
 
 export function Home() {
 	return (
@@ -15,14 +16,14 @@ export function Home() {
 				<NavBar />
 			</header>
 			<main>
-				<h1 class="p-1 fs-1 text-center">Good Food Hut</h1>
-				<div class="p-1 fs-2 text-center">
+				<h1 className="p-1 fs-1 text-center">Good Food Hut</h1>
+				<div className="p-1 fs-2 text-center">
 					Swing On By and Taste Our Good Food!
 				</div>
-				<h3 class="p-1 text-center">Delighting Tastebuds since 1988</h3>
+				<h3 className="p-1 text-center">Delighting Tastebuds since 1988</h3>
 				<br />
 				{/* <GrowSpinner /> */}
-				<p class="text-start fs-3">
+				<p className="text-start fs-3">
 					Visit our Sesame Street Location and try all that the Good Food Hut
 					has to offer. We have been sharing our Good Food Philosophy for over
 					20 years and you haven't seen nor tasted anything yet!
@@ -41,10 +42,10 @@ export function Home() {
 				</p>
 
 				<h4>Welcome home, Suga'!</h4>
-				<div class="text-center" style="padding: 10px">
+				<div className="text-center">
 					<button
-						onclick="handleAdvice()"
-						class="btn btn-sm rounded-3 bg-primary"
+						onClick={handleAdvice}
+						className="btn btn-sm rounded-3 bg-primary"
 						id="mixin-button">
 						Get Random Advice Here
 					</button>

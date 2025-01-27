@@ -1,29 +1,25 @@
-import { extractAdvice } from "../../modules/extractAdvice.js";
-import { viewAdvice } from "../../modules/viewAdvice.js";
-import { Output } from "../utils/output.js";
-
-window.handleAdvice = handleAdvice;
+import { output } from "../utils/output.js";
 
 //FETCH FUNCTION sends request to API URL and returns a promise
 export function handleAdvice() {
 	debugger;
 	const promise = fetch("	https://api.adviceslip.com/advice");
 	promise.then(extractAdvice);
-}
 
-//Resolve value is a special object created by the fetch function
-//Text Method extracts stringified object
-function extractAdvice(resolveValue) {
-	const promise = resolveValue.text();
-	promise.then(viewAdvice);
-}
+	//Resolve value is a special object created by the fetch function
+	//Text Method extracts stringified object
+	function extractAdvice(resolveValue) {
+		const promise = resolveValue.text();
+		promise.then(viewAdvice);
 
-//JSON.parse function to convert special object to a stringified object
-//JSON.parse method generates an object from the string
-//JSON.stringify method generates a string from an object
-function viewAdvice(resolveValue) {
-	debugger;
-	const result = JSON.parse(resolveValue);
-	const advice = result.slip.advice;
-	Output(advice);
+		//JSON.parse function to convert special object to a stringified object
+		//JSON.parse method generates an object from the string
+		//JSON.stringify method generates a string from an object
+		function viewAdvice(resolveValue) {
+			debugger;
+			const result = JSON.parse(resolveValue);
+			const advice = result.slip.advice;
+			output(advice);
+		}
+	}
 }

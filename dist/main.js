@@ -11847,8 +11847,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var _utils_NavBar_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../utils/NavBar.js */ "./src/utils/NavBar.js");
 /* harmony import */ var _utils_Footer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../utils/Footer.js */ "./src/utils/Footer.js");
+/* harmony import */ var _controllers_handleAdvice_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../controllers/handleAdvice.js */ "./src/controllers/handleAdvice.js");
 
 // import { GrowSpinner } from "../utils/GrowSpinner.js";
+
 
 
 function Home() {
@@ -11857,22 +11859,21 @@ function Home() {
     alt: "fried seafood platter",
     src: "https://cdn.glitch.global/cbca519c-2e2c-44e5-a058-374e1c8be1a2/Screenshot%202024-08-03%20021209.jpg?v=1722669203847"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_utils_NavBar_js__WEBPACK_IMPORTED_MODULE_1__.NavBar, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", {
-    class: "p-1 fs-1 text-center"
+    className: "p-1 fs-1 text-center"
   }, "Good Food Hut"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    class: "p-1 fs-2 text-center"
+    className: "p-1 fs-2 text-center"
   }, "Swing On By and Taste Our Good Food!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", {
-    class: "p-1 text-center"
+    className: "p-1 text-center"
   }, "Delighting Tastebuds since 1988"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
-    class: "text-start fs-3"
+    className: "text-start fs-3"
   }, "Visit our Sesame Street Location and try all that the Good Food Hut has to offer. We have been sharing our Good Food Philosophy for over 20 years and you haven't seen nor tasted anything yet!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("hr", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
     src: "https://cdn.glitch.global/82eb993a-bf96-4031-9a18-ee851469bb49/restaurant%20interior.jpg?v=1726951573166",
     width: "100%"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("hr", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "So whether it's for some quality time with the family, \"chillaxation\" time with your friends, or decompression time with the colleagues...we have created a space that honors a relaxed and authentic vibe that'll make you feel like you belong here, because you do!\uD83D\uDE09"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h4", null, "Welcome home, Suga'!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    class: "text-center",
-    style: "padding: 10px"
+    className: "text-center"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
-    onclick: "handleAdvice()",
-    class: "btn btn-sm rounded-3 bg-primary",
+    onClick: _controllers_handleAdvice_js__WEBPACK_IMPORTED_MODULE_3__.handleAdvice,
+    className: "btn btn-sm rounded-3 bg-primary",
     id: "mixin-button"
   }, "Get Random Advice Here")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("output", {
     id: "outputTag"
@@ -12146,6 +12147,45 @@ function Photos() {
 
 /***/ }),
 
+/***/ "./src/controllers/handleAdvice.js":
+/*!*****************************************!*\
+  !*** ./src/controllers/handleAdvice.js ***!
+  \*****************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   handleAdvice: () => (/* binding */ handleAdvice)
+/* harmony export */ });
+/* harmony import */ var _utils_output_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../utils/output.js */ "./src/utils/output.js");
+
+
+//FETCH FUNCTION sends request to API URL and returns a promise
+function handleAdvice() {
+  debugger;
+  const promise = fetch("	https://api.adviceslip.com/advice");
+  promise.then(extractAdvice);
+
+  //Resolve value is a special object created by the fetch function
+  //Text Method extracts stringified object
+  function extractAdvice(resolveValue) {
+    const promise = resolveValue.text();
+    promise.then(viewAdvice);
+
+    //JSON.parse function to convert special object to a stringified object
+    //JSON.parse method generates an object from the string
+    //JSON.stringify method generates a string from an object
+    function viewAdvice(resolveValue) {
+      debugger;
+      const result = JSON.parse(resolveValue);
+      const advice = result.slip.advice;
+      (0,_utils_output_js__WEBPACK_IMPORTED_MODULE_0__.output)(advice);
+    }
+  }
+}
+
+/***/ }),
+
 /***/ "./src/utils/Footer.js":
 /*!*****************************!*\
   !*** ./src/utils/Footer.js ***!
@@ -12245,6 +12285,23 @@ function NavBar() {
   }, "MENUS|"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router__WEBPACK_IMPORTED_MODULE_1__.Link, {
     to: "/contact"
   }, "CONTACT|"))));
+}
+
+/***/ }),
+
+/***/ "./src/utils/output.js":
+/*!*****************************!*\
+  !*** ./src/utils/output.js ***!
+  \*****************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   output: () => (/* binding */ output)
+/* harmony export */ });
+function output(message = "", outputTag = "outputTag", shouldAppend = true) {
+  const outputElement = document.getElementById(outputTag);
+  if (shouldAppend) outputElement.innerHTML += message;else outputElement.innerHTML += message;
 }
 
 /***/ })
