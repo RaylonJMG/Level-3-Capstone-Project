@@ -11750,177 +11750,165 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var _utils_NavBar_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../utils/NavBar.js */ "./src/utils/NavBar.js");
 /* harmony import */ var _utils_Footer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../utils/Footer.js */ "./src/utils/Footer.js");
-/* harmony import */ var _utils_ListGroup_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../utils/ListGroup.js */ "./src/utils/ListGroup.js");
-/* harmony import */ var _utils_ListGroupItem_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../utils/ListGroupItem.js */ "./src/utils/ListGroupItem.js");
 
 
 
-
+// import { ListGroup } from "../utils/ListGroup.js";
+// import { ListGroupItem } from "../utils/ListGroupItem.js";
+//import { Alert } from "../utils/Alert.js";
 
 function Menus() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("header", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
     width: "100%",
     alt: "fried seafood platter",
     src: "https://cdn.glitch.global/cbca519c-2e2c-44e5-a058-374e1c8be1a2/Screenshot%202024-08-03%20021209.jpg?v=1722669203847"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_utils_NavBar_js__WEBPACK_IMPORTED_MODULE_1__.NavBar, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", null, "Full Menu"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    class: "alert alert-primary alert-dismissible ",
-    role: "alert"
-  }, "ASK ABOUT OUR DAILY SPECIALS!", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
-    type: "button",
-    class: "btn-close",
-    "data-bs-dismiss": "alert",
-    "aria-label": "Close"
-  }, "Close")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_utils_NavBar_js__WEBPACK_IMPORTED_MODULE_1__.NavBar, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", null, "Full Menu"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "ASK ABOUT OUR DAILY SPECIALS!", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", {
     id: "soups"
-  }, "Soups, Salads, and Gumbos"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
-    class: "text-center fs-6"
-  }, "All Soups/Gumbos served with Potato Salad or Side Salad and Crackers"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("ul", {
-    class: "list-group text-primary border border-5 border-primary"
+  }, "Soups, Salads, and Gumbos"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "All Soups/Gumbos served with Potato Salad or Side Salad and Crackers"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("ul", {
+    className: "list-group text-primary border border-5 border-primary"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
-    class: "list-group-item"
+    className: "list-group-item"
   }, "Shrimp Salad"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
-    class: "list-group-item"
+    className: "list-group-item"
   }, "Grilled Chicken Salad"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
-    class: "list-group-item",
+    className: "list-group-item",
     "aria-current": "true"
-  }, "Chef's Kiss Salad", " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
-    class: "text-end badge bg-success"
-  }, " ", "Customer Rated 10/10 \uD83D\uDE0D")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
-    class: "list-group-item"
+  }, "Chef's Kiss Salad"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
+    className: "list-group-item"
   }, "Creole Shrimp and Tomato Soup"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
-    class: "list-group-item"
+    className: "list-group-item"
   }, "Seafood Gumbo"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
-    class: "list-group-item"
+    className: "list-group-item"
   }, "Chicken and Sausage Gumbo")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("hr", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", {
     id: "poboys"
   }, "Overstuffed Po-Boys", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), " (Half or Whole)"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("ul", {
-    class: "list-group text-primary border border-5 border-primary"
+    className: "list-group text-primary border border-5 border-primary"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
-    class: "list-group-item"
+    className: "list-group-item"
   }, "Oyster"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
-    class: "list-group-item"
+    className: "list-group-item"
   }, "Shrimp"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
-    class: "list-group-item"
+    className: "list-group-item"
   }, "Crawfish"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
-    class: "list-group-item"
+    className: "list-group-item"
   }, "Fish"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
-    class: "list-group-item"
+    className: "list-group-item"
   }, "Seafood Platter Po-Boy: contains shrimp, crawfish, catfish and oysters", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
-    class: "badge bg-success"
+    className: "badge bg-success"
   }, " Customer Rated 10/10 \uD83D\uDE0D")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
-    class: "list-group-item"
+    className: "list-group-item"
   }, "Roast Beef"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
-    class: "list-group-item"
+    className: "list-group-item"
   }, "Ham and Swiss Cheese"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
-    class: "list-group-item"
+    className: "list-group-item"
   }, "Grilled Chicken Breast"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
-    class: "list-group-item"
+    className: "list-group-item"
   }, "Hamburger"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
-    class: "list-group-item"
+    className: "list-group-item"
   }, "Cheeseburger")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("hr", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", {
     id: "baskets"
   }, "Baskets"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("ul", {
-    class: "list-group text-primary border border-5 border-primary"
+    className: "list-group text-primary border border-5 border-primary"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
-    class: "list-group-item"
+    className: "list-group-item"
   }, "Shrimp Basket"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
-    class: "list-group-item"
+    className: "list-group-item"
   }, "Crawfish Basket"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
-    class: "list-group-item"
+    className: "list-group-item"
   }, "Catfish Basket"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
-    class: "list-group-item"
+    className: "list-group-item"
   }, "Oyster Basket"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
-    class: "list-group-item"
+    className: "list-group-item"
   }, "Seafood Combo Basket"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
-    class: "list-group-item"
+    className: "list-group-item"
   }, "Chicken Tender Basket"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
-    class: "list-group-item"
+    className: "list-group-item"
   }, "Kid's Basket (with fries and roll)")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("hr", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", {
     id: "burgers"
   }, "Burgers"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
-    class: "text-center fs-6"
+    className: "text-center fs-6"
   }, "Served with choice of Fries, Onion Rings, or Tater tots"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("ul", {
-    class: "list-group text-primary border border-5 border-primary"
+    className: "list-group text-primary border border-5 border-primary"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
-    class: "badge bg-primary"
+    className: "badge bg-primary"
   }, "Gluten Free Buns available by Request"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
-    class: "list-group-item"
+    className: "list-group-item"
   }, "Hamburger"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
-    class: "list-group-item"
+    className: "list-group-item"
   }, "Cheeseburger"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
-    class: "list-group-item"
+    className: "list-group-item"
   }, "1/4 lb Hamburger"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
-    class: "list-group-item"
+    className: "list-group-item"
   }, "1/4 lb Cheeseburger", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
-    class: "badge bg-success"
+    className: "badge bg-success"
   }, " Customer Rated 10/10 \uD83D\uDE0D")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
-    class: "list-group-item"
+    className: "list-group-item"
   }, "Shrimp, Catfish, or Crawfish Burger")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("hr", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", {
     id: "snacks",
-    class: "text-center"
+    className: "text-center"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("u", null, "Snack Bites")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("ul", {
-    class: "list-group text-primary border border-5 border-primary"
+    className: "list-group text-primary border border-5 border-primary"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
-    class: "list-group-item"
+    className: "list-group-item"
   }, "Fries"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
-    class: "list-group-item"
+    className: "list-group-item"
   }, "Chicken Tenders"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
-    class: "list-group-item"
+    className: "list-group-item"
   }, "Tater Tots"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
-    class: "list-group-item"
+    className: "list-group-item"
   }, "Onion Rings")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("hr", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", {
     id: "drinks",
-    class: "text-center"
+    className: "text-center"
   }, "Beverages"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    class: "container"
+    className: "container"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    class: "row gap-3"
+    className: "row gap-3"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    class: "col border border-primary text-center"
+    className: "col border border-primary text-center"
   }, "Coke"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    class: "col border border-primary text-center"
+    className: "col border border-primary text-center"
   }, "Diet Coke"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    class: "col border border-primary text-center"
+    className: "col border border-primary text-center"
   }, "Root Beer"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    class: "container"
+    className: "container"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    class: "row gap-3"
+    className: "row gap-3"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    class: "col border border-primary text-center"
+    className: "col border border-primary text-center"
   }, "Sprite"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    class: "col border border-primary text-center"
+    className: "col border border-primary text-center"
   }, "Mr. Pibb"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    class: "col border border-primary text-center"
+    className: "col border border-primary text-center"
   }, "Strawberry Iced Tea"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", null, "Beer"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    class: "container"
+    className: "container"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    class: "row gap-3"
+    className: "row gap-3"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    class: "col border border-primary text-center"
+    className: "col border border-primary text-center"
   }, "Coors Lite"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    class: "col border border-primary text-center"
+    className: "col border border-primary text-center"
   }, "Miller Lite"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    class: "col border border-primary text-center"
+    className: "col border border-primary text-center"
   }, "Bud Lite"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    class: "container"
+    className: "container"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    class: "row gap-3"
+    className: "row gap-3"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    class: "col border border-primary text-center"
+    className: "col border border-primary text-center"
   }, "Budweiser"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    class: "col border border-primary text-center"
+    className: "col border border-primary text-center"
   }, "Heineken"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    class: "col border border-primary text-center"
+    className: "col border border-primary text-center"
   }, "Corona"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    class: "container"
+    className: "container"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    class: "row gap-3"
+    className: "row gap-3"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    class: "col border border-primary text-center"
+    className: "col border border-primary text-center"
   }, "Dos Equis"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    class: "col border border-primary text-center"
+    className: "col border border-primary text-center"
   }, "Stella Artois"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    class: "col border border-primary text-center"
+    className: "col border border-primary text-center"
   }, "Modelo"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("hr", null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_utils_Footer_js__WEBPACK_IMPORTED_MODULE_2__.Footer, {
     style: {
       textAlign: "center",
@@ -12060,56 +12048,6 @@ function Footer() {
       fontSize: 6
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), " Good Food Hut \u274312345 Big Bird Ave, Sesame Street, LA 12345 \u2743 337-555-4321\u2743", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "Website Created by RaylonJMG 2024"));
-}
-
-/***/ }),
-
-/***/ "./src/utils/ListGroup.js":
-/*!********************************!*\
-  !*** ./src/utils/ListGroup.js ***!
-  \********************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   ListGroup: () => (/* binding */ ListGroup)
-/* harmony export */ });
-/* harmony import */ var _ListGroupItem_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ListGroupItem.js */ "./src/utils/ListGroupItem.js");
-
-class ListGroup {
-  openingTag = " <ul class='list-group text-primary border border-5 border-primary'>";
-  closingTag = "</ul>";
-  innerHTML = "";
-  addListGroupItem(listGroupItem = new _ListGroupItem_js__WEBPACK_IMPORTED_MODULE_0__.ListGroupItem()) {
-    this.innerHTML += listGroupItem;
-  }
-  toString() {
-    return `${this.openingTag}${this.innerHTML}${this.closingTag}`;
-  }
-}
-
-/***/ }),
-
-/***/ "./src/utils/ListGroupItem.js":
-/*!************************************!*\
-  !*** ./src/utils/ListGroupItem.js ***!
-  \************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   ListGroupItem: () => (/* binding */ ListGroupItem)
-/* harmony export */ });
-class ListGroupItem {
-  openingTag = "<li class='list-group-item'>";
-  closingTag = "</li>";
-  innerHTML = "";
-  constructor(content = "") {
-    this.innerHTML = content;
-  }
-  toString() {
-    return `${this.openingTag}${this.innerHTML}${this.closingTag}`;
-  }
 }
 
 /***/ }),
