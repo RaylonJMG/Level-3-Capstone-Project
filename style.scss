@@ -2,128 +2,128 @@
 $darkBlue: rgba(0, 0, 105, 1);
 $lightBlue: rgba(0, 102, 255, 1);
 $myYellow: rgba(241, 196, 15, 1);
-$myTeal:rgba(33, 136, 145, 1);
+$myTeal: rgba(33, 136, 145, 1);
 $myGrey: rgba(128, 128, 128, 1);
 $myGreen: rgba(101, 224, 101, 0.74);
 
 //CUSTOM FONT
-$primaryFont: "Aurora";
-$secondaryFont: serif;
-@font-face {
-    font-family: "Aurora";
-    src: url("Aurora.otf");
-}
+// $primaryFont: "Aurora";
+// $secondaryFont: serif;
+// @font-face {
+//     font-family: "Aurora";
+//     src: url("Aurora.otf");
+// }
 
 //MIXINS
 @mixin blueText {
-    color: $darkBlue;
+	color: $darkBlue;
 }
 
 @mixin greenText {
-    color: $myGreen;
+	color: $myGreen;
 }
 
 @mixin boxShadow {
-    box-shadow: 5px 5px $myGrey;
+	box-shadow: 5px 5px $myGrey;
 }
 
 @mixin textShadow {
-    text-shadow: 0px 0px $myYellow;
+	text-shadow: 0px 0px $myYellow;
 }
 
 @mixin animation1 {
-    transform: scale(1) rotate(0deg);
-    transition: transform 1s;
+	transform: scale(1) rotate(0deg);
+	transition: transform 1s;
 }
 
 @mixin animation2 {
-    transform: scale(2) rotate(5deg);
-    transition: transform 2s;
+	transform: scale(2) rotate(5deg);
+	transition: transform 2s;
 }
 
 #mixin-button {
-    @include boxShadow;
-    @include textShadow;
-    @include animation1;
-    &:hover {
-        @include animation2;
-        @include greenText;
-    }
+	@include boxShadow;
+	@include textShadow;
+	@include animation1;
+	&:hover {
+		@include animation2;
+		@include greenText;
+	}
 }
 
 //BACKGROUND IMAGE
-$sun:url("sun.png");
+$sun: url("sun.png");
 .bg-image {
-    background-image: $sun;
+	background-image: $sun;
 }
 
 .width {
-    width: 10vw;
+	width: 10vw;
 }
 
 .size {
-    background-size: 10vw;
+	background-size: 10vw;
 }
 
 .opacity {
-    opacity: 0.10;
+	opacity: 0.1;
 }
 
 html {
-    background-color: $myTeal;
+	background-color: $myTeal;
 }
 
 h1,
 h3 {
-    font-family: $primaryFont;
-    text-align: center;
-    color: $darkBlue;
-    font-weight: bold;
+	font-family: $primaryFont;
+	text-align: center;
+	color: $darkBlue;
+	font-weight: bold;
 }
 
 body {
-    background-color: $myYellow;
-    font-family: $secondaryFont;
+	background-color: $myYellow;
+	font-family: $secondaryFont;
 }
 
 p {
-    @include blueText;
+	@include blueText;
 }
 
 .baskets {
-    font-style: underline;
+	font-style: underline;
 }
 
 #email,
 #message {
-    width: fit-content;
+	width: fit-content;
 }
 
 //
 .border-dashed {
-    border-style: dashed !important;
+	border-style: dashed !important;
 }
 //CONTACT PAGE
 .border-ridge {
-    border-style: ridge !important;
+	border-style: ridge !important;
 }
 //CONTACT PAGE
 .border-groove {
-    border-style: groove !important;
+	border-style: groove !important;
 }
 
 h4 {
-    color: $darkBlue;
-    text-align: center;
-    font-weight: bold;
+	color: $darkBlue;
+	text-align: center;
+	font-weight: bold;
 }
 
 h2 {
-    color: $darkBlue;
-    font-weight: bold;
+	color: $darkBlue;
+	font-weight: bold;
 }
 
 form {
-    color: $lightBlue;
-    font-weight: bold;
+	color: $lightBlue;
+	font-weight: bold;
 }
