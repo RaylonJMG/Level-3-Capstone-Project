@@ -16,14 +16,12 @@ export function Home() {
 				<NavBar />
 			</header>
 			<main>
-				<h1 className="p-1 fs-1 text-center">Good Food Hut</h1>
-				<div className="p-1 fs-2 text-center">
-					Swing On By and Taste Our Good Food!
-				</div>
-				<h3 className="p-1 text-center">Delighting Tastebuds since 1988</h3>
+				<h1>Good Food Hut</h1>
+				<div>Swing On By and Taste Our Good Food!</div>
+				<h3>Delighting Tastebuds since 1988</h3>
 				<br />
 				{/* <GrowSpinner /> */}
-				<p className="text-start fs-3">
+				<p>
 					Visit our Sesame Street Location and try all that the Good Food Hut
 					has to offer. We have been sharing our Good Food Philosophy for over
 					20 years and you haven't seen nor tasted anything yet!
