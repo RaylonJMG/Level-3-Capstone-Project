@@ -13,9 +13,9 @@ export function Photos() {
 				/>
 				<NavBar />
 			</header>
-			<main class="container">
+			<main>
 				<h1>Good Food Hall of Fame</h1>
-				<script>
+				{/* <script>
 					//OBJECTS WITH PROPERTIES IN A CARD W/ IMAGE const card1 ={" "}
 					{{
 						src: "https://preview.redd.it/i-ate-fried-seafood-platter-v0-7747apv88fta1.jpg?width=1080&crop=smart&auto=webp&s=e08c9217fed766d3a6cabb738cb0ef3f5e52787e",
@@ -66,12 +66,12 @@ export function Photos() {
 					}}
 					; debugger; const cardsArray = [card1, card2, card3, card4, card5,
 					card6]
-					{/* for (position = 0; position < cardsArray.length; position++) {
+					for (position = 0; position < cardsArray.length; position++) {
                 const card = cardsArray[position];
                 const cardString = convertCard(card);
                 display(cardString);
-            } */}
-				</script>
+            }
+				</script> */}
 			</main>
 			<Footer />
 		</>
