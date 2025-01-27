@@ -13,17 +13,16 @@ export function About() {
 				/>
 				<NavBar />
 			</header>
-			<main class="container">
+			<main>
 				<h1>About Us</h1>
 				<img
-					class="card-body"
 					alt="America's Best Food Award logo"
 					height="500px"
 					width="100%"
 					src="https://cdn.glitch.global/82eb993a-bf96-4031-9a18-ee851469bb49/americasbestfoodaward4M11%2Bcopy-4133607208.jpg?v=1726742656338"
 				/>
-				<h2 class="text-center fs-2">Philosophy: Good Food Matters!</h2>
-				<p class="fs-3">
+				<h2>Philosophy: Good Food Matters!</h2>
+				<p>
 					Hey there, mon chere'! We live for and love to eat Good Food! It makes{" "}
 					<b>ZERO</b> sense to us to plate <i>something</i> that tastes anything
 					short of absolutely delicious and looks like meh...What a wasted dish!
@@ -31,21 +30,20 @@ export function About() {
 				</p>
 				<br />
 				<img
-					class="card-body"
 					alt="chef trophy winner"
 					width="100%"
 					src="https://cdn.glitch.global/82eb993a-bf96-4031-9a18-ee851469bb49/trophy-chef.jpg?v=1726742667968"
 				/>
-				<h2 class="text-center fs-2">Who We Are</h2>
-				<p class="fs-3">
+				<h2>Who We Are</h2>
+				<p>
 					We are a multi-award winning restaurant where folks are greeted with
 					the heart of the South...it's simply Good Food. Food so good, you
 					wanna tell the world how darn good it is! Food so good, you'll want a
 					second helping, or a third, or a fourth! No worries, we got you
 					covered there!
 				</p>
-
-				<p class="fs-3">
+				<br />
+				<p>
 					As you can see, we are proud to have been supported as a local fan
 					favorite for over 20 years. Thank you so much to all the people from
 					around the world that have swung by to see us and share in our Good
@@ -75,8 +73,7 @@ export function About() {
             </map> */}
 				<br />
 				<p>
-					{" "}
-					Site Inspiration: Love of GOOD FOOD! 😍 I believe that potential
+					Site Inspiration:Love of GOOD FOOD! 😍 I believe that potential
 					employers will wish to hire me based on this website because it pretty
 					much is a functional, informational website. Most people who have no
 					idea about software development may even think that this site
@@ -94,7 +91,7 @@ export function About() {
 					attach and create image maps, process forms, simulate server
 					responses, extract data from REST APIs, and use SASS styling upgrades,
 					including mixins, transitions and animations --all of which has been
-					integrated into this website.{" "}
+					integrated into this website.
 				</p>
 			</main>
 			<Footer />
