@@ -1,13 +1,13 @@
-export class GrowSpinner{
-    openingTag = "<div class='spinner-grow text-primary'>";
-    closingTag = "</div>";
-    innerHTML = "";
+// export class GrowSpinner {
+// 	openingTag = "<div class='spinner-grow text-primary'>";
+// 	closingTag = "</div>";
+// 	innerHTML = "";
 
-    constructor(content = "") {
-        this.innerHTML = content;
-    }
+// 	constructor(content = "") {
+// 		this.innerHTML = content;
+// 	}
 
-    toString() {
-        return `${this.openingTag}${this.innerHTML}${this.closingTag}`;
-    };
-}
+// 	toString() {
+// 		return `${this.openingTag}${this.innerHTML}${this.closingTag}`;
+// 	}
+// }

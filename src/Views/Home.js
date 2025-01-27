@@ -1,5 +1,5 @@
 import React from "react";
-import { GrowSpinner } from "../utils/GrowSpinner.js";
+// import { GrowSpinner } from "../utils/GrowSpinner.js";
 import { NavBar } from "../utils/NavBar.js";
 import { Footer } from "../utils/Footer.js";
 
@@ -15,35 +15,32 @@ export function Home() {
 				<NavBar />
 			</header>
 			<main>
-				<article class="container">
-					<h1 class="p-1 fs-1 text-center">Good Food Hut</h1>
-					<div class="p-1 fs-2 text-center">
-						Swing On By and Taste Our Good Food!
-					</div>
-					<h3 class="p-1 text-center">Delighting Tastebuds since 1988</h3>
-					<br />
-					<GrowSpinner />
-					<p class="text-start fs-3">
-						Visit our Sesame Street Location and try all that the Good Food Hut
-						has to offer. We have been sharing our Good Food Philosophy for over
-						20 years and you haven't seen nor tasted anything yet!
-					</p>
-					<hr />
-					<img
-						src="https://cdn.glitch.global/82eb993a-bf96-4031-9a18-ee851469bb49/restaurant%20interior.jpg?v=1726951573166"
-						width="100%"
-					/>
-					<hr />
-					<p>
-						So whether it's for some quality time with the family,
-						"chillaxation" time with your friends, or decompression time with
-						the colleagues...we have created a space that honors a relaxed and
-						authentic vibe that'll make you feel like you belong here, because
-						you do!😉
-					</p>
+				<h1 class="p-1 fs-1 text-center">Good Food Hut</h1>
+				<div class="p-1 fs-2 text-center">
+					Swing On By and Taste Our Good Food!
+				</div>
+				<h3 class="p-1 text-center">Delighting Tastebuds since 1988</h3>
+				<br />
+				{/* <GrowSpinner /> */}
+				<p class="text-start fs-3">
+					Visit our Sesame Street Location and try all that the Good Food Hut
+					has to offer. We have been sharing our Good Food Philosophy for over
+					20 years and you haven't seen nor tasted anything yet!
+				</p>
+				<hr />
+				<img
+					src="https://cdn.glitch.global/82eb993a-bf96-4031-9a18-ee851469bb49/restaurant%20interior.jpg?v=1726951573166"
+					width="100%"
+				/>
+				<hr />
+				<p>
+					So whether it's for some quality time with the family, "chillaxation"
+					time with your friends, or decompression time with the colleagues...we
+					have created a space that honors a relaxed and authentic vibe that'll
+					make you feel like you belong here, because you do!😉
+				</p>
 
-					<h4>Welcome home, Suga'!</h4>
-				</article>
+				<h4>Welcome home, Suga'!</h4>
 				<div class="text-center" style="padding: 10px">
 					<button
 						onclick="handleAdvice()"

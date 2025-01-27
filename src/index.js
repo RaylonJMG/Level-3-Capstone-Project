@@ -9,18 +9,15 @@ import { Contact } from "./Views/Contact.js";
 
 const root = createRoot(window.bodyTag);
 root.render(
-	<>
-		<BrowserRouter>
-			<Routes>
-				<Route path="/" element={<Home />} />
-				<Route path="/home" element={<Home />} />
-				<Route path="/index.html" element={<Home />} />
-				<Route path="/Level-3-Capstone-Project" element={<Home />} />
-				<Route path="/about" element={<About />} />
-				<Route path="/photos" element={<Photos />} />
-				<Route path="/menus" element={<Menus />} />
-				<Route path="/contact" element={<Contact />} />
-			</Routes>
-		</BrowserRouter>
-	</>
+	<BrowserRouter>
+		<Routes>
+			<Route path="/" element={<Home />} />
+			<Route path="/index.html" element={<Home />} />
+			<Route path="/" element={<Home />} />
+			<Route path="/photos" element={<Photos />} />
+			<Route path="/about" element={<About />} />
+			<Route path="/contact" element={<Contact />} />
+			<Route path="/menus" element={<Menus />} />
+		</Routes>
+	</BrowserRouter>
 );

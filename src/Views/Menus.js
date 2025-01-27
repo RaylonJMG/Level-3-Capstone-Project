@@ -1,6 +1,6 @@
 import React from "react";
-import { NavBar } from "../utils/NavBar";
-import { Footer } from "../utils/Footer";
+import { NavBar } from "../utils/NavBar.js";
+import { Footer } from "../utils/Footer.js";
 import { ListGroup } from "../utils/ListGroup.js";
 import { ListGroupItem } from "../utils/ListGroupItem.js";
 
