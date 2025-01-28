@@ -1,7 +1,7 @@
 {
 	"name": "capstone-project-level-3",
 	"version": "1.0.0",
-	"description": "echo \"# raylon-capstone-project-irvisacoltutoenzxcvbnmjkl\" >> README.md\r git init\r git add README.md\r git config user.name \"RaylonJMG\"\r git config user.email \"ryj2213@gmail.com\"\r git commit -m \"first commit\"\r git branch -M main\r git remote add origin https://github.com/RaylonJMG/raylon-capstone-project-irvisacoltutoenzxcvbnmjkl.git\r curl -sS https://webi.sh/gh | sh\r gh auth login\r git push --set-upstream origin main",
+	"description": "",
 	"homepage": "https://github.com/RaylonJMG/Level-3-Capstone-Project#readme",
 	"bugs": {
 		"url": "https://github.com/RaylonJMG/Level-3-Capstone-Project/issues"
@@ -12,7 +12,6 @@
 	},
 	"license": "ISC",
 	"author": "",
-	"type": "module",
 	"main": "index.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
