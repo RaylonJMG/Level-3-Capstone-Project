@@ -1,6 +1,7 @@
 import React from "react";
 import { NavBar } from "../utils/NavBar.js";
 import { Footer } from "../utils/Footer.js";
+import { ImageMap } from "./ImageMap.js";
 
 export function About() {
 	return (
@@ -51,6 +52,7 @@ export function About() {
 				</p>
 				<br />
 				<br />
+				<ImageMap />
 				<h4>Come on back now, ya' hear?</h4>
 				<br />
 
