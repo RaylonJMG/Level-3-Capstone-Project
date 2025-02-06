@@ -8,7 +8,7 @@ export function ImageMap() {
 			<main>
 				<img
 					width="100%"
-					usemap="#my-image-map"
+					useMap="#my-image-map"
 					src="../assets/Seasonings.jpg"
 					alt="Cajun Seasoning Blends"
 				/>

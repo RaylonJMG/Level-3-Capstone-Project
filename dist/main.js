@@ -2018,6 +2018,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function About() {
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidMount, []);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUpdate, []);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUnmount, []);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("header", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
     width: "100%",
     alt: "fried seafood platter",
@@ -2032,6 +2035,19 @@ function About() {
     width: "100%",
     src: "https://cdn.glitch.global/82eb993a-bf96-4031-9a18-ee851469bb49/trophy-chef.jpg?v=1726742667968"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", null, "Who We Are"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "We are a multi-award winning restaurant where folks are greeted with the heart of the South...it's simply Good Food. Food so good, you wanna tell the world how darn good it is! Food so good, you'll want a second helping, or a third, or a fourth! No worries, we got you covered there!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "As you can see, we are proud to have been supported as a local fan favorite for over 20 years. Thank you so much to all the people from around the world that have swung by to see us and share in our Good Food Philosophy."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_ImageMap_js__WEBPACK_IMPORTED_MODULE_3__.ImageMap, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h4", null, "Come on back now, ya' hear?"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Site Inspiration:Love of GOOD FOOD! \uD83D\uDE0D I believe that potential employers will wish to hire me based on this website because it pretty much is a functional, informational website. Most people who have no idea about software development may even think that this site represents a real business, even though this is my imagination at work. It shows that I can manage projects until completion, adhering to detailed instruction from leadership, but allows my personality, style, and flair to also be showcased in the work."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Site Features: This website was created using HTML, CSS, Bootstrap, and Javascript. In Level 1, we learned to create and style basic websites, run functions, attach images/videos, create grids and cards. In Level 2 of the course, we have expanded our knowledgebase; we can attach and create image maps, process forms, simulate server responses, extract data from REST APIs, and use SASS styling upgrades, including mixins, transitions and animations --all of which has been integrated into this website.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_utils_Footer_js__WEBPACK_IMPORTED_MODULE_2__.Footer, null));
+}
+function componentDidMount() {
+  document.title = "About";
+  console.log("The component has mounted on the About page.");
+  return componentDidUnmount;
+}
+function componentDidUpdate() {
+  console.log("The component has updated.");
+}
+function componentDidUnmount() {
+  return function () {
+    console.log("The component has unmounted.");
+  };
 }
 
 /***/ }),
@@ -2243,7 +2259,7 @@ function ImageMap() {
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidMount, []);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("header", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
     width: "100%",
-    usemap: "#my-image-map",
+    useMap: "#my-image-map",
     src: "../assets/Seasonings.jpg",
     alt: "Cajun Seasoning Blends"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("map", {
