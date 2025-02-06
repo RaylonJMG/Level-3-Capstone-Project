@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Footer } from "../utils/Footer.js";
 import { NavBar } from "../utils/NavBar.js";
 import { handleRating } from "../controllers/handleRating.js";
@@ -6,6 +6,10 @@ import { handleSubmit } from "../controllers/handleSubmit.js";
 import { handleForm } from "../controllers/handleForm.js";
 
 export function Contact() {
+	useEffect(componentDidMount, []);
+	useEffect(componentDidUpdate, []);
+	useEffect(componentDidUnmount, []);
+
 	return (
 		<>
 			<header>
@@ -73,16 +77,16 @@ export function Contact() {
 					<label for="fullName">Full Name:</label>
 					<br />
 					<input
-						type="text"
 						id="fullName"
+						type="text"
 						placeholder="Enter First & Last Name"
 					/>
 					<br />
 					<label for="email">Email Address:</label>
 					<br />
 					<input
-						type="email"
 						id="email"
+						type="email"
 						placeholder="Enter Email Address"
 						required
 					/>
@@ -92,10 +96,10 @@ export function Contact() {
 					<textarea id="message"></textarea>
 					<br />
 					<input
+						id="mixin-button"
 						type="submit"
 						value="Submit Message"
 						className="btn btn-sm rounded-3 bg-primary"
-						id="mixin-button"
 					/>
 				</form>
 				<hr />
@@ -111,52 +115,52 @@ export function Contact() {
 				<hr />
 				<form onSubmit={handleForm}>
 					<label for="firstName"> First Name:</label>
-					<br />{" "}
+					<br />
 					<input
+						id="firstName"
 						required
 						name="firstName"
 						type="text"
-						id="firstName"
 						placeholder="Enter First Name"
 					/>
 					<br />
 					<label for="lastName"> Last Name:</label>
 					<br />
 					<input
+						id="lastName"
 						required
 						name="lastName"
 						type="text"
-						id="lastName"
 						placeholder="Enter Last Name"
 					/>
 					<br />
 					<label for="calendar">Phone Appointment:</label>
 					<br />
 					<input
+						id="calendar"
 						required
 						name="calendar"
 						type="datetime-local"
-						id="calendar"
 					/>
 					<br />
 					<label for="phoneNumber">Phone Number:</label>
 					<br />
 					<input
+						id="phoneNumber"
 						required
 						name="phoneNumber"
 						type="tel"
 						placeholder="###-###-####"
 						pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-						id="phoneNumber"
 					/>
 					<br />
 					<label for="email">Email:</label>
 					<br />
 					<input
+						id="email"
 						required
 						name="email"
 						type="text"
-						id="email"
 						placeholder="Enter Email Address"
 					/>
 					<br />
@@ -167,14 +171,14 @@ export function Contact() {
 						id="message"></textarea>
 					<br />
 					<input
+						id="mixin-button"
 						type="submit"
 						value="Submit"
-						id="mixin-button"
 					/>
 					<input
+						id="mixin-button"
 						type="reset"
 						value="Reset form"
-						id="mixin-button"
 					/>
 				</form>
 				<output id="outputTag"></output>
@@ -182,4 +186,18 @@ export function Contact() {
 			<Footer />
 		</>
 	);
+}
+function componentDidMount() {
+	document.title = "Contact";
+	console.log("The component has mounted on the Contact page.");
+
+	return componentDidUnmount;
+}
+function componentDidUpdate() {
+	console.log("The component has updated.");
+}
+function componentDidUnmount() {
+	return function () {
+		console.log("The component has unmounted.");
+	};
 }
