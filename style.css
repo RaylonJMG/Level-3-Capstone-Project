@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Aurora";
-  src: url("Aurora.otf");
+  src: url(./assets/Aurora.otf);
 }
 #mixin-button {
   box-shadow: 5px 5px rgb(128, 128, 128);
@@ -15,7 +15,7 @@
 }
 
 .bg-image {
-  background-image: url("sun.png");
+  background-image: url(./assets/sun.png);
 }
 
 .width {

@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 // import { GrowSpinner } from "../utils/GrowSpinner.js";
 import { NavBar } from "../utils/NavBar.js";
 import { Footer } from "../utils/Footer.js";
 import { handleAdvice } from "../controllers/handleAdvice.js";
 
 export function Home() {
+	useEffect(componentDidMount, []);
+	useEffect(componentDidUpdate, []);
+	useEffect(componentDidUnmount, []);
 	return (
 		<>
 			<header>
@@ -53,4 +56,17 @@ export function Home() {
 			<Footer />
 		</>
 	);
+}
+function componentDidMount() {
+	console.log("The component has mounted.");
+
+	return componentDidUnmount;
+}
+function componentDidUpdate() {
+	console.log("The component has updated.");
+}
+function componentDidUnmount() {
+	return function () {
+		console.log("The component has unmounted.");
+	};
 }
