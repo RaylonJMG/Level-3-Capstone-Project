@@ -115,7 +115,7 @@ export function Contact() {
 				<hr />
 				<form onSubmit={handleForm}>
 					<label for="firstName"> First Name:</label>
-					<br />{" "}
+					<br />
 					<input
 						id="firstName"
 						required
@@ -188,7 +188,8 @@ export function Contact() {
 	);
 }
 function componentDidMount() {
-	console.log("The component has mounted.");
+	document.title = "Contact";
+	console.log("The component has mounted on the Contact page.");
 
 	return componentDidUnmount;
 }

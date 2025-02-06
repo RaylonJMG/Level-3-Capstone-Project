@@ -2128,7 +2128,7 @@ function Contact() {
     onSubmit: _controllers_handleForm_js__WEBPACK_IMPORTED_MODULE_5__.handleForm
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
     for: "firstName"
-  }, " First Name:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
+  }, " First Name:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
     id: "firstName",
     required: true,
     name: "firstName",
@@ -2184,7 +2184,8 @@ function Contact() {
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_utils_Footer_js__WEBPACK_IMPORTED_MODULE_1__.Footer, null));
 }
 function componentDidMount() {
-  console.log("The component has mounted.");
+  document.title = "Contact";
+  console.log("The component has mounted on the Contact page.");
   return componentDidUnmount;
 }
 function componentDidUpdate() {
