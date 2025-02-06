@@ -1,8 +1,8 @@
-window.convertCard = convertCard;
+import React from "react";
 
 //CONVERTS BOOSTSTRAP OBJECT CARDS INTO A TEMPLATE STRING
 export function convertCard(cardObject) {
-    const cardString = `<div class="card">
+	const cardString = `<div class="card">
             <img
               class="card-body"
               alt="${cardObject.alt}"
@@ -11,7 +11,7 @@ export function convertCard(cardObject) {
             />
             <h3 class="card-title">${cardObject.title}</h3> 
             <h4 class="card-summary">${cardObject.summary}</h4>
-          </div>`
+          </div>`;
 
-    return cardString;
+	return cardString;
 }
