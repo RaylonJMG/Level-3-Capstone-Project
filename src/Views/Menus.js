@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { NavBar } from "../utils/NavBar.js";
 import { Footer } from "../utils/Footer.js";
 // import { ListGroup } from "../utils/ListGroup.js";
@@ -6,6 +6,9 @@ import { Footer } from "../utils/Footer.js";
 //import { Alert } from "../utils/Alert.js";
 
 export function Menus() {
+	useEffect(componentDidMount, []);
+	useEffect(componentDidUpdate, []);
+	useEffect(componentDidUnmount, []);
 	return (
 		<>
 			<header>
@@ -34,7 +37,9 @@ export function Menus() {
 				<ul className="list-group text-primary border border-5 border-primary">
 					<li className="list-group-item">Shrimp Salad</li>
 					<li className="list-group-item">Grilled Chicken Salad</li>
-					<li className="list-group-item" aria-current="true">
+					<li
+						className="list-group-item"
+						aria-current="true">
 						Chef's Kiss Salad
 						{/* <span className="text-end badge bg-success">
 							Customer Rated 10/10 😍
@@ -99,7 +104,9 @@ export function Menus() {
 					</li>
 				</ul>
 				<hr />
-				<h3 id="snacks" className="text-center">
+				<h3
+					id="snacks"
+					className="text-center">
 					<u>Snack Bites</u>
 				</h3>
 				<ul className="list-group text-primary border border-5 border-primary">
@@ -109,7 +116,9 @@ export function Menus() {
 					<li className="list-group-item">Onion Rings</li>
 				</ul>
 				<hr />
-				<h3 id="drinks" className="text-center">
+				<h3
+					id="drinks"
+					className="text-center">
 					Beverages
 				</h3>
 				<div className="container">
@@ -191,4 +200,18 @@ export function Menus() {
 			</Footer>
 		</>
 	);
+}
+function componentDidMount() {
+	document.title = "Menus";
+	console.log("The component has mounted on the Menus page.");
+
+	return componentDidUnmount;
+}
+function componentDidUpdate() {
+	console.log("The component has updated.");
+}
+function componentDidUnmount() {
+	return function () {
+		console.log("The component has unmounted.");
+	};
 }
