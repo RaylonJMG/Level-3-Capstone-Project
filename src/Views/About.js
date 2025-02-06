@@ -86,7 +86,8 @@ export function About() {
 	);
 }
 function componentDidMount() {
-	console.log("The component has mounted.");
+	document.title = "About";
+	console.log("The component has mounted on the About page.");
 
 	return componentDidUnmount;
 }
