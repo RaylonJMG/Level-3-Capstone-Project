@@ -1,90 +1,90 @@
-@font-face {
+/* @font-face {
   font-family: "Aurora";
   src: url("Aurora.otf");
-}
+} */
 #mixin-button {
-  box-shadow: 5px 5px rgb(128, 128, 128);
-  text-shadow: 0px 0px rgb(241, 196, 15);
-  transform: scale(1) rotate(0deg);
-  transition: transform 1s;
+	box-shadow: 5px 5px rgb(128, 128, 128);
+	text-shadow: 0px 0px rgb(241, 196, 15);
+	transform: scale(1) rotate(0deg);
+	transition: transform 1s;
 }
 #mixin-button:hover {
-  transform: scale(2) rotate(5deg);
-  transition: transform 2s;
-  color: rgba(101, 224, 101, 0.74);
+	transform: scale(2) rotate(5deg);
+	transition: transform 2s;
+	color: rgba(101, 224, 101, 0.74);
 }
 
 .bg-image {
-  background-image: url("sun.png");
+	background-image: url("sun.png");
 }
 
 .width {
-  width: 10vw;
+	width: 10vw;
 }
 
 .size {
-  background-size: 10vw;
+	background-size: 10vw;
 }
 
 .opacity {
-  opacity: 0.1;
+	opacity: 0.1;
 }
 
 html {
-  background-color: rgb(33, 136, 145);
+	background-color: rgb(33, 136, 145);
 }
 
 h1,
 h3 {
-  font-family: "Aurora";
-  text-align: center;
-  color: rgb(0, 0, 105);
-  font-weight: bold;
+	font-family: "Aurora";
+	text-align: center;
+	color: rgb(0, 0, 105);
+	font-weight: bold;
 }
 
 body {
-  background-color: rgb(241, 196, 15);
-  font-family: serif;
+	background-color: rgb(241, 196, 15);
+	font-family: serif;
 }
 
 p {
-  color: rgb(0, 0, 105);
+	color: rgb(0, 0, 105);
 }
 
 .baskets {
-  font-style: underline;
+	font-style: underline;
 }
 
 #email,
 #message {
-  width: -moz-fit-content;
-  width: fit-content;
+	width: -moz-fit-content;
+	width: fit-content;
 }
 
 .border-dashed {
-  border-style: dashed !important;
+	border-style: dashed !important;
 }
 
 .border-ridge {
-  border-style: ridge !important;
+	border-style: ridge !important;
 }
 
 .border-groove {
-  border-style: groove !important;
+	border-style: groove !important;
 }
 
 h4 {
-  color: rgb(0, 0, 105);
-  text-align: center;
-  font-weight: bold;
+	color: rgb(0, 0, 105);
+	text-align: center;
+	font-weight: bold;
 }
 
 h2 {
-  color: rgb(0, 0, 105);
-  font-weight: bold;
+	color: rgb(0, 0, 105);
+	font-weight: bold;
 }
 
 form {
-  color: rgb(0, 102, 255);
-  font-weight: bold;
+	color: rgb(0, 102, 255);
+	font-weight: bold;
 }

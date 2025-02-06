@@ -1,6 +1,9 @@
 import React from "react";
 import { Footer } from "../utils/Footer.js";
 import { NavBar } from "../utils/NavBar.js";
+import { handleRating } from "../controllers/handleRating.js";
+import { handleSubmit } from "../controllers/handleSubmit.js";
+import { handleForm } from "../controllers/handleForm.js";
 
 export function Contact() {
 	return (
@@ -13,44 +16,60 @@ export function Contact() {
 				/>
 				<NavBar />
 			</header>
-			<main id="mainTag" class="m-3">
+			<main>
 				<h1>Contact Us!</h1>
 				<hr />
-				<p class="p-6 m-5 fw-bold text-center">
+				<p>
 					We love hearing from our customers. Please feel free to leave a
 					rating, comments, suggestions, or ask any inquiries in the form below.
 					Thank you in advance. We look forward to serving you again soon.
 				</p>
-				<form
-					style="padding: 10px"
-					class="text-center border border-5 border-dotted border-dark">
-					<section id="radio-buttons">
-						<h5>Rate your food experience</h5>
-						<input id="hated it" type="radio" name="rating" />
-						<label for="hated it">🤢Hated it!</label>
-						<br />
-						<input id="disliked" type="radio" name="rating" />
-						<label for="disliked">😓Disliked it.</label>
-						<br />
-						<input id="okay" type="radio" name="rating" />
-						<label for="okay">😔Meh...it was just okay.</label>
-						<br />
-						<input id="liked" type="radio" name="rating" />
-						<label for="liked">😋Liked it.</label>
-						<br />
-						<input id="loved" type="radio" name="rating" />
-						<label for="loved">😍 Loved it!</label>
-						<br />
-						<button
-							onclick="handleRating()"
-							class="btn btn-sm rounded-3 bg-primary"
-							id="mixin-button">
-							Submit Rating
-						</button>
-					</section>
+				<form>
+					<h5>Rate your food experience</h5>
+					<input
+						id="hated it"
+						type="radio"
+						name="rating"
+					/>
+					<label for="hated it">🤢Hated it!</label>
+					<br />
+					<input
+						id="disliked"
+						type="radio"
+						name="rating"
+					/>
+					<label for="disliked">😓Disliked it.</label>
+					<br />
+					<input
+						id="okay"
+						type="radio"
+						name="rating"
+					/>
+					<label for="okay">😔Meh...it was just okay.</label>
+					<br />
+					<input
+						id="liked"
+						type="radio"
+						name="rating"
+					/>
+					<label for="liked">😋Liked it.</label>
+					<br />
+					<input
+						id="loved"
+						type="radio"
+						name="rating"
+					/>
+					<label for="loved">😍 Loved it!</label>
+					<br />
+					<input
+						onSubmit={handleRating}
+						type="submit"
+						className="btn btn-sm rounded-3 bg-primary"
+						id="mixin-input"
+					/>
 				</form>
 				<hr />
-				<form onsubmit="handleSubmit(event)">
+				<form onSubmit={handleSubmit}>
 					<label for="fullName">Full Name:</label>
 					<br />
 					<input
@@ -75,26 +94,24 @@ export function Contact() {
 					<input
 						type="submit"
 						value="Submit Message"
-						class="btn btn-sm rounded-3 bg-primary"
+						className="btn btn-sm rounded-3 bg-primary"
 						id="mixin-button"
 					/>
 				</form>
 				<hr />
-				<div class="bg-image size opacity border border-5 border-groove">
-					<p class="fw-bold text-center fs-4">
-						Looking to eat Good Food at your next family, corporate, or festival
-						event?
-					</p>
-					<p class="text-center fs-5 fw-bold">
-						We offer catering services for events of any size!
-						<br /> Schedule a phone appointment today to book with our{" "}
-						<b>Good Food Hosts</b>
-					</p>
-				</div>
+				<p>
+					Looking to eat Good Food at your next family, corporate, or festival
+					event?
+				</p>
+				<p>
+					We offer catering services for events of any size!
+					<br /> Schedule a phone appointment with our Good Food Hosts to book
+					today!
+				</p>
 				<hr />
-				<form onsubmit="processForm(event)">
+				<form onSubmit={handleForm}>
 					<label for="firstName"> First Name:</label>
-					<br />
+					<br />{" "}
 					<input
 						required
 						name="firstName"
@@ -115,7 +132,12 @@ export function Contact() {
 					<br />
 					<label for="calendar">Phone Appointment:</label>
 					<br />
-					<input required name="calendar" type="datetime-local" id="calendar" />
+					<input
+						required
+						name="calendar"
+						type="datetime-local"
+						id="calendar"
+					/>
 					<br />
 					<label for="phoneNumber">Phone Number:</label>
 					<br />
@@ -140,18 +162,18 @@ export function Contact() {
 					<br />
 					<label for="message">Optional Message:</label>
 					<br />
-					<textarea name="message" id="message"></textarea>
+					<textarea
+						name="message"
+						id="message"></textarea>
 					<br />
 					<input
 						type="submit"
 						value="Submit"
-						class="btn btn-sm rounded-3 bg-primary"
 						id="mixin-button"
 					/>
 					<input
 						type="reset"
 						value="Reset form"
-						class="btn btn-sm rounded-3 bg-primary"
 						id="mixin-button"
 					/>
 				</form>
