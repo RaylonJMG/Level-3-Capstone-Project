@@ -58,7 +58,8 @@ export function Home() {
 	);
 }
 function componentDidMount() {
-	console.log("The component has mounted.");
+	document.title = "Home";
+	console.log("The component has mounted on the Home page.");
 
 	return componentDidUnmount;
 }

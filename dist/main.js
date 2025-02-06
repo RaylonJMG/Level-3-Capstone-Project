@@ -11854,6 +11854,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function Home() {
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidMount, []);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUpdate, []);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUnmount, []);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("header", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
     width: "100%",
     alt: "fried seafood platter",
@@ -11870,6 +11873,19 @@ function Home() {
   }, "Get Random Advice Here")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("output", {
     id: "outputTag"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_utils_Footer_js__WEBPACK_IMPORTED_MODULE_2__.Footer, null));
+}
+function componentDidMount() {
+  document.title = "Home";
+  console.log("The component has mounted on the Home page.");
+  return componentDidUnmount;
+}
+function componentDidUpdate() {
+  console.log("The component has updated.");
+}
+function componentDidUnmount() {
+  return function () {
+    console.log("The component has unmounted.");
+  };
 }
 
 /***/ }),
