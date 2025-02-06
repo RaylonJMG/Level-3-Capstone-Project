@@ -1,7 +1,12 @@
 /* @font-face {
   font-family: "Aurora";
+<<<<<<< HEAD
   src: url("Aurora.otf");
 } */
+=======
+  src: url(./assets/Aurora.otf);
+}
+>>>>>>> addHomePage
 #mixin-button {
 	box-shadow: 5px 5px rgb(128, 128, 128);
 	text-shadow: 0px 0px rgb(241, 196, 15);
@@ -15,7 +20,11 @@
 }
 
 .bg-image {
+<<<<<<< HEAD
 	background-image: url("sun.png");
+=======
+  background-image: url(./assets/sun.png);
+>>>>>>> addHomePage
 }
 
 .width {

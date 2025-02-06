@@ -7,12 +7,21 @@ $myGrey: rgba(128, 128, 128, 1);
 $myGreen: rgba(101, 224, 101, 0.74);
 
 //CUSTOM FONT
+<<<<<<< HEAD
 // $primaryFont: "Aurora";
 // $secondaryFont: serif;
 // @font-face {
 //     font-family: "Aurora";
 //     src: url("Aurora.otf");
 // }
+=======
+$primaryFont: "Aurora";
+$secondaryFont: serif;
+@font-face {
+	font-family: "Aurora";
+	src: url(./assets/Aurora.otf);
+}
+>>>>>>> addHomePage
 
 //MIXINS
 @mixin blueText {
@@ -52,7 +61,11 @@ $myGreen: rgba(101, 224, 101, 0.74);
 }
 
 //BACKGROUND IMAGE
+<<<<<<< HEAD
 $sun: url("sun.png");
+=======
+$sun: url(./assets/sun.png);
+>>>>>>> addHomePage
 .bg-image {
 	background-image: $sun;
 }
