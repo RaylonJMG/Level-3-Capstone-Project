@@ -2058,6 +2058,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function Contact() {
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidMount, []);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUpdate, []);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUnmount, []);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("header", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
     width: "100%",
     alt: "fried seafood platter",
@@ -2102,14 +2105,14 @@ function Contact() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
     for: "fullName"
   }, "Full Name:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
-    type: "text",
     id: "fullName",
+    type: "text",
     placeholder: "Enter First & Last Name"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
     for: "email"
   }, "Email Address:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
-    type: "email",
     id: "email",
+    type: "email",
     placeholder: "Enter Email Address",
     required: true
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
@@ -2117,51 +2120,51 @@ function Contact() {
   }, "Message:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("textarea", {
     id: "message"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
+    id: "mixin-button",
     type: "submit",
     value: "Submit Message",
-    className: "btn btn-sm rounded-3 bg-primary",
-    id: "mixin-button"
+    className: "btn btn-sm rounded-3 bg-primary"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("hr", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Looking to eat Good Food at your next family, corporate, or festival event?"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "We offer catering services for events of any size!", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), " Schedule a phone appointment with our Good Food Hosts to book today!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("hr", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("form", {
     onSubmit: _controllers_handleForm_js__WEBPACK_IMPORTED_MODULE_5__.handleForm
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
     for: "firstName"
   }, " First Name:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
+    id: "firstName",
     required: true,
     name: "firstName",
     type: "text",
-    id: "firstName",
     placeholder: "Enter First Name"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
     for: "lastName"
   }, " Last Name:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
+    id: "lastName",
     required: true,
     name: "lastName",
     type: "text",
-    id: "lastName",
     placeholder: "Enter Last Name"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
     for: "calendar"
   }, "Phone Appointment:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
+    id: "calendar",
     required: true,
     name: "calendar",
-    type: "datetime-local",
-    id: "calendar"
+    type: "datetime-local"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
     for: "phoneNumber"
   }, "Phone Number:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
+    id: "phoneNumber",
     required: true,
     name: "phoneNumber",
     type: "tel",
     placeholder: "###-###-####",
-    pattern: "[0-9]{3}-[0-9]{3}-[0-9]{4}",
-    id: "phoneNumber"
+    pattern: "[0-9]{3}-[0-9]{3}-[0-9]{4}"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
     for: "email"
   }, "Email:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
+    id: "email",
     required: true,
     name: "email",
     type: "text",
-    id: "email",
     placeholder: "Enter Email Address"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
     for: "message"
@@ -2169,16 +2172,28 @@ function Contact() {
     name: "message",
     id: "message"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
+    id: "mixin-button",
     type: "submit",
-    value: "Submit",
-    id: "mixin-button"
+    value: "Submit"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
+    id: "mixin-button",
     type: "reset",
-    value: "Reset form",
-    id: "mixin-button"
+    value: "Reset form"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("output", {
     id: "outputTag"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_utils_Footer_js__WEBPACK_IMPORTED_MODULE_1__.Footer, null));
+}
+function componentDidMount() {
+  console.log("The component has mounted.");
+  return componentDidUnmount;
+}
+function componentDidUpdate() {
+  console.log("The component has updated.");
+}
+function componentDidUnmount() {
+  return function () {
+    console.log("The component has unmounted.");
+  };
 }
 
 /***/ }),
