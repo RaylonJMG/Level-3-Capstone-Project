@@ -1,12 +1,15 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
+import { NavBar } from "../utils/NavBar";
+import { handleAdvice } from "../controllers/handleAdvice";
+import { Footer } from "../utils/Footer";
 // import { GrowSpinner } from "../utils/GrowSpinner.js";
-import { NavBar } from "../utils/NavBar.js";
-import { Footer } from "../utils/Footer.js";
-import { handleAdvice } from "../controllers/handleAdvice.js";
 
 export function Home() {
+	const welcome = useState(
+		"Hello There Mon Chere'! Swing On By and Taste Our Good Food!"
+	);
 	useEffect(componentDidMount, []);
-	useEffect(componentDidUpdate, []);
+	useEffect(componentDidUpdate, [welcome]);
 	useEffect(componentDidUnmount, []);
 	return (
 		<>
@@ -14,13 +17,13 @@ export function Home() {
 				<img
 					width="100%"
 					alt="fried seafood platter"
-					src="https://cdn.glitch.global/cbca519c-2e2c-44e5-a058-374e1c8be1a2/Screenshot%202024-08-03%20021209.jpg?v=1722669203847"
+					src="../assets/FriedSeafoodPlatter.jpg"
 				/>
 				<NavBar />
 			</header>
 			<main>
 				<h1>Good Food Hut</h1>
-				<div>Swing On By and Taste Our Good Food!</div>
+				<div>{welcome}</div>
 				<h3>Delighting Tastebuds since 1988</h3>
 				<br />
 				{/* <GrowSpinner /> */}
@@ -31,7 +34,7 @@ export function Home() {
 				</p>
 				<hr />
 				<img
-					src="https://cdn.glitch.global/82eb993a-bf96-4031-9a18-ee851469bb49/restaurant%20interior.jpg?v=1726951573166"
+					src="../assets/restaurant interior.jpg"
 					width="100%"
 				/>
 				<hr />
@@ -56,18 +59,18 @@ export function Home() {
 			<Footer />
 		</>
 	);
-}
-function componentDidMount() {
-	document.title = "Home";
-	console.log("The component has mounted on the Home page.");
+	function componentDidMount() {
+		document.title = "Home";
+		console.log("The component has mounted on the Home page.");
 
-	return componentDidUnmount;
-}
-function componentDidUpdate() {
-	console.log("The component has updated.");
-}
-function componentDidUnmount() {
-	return function () {
-		console.log("The component has unmounted.");
-	};
+		return componentDidUnmount;
+	}
+	function componentDidUpdate() {
+		console.log("The component has updated.");
+	}
+	function componentDidUnmount() {
+		return function () {
+			console.log("The component has unmounted.");
+		};
+	}
 }
