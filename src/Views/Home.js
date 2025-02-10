@@ -56,18 +56,18 @@ export function Home() {
 			<Footer />
 		</>
 	);
-}
-function componentDidMount() {
-	document.title = "Home";
-	console.log("The component has mounted on the Home page.");
+	function componentDidMount() {
+		document.title = "Home";
+		console.log("The component has mounted on the Home page.");
 
-	return componentDidUnmount;
-}
-function componentDidUpdate() {
-	console.log("The component has updated.");
-}
-function componentDidUnmount() {
-	return function () {
-		console.log("The component has unmounted.");
-	};
+		return componentDidUnmount;
+	}
+	function componentDidUpdate() {
+		console.log("The component has updated.");
+	}
+	function componentDidUnmount() {
+		return function () {
+			console.log("The component has unmounted.");
+		};
+	}
 }
