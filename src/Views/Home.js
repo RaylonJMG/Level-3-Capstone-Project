@@ -1,11 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { NavBar } from "../utils/NavBar";
 import { handleAdvice } from "../controllers/handleAdvice";
-import { Footer } from "../utils/Footer";
-// import { GrowSpinner } from "../utils/GrowSpinner.js";
+import { Footer } from "./Footer";
 
 export function Home() {
-	const welcome = useState(
+	const [welcome, setWelcome] = useState(
 		"Hello There Mon Chere'! Swing On By and Taste Our Good Food!"
 	);
 	useEffect(componentDidMount, []);
@@ -13,7 +11,7 @@ export function Home() {
 	useEffect(componentDidUnmount, []);
 	return (
 		<>
-			<header>
+			<header id="homeHeader">
 				<img
 					width="100%"
 					alt="fried seafood platter"
@@ -21,12 +19,11 @@ export function Home() {
 				/>
 				<NavBar />
 			</header>
-			<main>
+			<main id="homeMain">
 				<h1>Good Food Hut</h1>
 				<div>{welcome}</div>
 				<h3>Delighting Tastebuds since 1988</h3>
 				<br />
-				{/* <GrowSpinner /> */}
 				<p>
 					Visit our Sesame Street Location and try all that the Good Food Hut
 					has to offer. We have been sharing our Good Food Philosophy for over
@@ -34,7 +31,7 @@ export function Home() {
 				</p>
 				<hr />
 				<img
-					src="../assets/restaurant interior.jpg"
+					src="../assets/interior.jpg"
 					width="100%"
 					alt="Comfy restaurant Interior"
 				/>
@@ -57,7 +54,7 @@ export function Home() {
 				</div>
 				<output id="outputTag"></output>
 			</main>
-			<Footer />
+			<Footer id="homeFooter" />
 		</>
 	);
 	function componentDidMount() {
