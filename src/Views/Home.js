@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { handleAdvice } from "../controllers/handleAdvice";
 import { Footer } from "./Footer";
+import { NavCollapse } from "./NavCollapse";
 
 export function Home() {
 	const [welcome, setWelcome] = useState(
@@ -17,7 +18,7 @@ export function Home() {
 					alt="fried seafood platter"
 					src="../assets/FriedSeafoodPlatter.jpg"
 				/>
-				<NavBar />
+				<NavCollapse />
 			</header>
 			<main id="homeMain">
 				<h1>Good Food Hut</h1>
