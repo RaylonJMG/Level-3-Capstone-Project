@@ -36,6 +36,7 @@ export function Home() {
 				<img
 					src="../assets/restaurant interior.jpg"
 					width="100%"
+					alt="Comfy restaurant Interior"
 				/>
 				<hr />
 				<p>
