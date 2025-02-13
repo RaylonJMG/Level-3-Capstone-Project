@@ -12571,7 +12571,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-const root = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_1__.createRoot)(window.bodyTag);
+const bodyTag = document.getElementById("bodyTag");
+const root = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_1__.createRoot)(bodyTag);
 root.render(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_8__.BrowserRouter, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_8__.Routes, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_8__.Route, {
   path: "/",
   element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Views_Home_js__WEBPACK_IMPORTED_MODULE_2__.Home, null)
