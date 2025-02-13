@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { NavBar } from "../utils/NavBar";
 import { handleAdvice } from "../controllers/handleAdvice";
-import { Footer } from "../utils/Footer";
+import { Footer } from "./Footer";
 // import { GrowSpinner } from "../utils/GrowSpinner.js";
 
 export function Home() {
@@ -57,7 +57,7 @@ export function Home() {
 				</div>
 				<output id="outputTag"></output>
 			</main>
-			<Footer />
+			<Footer id="homeFooter" />
 		</>
 	);
 	function componentDidMount() {

@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import { NavBar } from "../utils/NavBar.js";
-import { Footer } from "../utils/Footer.js";
 import { convertCard } from "../controllers/convertCard.js";
 import { output } from "../utils/output.js";
+import { Footer } from "./Footer.js";
 
 export function Photos() {
 	useEffect(componentDidMount, []);
@@ -21,7 +21,7 @@ export function Photos() {
 			<main>
 				<h1>Good Food Hall of Fame</h1>
 			</main>
-			<Footer />
+			<Footer id="photosFooter" />
 		</>
 	);
 	function componentDidMount() {

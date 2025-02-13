@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
-import { Footer } from "../utils/Footer.js";
 import { NavBar } from "../utils/NavBar.js";
 import { handleRating } from "../controllers/handleRating.js";
 import { handleSubmit } from "../controllers/handleSubmit.js";
 import { handleForm } from "../controllers/handleForm.js";
+import { Footer } from "./Footer.js";
 
 export function Contact() {
 	useEffect(componentDidMount, []);
@@ -183,7 +183,7 @@ export function Contact() {
 				</form>
 				<output id="outputTag"></output>
 			</main>
-			<Footer />
+			<Footer id="contactFooter" />
 		</>
 	);
 }
