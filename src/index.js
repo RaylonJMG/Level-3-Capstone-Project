@@ -8,7 +8,8 @@ import { Menus } from "./Views/Menus.js";
 import { Contact } from "./Views/Contact.js";
 import { ImageMap } from "./Views/ImageMap.js";
 
-const root = createRoot(window.bodyTag);
+const bodyTag = document.getElementById("bodyTag");
+const root = createRoot(bodyTag);
 root.render(
 	<BrowserRouter>
 		<Routes>
