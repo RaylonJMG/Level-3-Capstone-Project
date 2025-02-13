@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
-import { NavBar } from "../utils/NavBar.js";
+import { Footer } from "./Footer.js";
 import { convertCard } from "../controllers/convertCard.js";
 import { output } from "../utils/output.js";
-import { Footer } from "./Footer.js";
+import { NavCollapse } from "./NavCollapse.js";
 
 export function Photos() {
 	useEffect(componentDidMount, []);
@@ -16,7 +16,7 @@ export function Photos() {
 					alt="fried seafood platter"
 					src="https://cdn.glitch.global/cbca519c-2e2c-44e5-a058-374e1c8be1a2/Screenshot%202024-08-03%20021209.jpg?v=1722669203847"
 				/>
-				<NavBar />
+				<NavCollapse />
 			</header>
 			<main>
 				<h1>Good Food Hall of Fame</h1>

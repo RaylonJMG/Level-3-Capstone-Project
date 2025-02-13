@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
-import { NavBar } from "../utils/NavBar.js";
 import { handleRating } from "../controllers/handleRating.js";
 import { handleSubmit } from "../controllers/handleSubmit.js";
 import { handleForm } from "../controllers/handleForm.js";
+import { NavCollapse } from "./NavCollapse.js";
 import { Footer } from "./Footer.js";
 
 export function Contact() {
@@ -18,7 +18,7 @@ export function Contact() {
 					alt="fried seafood platter"
 					src="https://cdn.glitch.global/cbca519c-2e2c-44e5-a058-374e1c8be1a2/Screenshot%202024-08-03%20021209.jpg?v=1722669203847"
 				/>
-				<NavBar />
+				<NavCollapse />
 			</header>
 			<main>
 				<h1>Contact Us!</h1>
