@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { NavBar } from "../utils/NavBar.js";
-import { Footer } from "../utils/Footer.js";
 import { ImageMap } from "./ImageMap.js";
+import { Footer } from "./Footer.js";
 
 export function About() {
 	useEffect(componentDidMount, []);
@@ -81,7 +81,7 @@ export function About() {
 					integrated into this website.
 				</p>
 			</main>
-			<Footer />
+			<Footer id="aboutFooter" />
 		</>
 	);
 }

@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
-import { NavBar } from "../utils/NavBar.js";
-import { Footer } from "../utils/Footer.js";
+//import { NavBar } from "../utils/NavBar.js";
 // import { ListGroup } from "../utils/ListGroup.js";
 // import { ListGroupItem } from "../utils/ListGroupItem.js";
 //import { Alert } from "../utils/Alert.js";
@@ -181,7 +180,9 @@ export function Menus() {
 				</div>
 				<hr />
 			</main>
-			<Footer style={{ textAlign: "center", border: 5, border: "primary" }}>
+			<footer
+				id="menusFooter"
+				style={{ textAlign: "center", border: 5, border: "primary" }}>
 				<b>Menu Map</b>
 				<br />
 				<nav>
@@ -197,7 +198,7 @@ export function Menus() {
 					<br />
 					<a href="#drinks">Ice Cold Beverages</a>
 				</nav>
-			</Footer>
+			</footer>
 		</>
 	);
 }
