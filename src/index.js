@@ -10,6 +10,7 @@ import { ImageMap } from "./Views/ImageMap.js";
 
 const bodyTag = document.getElementById("bodyTag");
 const root = createRoot(bodyTag);
+//root.render(<h1>Hello World!</h1>);
 root.render(
 	<BrowserRouter>
 		<Routes>
