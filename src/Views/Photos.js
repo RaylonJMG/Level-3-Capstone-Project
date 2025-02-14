@@ -5,6 +5,7 @@ import { output } from "../utils/output.js";
 import { NavCollapse } from "./NavCollapse.js";
 
 export function Photos() {
+	debugger;
 	useEffect(componentDidMount, []);
 	useEffect(componentDidUpdate, []);
 	useEffect(componentDidUnmount, []);

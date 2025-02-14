@@ -2010,9 +2010,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-Object(function webpackMissingModule() { var e = new Error("Cannot find module '../utils/Footer.js'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
-/* harmony import */ var _ImageMap_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ImageMap.js */ "./src/Views/ImageMap.js");
-/* harmony import */ var _NavCollapse_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./NavCollapse.js */ "./src/Views/NavCollapse.js");
+/* harmony import */ var _ImageMap_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ImageMap.js */ "./src/Views/ImageMap.js");
+/* harmony import */ var _NavCollapse_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./NavCollapse.js */ "./src/Views/NavCollapse.js");
+/* harmony import */ var _Footer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Footer.js */ "./src/Views/Footer.js");
 
 
 
@@ -2025,7 +2025,7 @@ function About() {
     width: "100%",
     alt: "fried seafood platter",
     src: "https://cdn.glitch.global/cbca519c-2e2c-44e5-a058-374e1c8be1a2/Screenshot%202024-08-03%20021209.jpg?v=1722669203847"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_NavCollapse_js__WEBPACK_IMPORTED_MODULE_3__.NavCollapse, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, "About Us"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_NavCollapse_js__WEBPACK_IMPORTED_MODULE_2__.NavCollapse, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, "About Us"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
     alt: "America's Best Food Award logo",
     height: "500px",
     width: "100%",
@@ -2034,7 +2034,9 @@ function About() {
     alt: "chef trophy winner",
     width: "100%",
     src: "https://cdn.glitch.global/82eb993a-bf96-4031-9a18-ee851469bb49/trophy-chef.jpg?v=1726742667968"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", null, "Who We Are"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "We are a multi-award winning restaurant where folks are greeted with the heart of the South...it's simply Good Food. Food so good, you wanna tell the world how darn good it is! Food so good, you'll want a second helping, or a third, or a fourth! No worries, we got you covered there!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "As you can see, we are proud to have been supported as a local fan favorite for over 20 years. Thank you so much to all the people from around the world that have swung by to see us and share in our Good Food Philosophy."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_ImageMap_js__WEBPACK_IMPORTED_MODULE_2__.ImageMap, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h4", null, "Come on back now, ya' hear?"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Site Inspiration:Love of GOOD FOOD! \uD83D\uDE0D I believe that potential employers will wish to hire me based on this website because it pretty much is a functional, informational website. Most people who have no idea about software development may even think that this site represents a real business, even though this is my imagination at work. It shows that I can manage projects until completion, adhering to detailed instruction from leadership, but allows my personality, style, and flair to also be showcased in the work."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Site Features: This website was created using HTML, CSS, Bootstrap, and Javascript. In Level 1, we learned to create and style basic websites, run functions, attach images/videos, create grids and cards. In Level 2 of the course, we have expanded our knowledgebase; we can attach and create image maps, process forms, simulate server responses, extract data from REST APIs, and use SASS styling upgrades, including mixins, transitions and animations --all of which has been integrated into this website.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Object(function webpackMissingModule() { var e = new Error("Cannot find module '../utils/Footer.js'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()), null));
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", null, "Who We Are"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "We are a multi-award winning restaurant where folks are greeted with the heart of the South...it's simply Good Food. Food so good, you wanna tell the world how darn good it is! Food so good, you'll want a second helping, or a third, or a fourth! No worries, we got you covered there!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "As you can see, we are proud to have been supported as a local fan favorite for over 20 years. Thank you so much to all the people from around the world that have swung by to see us and share in our Good Food Philosophy."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_ImageMap_js__WEBPACK_IMPORTED_MODULE_1__.ImageMap, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h4", null, "Come on back now, ya' hear?"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Site Inspiration:Love of GOOD FOOD! \uD83D\uDE0D I believe that potential employers will wish to hire me based on this website because it pretty much is a functional, informational website. Most people who have no idea about software development may even think that this site represents a real business, even though this is my imagination at work. It shows that I can manage projects until completion, adhering to detailed instruction from leadership, but allows my personality, style, and flair to also be showcased in the work."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Site Features: This website was created using HTML, CSS, Bootstrap, and Javascript. In Level 1, we learned to create and style basic websites, run functions, attach images/videos, create grids and cards. In Level 2 of the course, we have expanded our knowledgebase; we can attach and create image maps, process forms, simulate server responses, extract data from REST APIs, and use SASS styling upgrades, including mixins, transitions and animations --all of which has been integrated into this website.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Footer_js__WEBPACK_IMPORTED_MODULE_3__.Footer, {
+    id: "aboutFooter"
+  }));
 }
 function componentDidMount() {
   document.title = "About";
@@ -2068,8 +2070,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _controllers_handleSubmit_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../controllers/handleSubmit.js */ "./src/controllers/handleSubmit.js");
 /* harmony import */ var _controllers_handleForm_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../controllers/handleForm.js */ "./src/controllers/handleForm.js");
 /* harmony import */ var _NavCollapse_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./NavCollapse.js */ "./src/Views/NavCollapse.js");
+/* harmony import */ var _Footer_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Footer.js */ "./src/Views/Footer.js");
 
-//import { Footer } from "../utils/Footer.js";
+
 
 
 
@@ -2198,7 +2201,9 @@ function Contact() {
     value: "Reset form"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("output", {
     id: "outputTag"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Footer, null));
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Footer_js__WEBPACK_IMPORTED_MODULE_5__.Footer, {
+    id: "contactFooter"
+  }));
 }
 function componentDidMount() {
   document.title = "Contact";
@@ -2359,9 +2364,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-Object(function webpackMissingModule() { var e = new Error("Cannot find module '../utils/Footer.js'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
-/* harmony import */ var _NavCollapse_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./NavCollapse.js */ "./src/Views/NavCollapse.js");
-
+/* harmony import */ var _NavCollapse_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./NavCollapse.js */ "./src/Views/NavCollapse.js");
 
 
 // import { ListGroup } from "../utils/ListGroup.js";
@@ -2376,7 +2379,7 @@ function Menus() {
     width: "100%",
     alt: "fried seafood platter",
     src: "https://cdn.glitch.global/cbca519c-2e2c-44e5-a058-374e1c8be1a2/Screenshot%202024-08-03%20021209.jpg?v=1722669203847"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_NavCollapse_js__WEBPACK_IMPORTED_MODULE_2__.NavCollapse, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, "Full Menu"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), "ASK ABOUT OUR DAILY SPECIALS!", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_NavCollapse_js__WEBPACK_IMPORTED_MODULE_1__.NavCollapse, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, "Full Menu"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), "ASK ABOUT OUR DAILY SPECIALS!", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
     id: "soups"
   }, "Soups, Salads, and Gumbos"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "All Soups/Gumbos served with Potato Salad or Side Salad and Crackers"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
     className: "list-group text-primary border border-5 border-primary"
@@ -2523,7 +2526,8 @@ function Menus() {
     className: "col border border-primary text-center"
   }, "Stella Artois"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "col border border-primary text-center"
-  }, "Modelo"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("hr", null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Object(function webpackMissingModule() { var e = new Error("Cannot find module '../utils/Footer.js'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()), {
+  }, "Modelo"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("hr", null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("footer", {
+    id: "menusFooter",
     style: {
       textAlign: "center",
       border: 5,
@@ -2633,15 +2637,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _controllers_convertCard_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../controllers/convertCard.js */ "./src/controllers/convertCard.js");
-/* harmony import */ var _utils_output_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../utils/output.js */ "./src/utils/output.js");
-/* harmony import */ var _NavCollapse_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./NavCollapse.js */ "./src/Views/NavCollapse.js");
+/* harmony import */ var _Footer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Footer.js */ "./src/Views/Footer.js");
+/* harmony import */ var _controllers_convertCard_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../controllers/convertCard.js */ "./src/controllers/convertCard.js");
+/* harmony import */ var _utils_output_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../utils/output.js */ "./src/utils/output.js");
+/* harmony import */ var _NavCollapse_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./NavCollapse.js */ "./src/Views/NavCollapse.js");
 
-//import { Footer } from "../utils/Footer.js";
+
 
 
 
 function Photos() {
+  debugger;
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidMount, []);
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUpdate, []);
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUnmount, []);
@@ -2649,7 +2655,9 @@ function Photos() {
     width: "100%",
     alt: "fried seafood platter",
     src: "https://cdn.glitch.global/cbca519c-2e2c-44e5-a058-374e1c8be1a2/Screenshot%202024-08-03%20021209.jpg?v=1722669203847"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_NavCollapse_js__WEBPACK_IMPORTED_MODULE_3__.NavCollapse, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, "Good Food Hall of Fame")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Footer, null));
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_NavCollapse_js__WEBPACK_IMPORTED_MODULE_4__.NavCollapse, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, "Good Food Hall of Fame")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Footer_js__WEBPACK_IMPORTED_MODULE_1__.Footer, {
+    id: "photosFooter"
+  }));
   function componentDidMount() {
     document.title = "Photos";
     console.log("The component has mounted on the Photos page.");
