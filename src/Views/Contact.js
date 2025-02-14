@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
-import { handleRating } from "../controllers/handleRating.js";
-import { handleSubmit } from "../controllers/handleSubmit.js";
-import { handleForm } from "../controllers/handleForm.js";
-import { NavCollapse } from "./NavCollapse.js";
-import { Footer } from "./Footer.js";
+import { handleRating } from "../controllers/handleRating";
+import { handleSubmit } from "../controllers/handleSubmit";
+import { handleForm } from "../controllers/handleForm";
+import { NavCollapse } from "./NavCollapse";
+import { Footer } from "./Footer";
 
 export function Contact() {
 	useEffect(componentDidMount, []);

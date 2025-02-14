@@ -2066,11 +2066,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _controllers_handleRating_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../controllers/handleRating.js */ "./src/controllers/handleRating.js");
-/* harmony import */ var _controllers_handleSubmit_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../controllers/handleSubmit.js */ "./src/controllers/handleSubmit.js");
-/* harmony import */ var _controllers_handleForm_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../controllers/handleForm.js */ "./src/controllers/handleForm.js");
-/* harmony import */ var _NavCollapse_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./NavCollapse.js */ "./src/Views/NavCollapse.js");
-/* harmony import */ var _Footer_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Footer.js */ "./src/Views/Footer.js");
+/* harmony import */ var _controllers_handleRating__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../controllers/handleRating */ "./src/controllers/handleRating.js");
+/* harmony import */ var _controllers_handleSubmit__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../controllers/handleSubmit */ "./src/controllers/handleSubmit.js");
+/* harmony import */ var _controllers_handleForm__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../controllers/handleForm */ "./src/controllers/handleForm.js");
+/* harmony import */ var _NavCollapse__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./NavCollapse */ "./src/Views/NavCollapse.js");
+/* harmony import */ var _Footer__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Footer */ "./src/Views/Footer.js");
 
 
 
@@ -2085,7 +2085,7 @@ function Contact() {
     width: "100%",
     alt: "fried seafood platter",
     src: "https://cdn.glitch.global/cbca519c-2e2c-44e5-a058-374e1c8be1a2/Screenshot%202024-08-03%20021209.jpg?v=1722669203847"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_NavCollapse_js__WEBPACK_IMPORTED_MODULE_4__.NavCollapse, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, "Contact Us!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("hr", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "We love hearing from our customers. Please feel free to leave a rating, comments, suggestions, or ask any inquiries in the form below. Thank you in advance. We look forward to serving you again soon."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("form", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h5", null, "Rate your food experience"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_NavCollapse__WEBPACK_IMPORTED_MODULE_4__.NavCollapse, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, "Contact Us!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("hr", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "We love hearing from our customers. Please feel free to leave a rating, comments, suggestions, or ask any inquiries in the form below. Thank you in advance. We look forward to serving you again soon."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("form", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h5", null, "Rate your food experience"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
     id: "hated it",
     type: "radio",
     name: "rating"
@@ -2116,12 +2116,12 @@ function Contact() {
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
     for: "loved"
   }, "\uD83D\uDE0D Loved it!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
-    onSubmit: _controllers_handleRating_js__WEBPACK_IMPORTED_MODULE_1__.handleRating,
+    onSubmit: _controllers_handleRating__WEBPACK_IMPORTED_MODULE_1__.handleRating,
     type: "submit",
     className: "btn btn-sm rounded-3 bg-primary",
     id: "mixin-input"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("hr", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("form", {
-    onSubmit: _controllers_handleSubmit_js__WEBPACK_IMPORTED_MODULE_2__.handleSubmit
+    onSubmit: _controllers_handleSubmit__WEBPACK_IMPORTED_MODULE_2__.handleSubmit
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
     for: "fullName"
   }, "Full Name:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
@@ -2145,7 +2145,7 @@ function Contact() {
     value: "Submit Message",
     className: "btn btn-sm rounded-3 bg-primary"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("hr", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Looking to eat Good Food at your next family, corporate, or festival event?"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "We offer catering services for events of any size!", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), " Schedule a phone appointment with our Good Food Hosts to book today!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("hr", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("form", {
-    onSubmit: _controllers_handleForm_js__WEBPACK_IMPORTED_MODULE_3__.handleForm
+    onSubmit: _controllers_handleForm__WEBPACK_IMPORTED_MODULE_3__.handleForm
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
     for: "firstName"
   }, " First Name:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
@@ -2201,7 +2201,7 @@ function Contact() {
     value: "Reset form"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("output", {
     id: "outputTag"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Footer_js__WEBPACK_IMPORTED_MODULE_5__.Footer, {
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Footer__WEBPACK_IMPORTED_MODULE_5__.Footer, {
     id: "contactFooter"
   }));
 }

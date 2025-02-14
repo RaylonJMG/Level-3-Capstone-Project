@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import { ImageMap } from "./ImageMap.js";
 import { NavCollapse } from "./NavCollapse.js";
 import { Footer } from "./Footer.js";
+import src from "../../assets/BestInAmerica";
+import src from "../../assets/ChefTrophy";
 
 export function About() {
 	useEffect(componentDidMount, []);
@@ -21,9 +23,10 @@ export function About() {
 				<h1>About Us</h1>
 				<img
 					alt="America's Best Food Award logo"
+					src={src}
 					height="500px"
 					width="100%"
-					src="https://cdn.glitch.global/82eb993a-bf96-4031-9a18-ee851469bb49/americasbestfoodaward4M11%2Bcopy-4133607208.jpg?v=1726742656338"
+					// src="https://cdn.glitch.global/82eb993a-bf96-4031-9a18-ee851469bb49/americasbestfoodaward4M11%2Bcopy-4133607208.jpg?v=1726742656338"
 				/>
 				<h2>Philosophy: Good Food Matters!</h2>
 				<p>
@@ -35,8 +38,9 @@ export function About() {
 				<br />
 				<img
 					alt="chef trophy winner"
+					src={src}
 					width="100%"
-					src="https://cdn.glitch.global/82eb993a-bf96-4031-9a18-ee851469bb49/trophy-chef.jpg?v=1726742667968"
+					// src="https://cdn.glitch.global/82eb993a-bf96-4031-9a18-ee851469bb49/trophy-chef.jpg?v=1726742667968"
 				/>
 				<h2>Who We Are</h2>
 				<p>
