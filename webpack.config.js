@@ -13,8 +13,8 @@ export default {
 				use: ["style-loader", "css-loader", "sass-loader"], //USE THESE LOADERS TO STYLE MODULES
 			},
 			{
-				test: /\.(jpg|png|mp4)/, //EXAMINE ASSET FILES
-				type: "asset-resource", //SPECIFIES THAT THESE FILES ARE ASSETS; THIS IS A BUILT IN FEATURE
+				test: /\.(jpg|png|mp4|jpeg)/, //EXAMINE ASSET FILES
+				type: "asset-resource", // SPECIFIES THAT THESE FILES ARE ASSETS; USE THIS BUILT-IN FEATURE TO HANDLE ASSETS;
 			},
 		],
 	},
