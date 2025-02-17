@@ -1,5 +1,5 @@
 import React from "react";
-import src from "../../assets/FriedSeafoodPlatter.jpg";
+import FriedSeafoodPlatter from "../../assets/FriedSeafoodPlatter.jpg";
 import { NavCollapse } from "./NavCollapse";
 
 export function Header() {
@@ -8,7 +8,7 @@ export function Header() {
 			<img
 				width="100%"
 				alt="fried seafood platter"
-				src={src}
+				src={FriedSeafoodPlatter}
 			/>
 			<NavCollapse />
 		</header>
