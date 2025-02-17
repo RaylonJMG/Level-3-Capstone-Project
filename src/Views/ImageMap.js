@@ -1,15 +1,15 @@
 import React, { useEffect } from "react";
+import Seasonings from "../../assets/Seasonings.jpg";
 
 export function ImageMap() {
 	useEffect(componentDidMount, []);
 	return (
 		<>
-			<header></header>
 			<main>
 				<img
 					width="100%"
 					useMap="#my-image-map"
-					src="../assets/Seasonings.jpg"
+					src={Seasonings}
 					alt="Cajun Seasoning Blends"
 				/>
 				<map name="my-image-map">
