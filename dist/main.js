@@ -2488,7 +2488,7 @@ __webpack_require__.r(__webpack_exports__);
 
 function ImageMap() {
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidMount, []);
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
     width: "100%",
     useMap: "#my-image-map",
     src: _assets_Seasonings_jpg__WEBPACK_IMPORTED_MODULE_1__,
@@ -2507,7 +2507,7 @@ function ImageMap() {
     coords: "290,123, 386,290",
     href: "https://www.mccormick.com/zatarains/products/spices-and-seasonings/spices-and-extracts/creole-seasoning",
     target: "_blank"
-  }))));
+  })));
   function componentDidMount() {
     imageMapResize();
   }
