@@ -2202,6 +2202,93 @@ function componentDidUnmount() {
 
 /***/ }),
 
+/***/ "./src/Views/Carousel.js":
+/*!*******************************!*\
+  !*** ./src/Views/Carousel.js ***!
+  \*******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   Carousel: () => (/* binding */ Carousel)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _assets_CheeseBurger_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../assets/CheeseBurger.jpg */ "./assets/CheeseBurger.jpg");
+/* harmony import */ var _assets_ChefsKissSalad_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../assets/ChefsKissSalad.jpg */ "./assets/ChefsKissSalad.jpg");
+/* harmony import */ var _assets_FriedFishBasket_jpg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../assets/FriedFishBasket.jpg */ "./assets/FriedFishBasket.jpg");
+
+
+
+
+function Carousel() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    id: " myPictures",
+    className: "carousel slide"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "carousel-indicators"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+    type: "button",
+    "data-bs-target": "#myPictures",
+    "data-bs-slide-to": "0",
+    className: "active",
+    "aria-current": "true",
+    "aria-label": "Slide 1"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+    type: "button",
+    "data-bs-target": "#myPictures",
+    "data-bs-slide-to": "1",
+    "aria-label": "Slide 2"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+    type: "button",
+    "data-bs-target": "#myPictures",
+    "data-bs-slide-to": "2",
+    "aria-label": "Slide 3"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "carousel-inner"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "carousel-item active"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+    src: _assets_CheeseBurger_jpg__WEBPACK_IMPORTED_MODULE_1__,
+    className: "d-block w-100",
+    alt: "CheeseBurger"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "carousel-item"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+    src: _assets_ChefsKissSalad_jpg__WEBPACK_IMPORTED_MODULE_2__,
+    className: "d-block w-100",
+    alt: "ChefsKissSalad"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "carousel-item"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+    src: _assets_FriedFishBasket_jpg__WEBPACK_IMPORTED_MODULE_3__,
+    className: "d-block w-100",
+    alt: "FriedFishBasket"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+    className: "carousel-control-prev",
+    type: "button",
+    "data-bs-target": "#myPictures",
+    "data-bs-slide": "prev"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
+    className: "carousel-control-prev-icon",
+    "aria-hidden": "true"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
+    className: "visually-hidden"
+  }, "Previous")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+    className: "carousel-control-next",
+    type: "button",
+    "data-bs-target": "#myPictures",
+    "data-bs-slide": "next"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
+    className: "carousel-control-next-icon",
+    "aria-hidden": "true"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
+    className: "visually-hidden"
+  }, "Next"))));
+}
+
+/***/ }),
+
 /***/ "./src/Views/Contact.js":
 /*!******************************!*\
   !*** ./src/Views/Contact.js ***!
@@ -2802,6 +2889,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _assets_SeafoodGumbo_jpg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../assets/SeafoodGumbo.jpg */ "./assets/SeafoodGumbo.jpg");
 /* harmony import */ var _assets_ChickenBasket_jpg__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../assets/ChickenBasket.jpg */ "./assets/ChickenBasket.jpg");
 /* harmony import */ var _assets_ShrimpPoboy_jpg__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../assets/ShrimpPoboy.jpg */ "./assets/ShrimpPoboy.jpg");
+/* harmony import */ var _Carousel__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./Carousel */ "./src/Views/Carousel.js");
+
 
 
 
@@ -2816,7 +2905,7 @@ function Photos() {
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidMount, []);
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUpdate, []);
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUnmount, []);
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, "Good Food Hall of Fame"));
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, "Good Food Hall of Fame"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Carousel__WEBPACK_IMPORTED_MODULE_9__.Carousel, null));
   function componentDidMount() {
     document.title = "Photos";
     console.log("The component has mounted on the Photos page.");
