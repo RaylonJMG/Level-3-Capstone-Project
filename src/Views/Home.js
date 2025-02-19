@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { handleAdvice } from "../controllers/handleAdvice";
 import Interior from "../../assets/Interior.jpg";
+import "../../style.scss";
 
 export function Home() {
 	const [welcome, setWelcome] = useState(
@@ -12,7 +13,7 @@ export function Home() {
 	return (
 		<main id="homeMain">
 			<h1>Good Food Hut</h1>
-			<div>{welcome}</div>
+			<div style={{ textAlign: "center" }}>{welcome}</div>
 			<h3>Delighting Tastebuds since 1988</h3>
 			<br />
 			<p>
