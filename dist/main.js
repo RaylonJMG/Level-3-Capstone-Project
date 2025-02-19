@@ -2421,11 +2421,13 @@ function Contact() {
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
     id: "mixin-button",
     type: "submit",
-    value: "Submit"
+    value: "Submit",
+    className: "btn btn-sm rounded-3 bg-primary"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
     id: "mixin-button",
     type: "reset",
-    value: "Reset form"
+    value: "Reset form",
+    className: "btn btn-sm rounded-3 bg-primary"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("output", {
     id: "outputTag"
   }));
