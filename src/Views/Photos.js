@@ -7,6 +7,7 @@ import ChefsKissSalad from "../../assets/ChefsKissSalad.jpg";
 import SeafoodGumbo from "../../assets/SeafoodGumbo.jpg";
 import ChickenBasket from "../../assets/ChickenBasket.jpg";
 import ShrimpPoboy from "../../assets/ShrimpPoboy.jpg";
+import { Carousel } from "./Carousel";
 
 export function Photos() {
 	debugger;
@@ -16,6 +17,7 @@ export function Photos() {
 	return (
 		<main>
 			<h1>Good Food Hall of Fame</h1>
+			<Carousel />
 		</main>
 	);
 	function componentDidMount() {
