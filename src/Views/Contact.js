@@ -163,11 +163,13 @@ export function Contact() {
 					id="mixin-button"
 					type="submit"
 					value="Submit"
+					className="btn btn-sm rounded-3 bg-primary"
 				/>
 				<input
 					id="mixin-button"
 					type="reset"
 					value="Reset form"
+					className="btn btn-sm rounded-3 bg-primary"
 				/>
 			</form>
 			<output id="outputTag"></output>
