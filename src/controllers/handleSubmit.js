@@ -1,5 +1,5 @@
 import React from "react";
-import { output } from "../utils/output.js";
+import { output } from "../utils/output";
 
 export function handleSubmit(event = new Event()) {
 	event.preventDefault();

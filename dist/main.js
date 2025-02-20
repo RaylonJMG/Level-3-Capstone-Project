@@ -2843,6 +2843,10 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function NavCollapse() {
+  debugger;
+  const domain = window.location.hostname;
+  let rootPath = "";
+  if (domain === "RaylonJMG.github.io") rootPath = "good-food-hut";
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("nav", {
     className: "nav-pills navbar navbar-expand-sm bg-body-tertiary"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
@@ -3127,7 +3131,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _utils_output_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../utils/output.js */ "./src/utils/output.js");
+/* harmony import */ var _utils_output__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../utils/output */ "./src/utils/output.js");
 
 
 function handleSubmit(event = new Event()) {
@@ -3135,18 +3139,18 @@ function handleSubmit(event = new Event()) {
   const inputs = event.target;
   const emailInput = inputs[1];
   const email = emailInput.value;
-  (0,_utils_output_js__WEBPACK_IMPORTED_MODULE_1__.output)("Submitting form for <br>" + email + "...");
+  (0,_utils_output__WEBPACK_IMPORTED_MODULE_1__.output)("Submitting form for <br>" + email + "...");
   setTimeout(serverResponse, 5000);
   promise.then(parseResponse);
   function serverResponse() {
-    (0,_utils_output_js__WEBPACK_IMPORTED_MODULE_1__.output)("Thanks! We have received your message!");
+    (0,_utils_output__WEBPACK_IMPORTED_MODULE_1__.output)("Thanks! We have received your message!");
   }
   function parseResponse(resolveValue) {
     debugger;
     //JSON.PARSE: CONVERTS STRING OBJECT INTO ACTUAL OBJECT
     const response = JSON.parse(resolveValue);
     const message = response.message;
-    (0,_utils_output_js__WEBPACK_IMPORTED_MODULE_1__.output)(resolveValue);
+    (0,_utils_output__WEBPACK_IMPORTED_MODULE_1__.output)(resolveValue);
   }
 }
 
