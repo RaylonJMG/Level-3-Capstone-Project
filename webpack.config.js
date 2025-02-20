@@ -14,11 +14,7 @@ export default {
 			},
 			{
 				test: /\.(jpg|png|mp4)/, //EXAMINE ASSET FILES
-<<<<<<< HEAD
 				type: "asset/resource", //SPECIFIES THAT THESE FILES ARE ASSETS; THIS IS A BUILT IN FEATURE
-=======
-				type: "asset/resource", // SPECIFIES THAT THESE FILES ARE ASSETS; USE THIS BUILT-IN FEATURE TO HANDLE ASSETS;
->>>>>>> main
 			},
 		],
 	},
