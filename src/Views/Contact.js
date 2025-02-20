@@ -33,7 +33,7 @@ export function Contact() {
 					name="rating"
 				/>
 				<label htmlFor="disliked">😓Disliked it.</label>
-				<i class="bi bi-emoji-frown"></i>
+				<i className="bi bi-emoji-frown"></i>
 				<br />
 				<input
 					id="okay"
@@ -49,7 +49,7 @@ export function Contact() {
 					name="rating"
 				/>
 				<label htmlFor="liked">😋Liked it.</label>
-				<i class="bi bi-emoji-smile"></i>
+				<i className="bi bi-emoji-smile"></i>
 				<br />
 				<input
 					id="loved"
@@ -76,7 +76,7 @@ export function Contact() {
 					placeholder="Enter First & Last Name"
 				/>
 				<br />
-				<i class="bi bi-envelope-at"></i>
+				<i className="bi bi-envelope-at"></i>
 				<label htmlFor="email">Email:</label>
 				<br />
 				<input
@@ -129,7 +129,7 @@ export function Contact() {
 					placeholder="Enter Last Name"
 				/>
 				<br />
-				<i class="bi bi-calendar4-week"></i>
+				<i className="bi bi-calendar4-week"></i>
 				<label htmlFor="calendar">Phone Appointment:</label>
 				<br />
 				<input
@@ -139,7 +139,7 @@ export function Contact() {
 					type="datetime-local"
 				/>
 				<br />
-				<i class="bi bi-telephone"></i>
+				<i className="bi bi-telephone"></i>
 				<label htmlFor="phoneNumber">Phone Number:</label>
 				<br />
 				<input
@@ -151,7 +151,7 @@ export function Contact() {
 					pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
 				/>
 				<br />
-				<i class="bi bi-envelope-at"></i>
+				<i className="bi bi-envelope-at"></i>
 				<label htmlFor="email">Email:</label>
 				<br />
 				<input
