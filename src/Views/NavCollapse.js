@@ -5,9 +5,6 @@ export function NavCollapse() {
 	return (
 		<nav className="nav-pills navbar navbar-expand-sm bg-body-tertiary">
 			<div className="container-fluid">
-				<a
-					className="navbar-brand"
-					to="#"></a>
 				<button
 					className="navbar-toggler"
 					type="button"
@@ -48,11 +45,6 @@ export function NavCollapse() {
 							to={`${rootPath}/contact`}>
 							Contact
 						</NavLink>
-						<a
-							className="nav-link disabled"
-							aria-disabled="true">
-							Disabled
-						</a>
 					</div>
 				</div>
 			</div>

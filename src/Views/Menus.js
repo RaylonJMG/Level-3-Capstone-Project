@@ -1,9 +1,7 @@
 import React, { useEffect } from "react";
-import { Footer } from "../utils/Footer.js";
-import { NavCollapse } from "./NavCollapse.js";
-// import { ListGroup } from "../utils/ListGroup.js";
-// import { ListGroupItem } from "../utils/ListGroupItem.js";
-//import { Alert } from "../utils/Alert.js";
+// import { ListGroup } from "../utils/ListGroup";
+// import { ListGroupItem } from "../utils/ListGroupItem";
+//import { Alert } from "../utils/Alert";
 
 export function Menus() {
 	useEffect(componentDidMount, []);
@@ -11,14 +9,6 @@ export function Menus() {
 	useEffect(componentDidUnmount, []);
 	return (
 		<>
-			<header>
-				<img
-					width="100%"
-					alt="fried seafood platter"
-					src="https://cdn.glitch.global/cbca519c-2e2c-44e5-a058-374e1c8be1a2/Screenshot%202024-08-03%20021209.jpg?v=1722669203847"
-				/>
-				<NavCollapse />
-			</header>
 			<main>
 				<h1>Full Menu</h1>
 				<br />
@@ -181,7 +171,9 @@ export function Menus() {
 				</div>
 				<hr />
 			</main>
-			<Footer style={{ textAlign: "center", border: 5, border: "primary" }}>
+			<footer
+				id="menusFooter"
+				style={{ textAlign: "center", border: 5, border: "primary" }}>
 				<b>Menu Map</b>
 				<br />
 				<nav>
@@ -197,7 +189,7 @@ export function Menus() {
 					<br />
 					<a href="#drinks">Ice Cold Beverages</a>
 				</nav>
-			</Footer>
+			</footer>
 		</>
 	);
 }

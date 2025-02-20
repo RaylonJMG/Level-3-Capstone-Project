@@ -1,28 +1,24 @@
 import React, { useEffect } from "react";
-//import { Footer } from "../utils/Footer.js";
-import { convertCard } from "../controllers/convertCard.js";
-import { output } from "../utils/output.js";
-import { NavCollapse } from "./NavCollapse.js";
+import { convertCard } from "../controllers/convertCard";
+import { output } from "../utils/output";
+import FriedFishBasket from "../../assets/FriedFishBasket.jpg";
+import CheeseBurger from "../../assets/CheeseBurger.jpg";
+import ChefsKissSalad from "../../assets/ChefsKissSalad.jpg";
+import SeafoodGumbo from "../../assets/SeafoodGumbo.jpg";
+import ChickenBasket from "../../assets/ChickenBasket.jpg";
+import ShrimpPoboy from "../../assets/ShrimpPoboy.jpg";
+import { Carousel } from "./Carousel";
 
 export function Photos() {
+	debugger;
 	useEffect(componentDidMount, []);
 	useEffect(componentDidUpdate, []);
 	useEffect(componentDidUnmount, []);
 	return (
-		<>
-			<header>
-				<img
-					width="100%"
-					alt="fried seafood platter"
-					src="https://cdn.glitch.global/cbca519c-2e2c-44e5-a058-374e1c8be1a2/Screenshot%202024-08-03%20021209.jpg?v=1722669203847"
-				/>
-				<NavCollapse />
-			</header>
-			<main>
-				<h1>Good Food Hall of Fame</h1>
-			</main>
-			<Footer />
-		</>
+		<main>
+			<h1>Good Food Hall of Fame</h1>
+			<Carousel />
+		</main>
 	);
 	function componentDidMount() {
 		document.title = "Photos";
@@ -33,14 +29,14 @@ export function Photos() {
 		//OBJECTS WITH PROPERTIES IN A CARD W / IMAGE
 		// 	const card1 = { ""}
 		// 		{{
-		// 	src: "https://preview.redd.it/i-ate-fried-seafood-platter-v0-7747apv88fta1.jpg?width=1080&crop=smart&auto=webp&s=e08c9217fed766d3a6cabb738cb0ef3f5e52787e",
+		// 	src: {FriedFishBasket},
 		// 	title: "Fried Fish Basket"
 		// 	alt: "fried fish basket"
 		// 	summary:"Local, Wild-caught Catfish and Soft-Shelled Crabs fried to perfection. ",
 		// 		}}
 		// 		; const card2 ={""}
 		// 		{{
-		// 			src: "https://preview.redd.it/homemade-cheese-burger-v0-pmd5oy5t8zi81.jpg?width=1080&crop=smart&auto=webp&s=f49ce6cd57bbc114321f28a7cbeecb9f6c046b84",
+		// 			src: "{CheeseBurger}",
 		// 			title: "1/4 lb Cheeseburger",
 		// 			alt: "cheeseburger",
 		// 			summary:
@@ -48,7 +44,7 @@ export function Photos() {
 		// 		}}
 		// 		; const card3 ={" "}
 		// 		{{
-		// 			src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSybPdO2LAoxRLzN5P2nAk-K6BIf7dnxvtTgQ&s"
+		// 			src: "{ChefsKissSalad}"
 		// 			title: "Chef's Kiss Salad"
 		// 			alt: "salad"
 		// 			summary:
@@ -56,7 +52,7 @@ export function Photos() {
 		// 		}}
 		// 		; const card4 ={" "}
 		// 		{{
-		// 			src: "https://cdn.glitch.global/82eb993a-bf96-4031-9a18-ee851469bb49/shrimp%20poboy%20pic.jpg?v=1726040746520"
+		// 			src: "{ShrimpPoboy}"
 		// 			title: "Overstuffed Shrimp PoBoy"
 		// 			alt: "shrimp poboy"
 		// 			summary:
@@ -64,7 +60,7 @@ export function Photos() {
 		// 		}}
 		// ; const card5 = { " "}
 		// 		{{
-		// 			src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb7qgRRm6zENkt-O4EcLq0bwS0ZDAI28IUFA&s"
+		// 			src: "{ChickenBasket}"
 		// 			title: "Chicken Tender Basket"
 		// 			alt: "chicken tenders and fries"
 		// 			summary:
@@ -72,11 +68,11 @@ export function Photos() {
 		// 		}}
 		// 		; const card6 ={" "}
 		// 		{{
-		// 			src: "https://preview.redd.it/homemade-gumbo-v0-k3pras89rxxb1.jpg?width=640&crop=smart&auto=webp&s=64d1effcf4bee4295146cc95f7263a013bb8e8ab"
+		// 			src: "{SeafoodGumbo}"
 		// 			title: "Seafood Gumbo"
 		// 			alt: "bowl of seafood gumbo"
 		// 			summary:
-		// 				"Our Ragin' Cajun rendition of the classic NOLA staple made in-house. Think HUGE Gulf Shrimp, Chicken, and Andouille Sausage over seasoned, steamed rice. Even better with a piece of Sweet Potato Corn Bread. Thank us later."
+		// 				"Our Ragin' Cajun rendition of the classic NOLA staple made in-house. Think HUGE Gulf Shrimp, Chicken, and Andouille Sausage Gumbo over seasoned, steamed rice. Even better with a piece of Sweet Potato Corn Bread. Thank us later."
 		// 		}}
 		// 	 const cardsArray = [card1, card2, card3, card4, card5,
 		// 				card6]

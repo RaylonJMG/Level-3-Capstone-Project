@@ -1,17 +1,20 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
 import { BrowserRouter, Route, Routes } from "react-router";
-import { Home } from "./Views/Home.js";
-import { About } from "./Views/About.js";
-import { Photos } from "./Views/Photos.js";
-import { Menus } from "./Views/Menus.js";
-import { Contact } from "./Views/Contact.js";
-import { ImageMap } from "./Views/ImageMap.js";
+import { Home } from "./Views/Home";
+import { About } from "./Views/About";
+import { Photos } from "./Views/Photos";
+import { Menus } from "./Views/Menus";
+import { Contact } from "./Views/Contact";
+import { ImageMap } from "./Views/ImageMap";
+import { Header } from "./Views/Header";
+import { Footer } from "./Views/Footer";
 
 const bodyTag = document.getElementById("bodyTag");
 const root = createRoot(bodyTag);
 root.render(
 	<BrowserRouter>
+		<Header />
 		<Routes>
 			<Route
 				path="/"
@@ -46,5 +49,6 @@ root.render(
 				element={<ImageMap />}
 			/>
 		</Routes>
+		<Footer />
 	</BrowserRouter>
 );
