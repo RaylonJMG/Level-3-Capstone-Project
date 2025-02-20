@@ -25,27 +25,27 @@ export function NavCollapse() {
 						<NavLink
 							className="nav-link"
 							aria-current="page"
-							to="/">
+							to={`${rootPath}/`}>
 							Home
 						</NavLink>
 						<NavLink
 							className="nav-link"
-							to="/about">
+							to={`${rootPath}/about`}>
 							About
 						</NavLink>
 						<NavLink
 							className="nav-link"
-							to="/photos">
+							to={`${rootPath}/photos`}>
 							Photos
 						</NavLink>
 						<NavLink
 							className="nav-link"
-							to="/menus">
+							to={`${rootPath}/menus`}>
 							Menus
 						</NavLink>
 						<NavLink
 							className="nav-link"
-							to="/contact">
+							to={`${rootPath}/contact`}>
 							Contact
 						</NavLink>
 						<a
