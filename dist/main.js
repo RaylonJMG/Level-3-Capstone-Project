@@ -2843,7 +2843,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function NavCollapse() {
-  debugger;
+  //debugger;
   const domain = window.location.hostname;
   let rootPath = "";
   if (domain === "RaylonJMG.github.io") rootPath = "good-food-hut";
