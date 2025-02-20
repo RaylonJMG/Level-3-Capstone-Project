@@ -25,6 +25,7 @@ export function Contact() {
 					name="rating"
 				/>
 				<label htmlFor="hated it">🤢Hated it!</label>
+				<i className="bi bi-emoji-tear"></i>
 				<br />
 				<input
 					id="disliked"
@@ -32,6 +33,7 @@ export function Contact() {
 					name="rating"
 				/>
 				<label htmlFor="disliked">😓Disliked it.</label>
+				<i class="bi bi-emoji-frown"></i>
 				<br />
 				<input
 					id="okay"
@@ -39,6 +41,7 @@ export function Contact() {
 					name="rating"
 				/>
 				<label htmlFor="okay">😔Meh...it was just okay.</label>
+				<i className="bi bi-emoji-neutral"></i>
 				<br />
 				<input
 					id="liked"
@@ -46,6 +49,7 @@ export function Contact() {
 					name="rating"
 				/>
 				<label htmlFor="liked">😋Liked it.</label>
+				<i class="bi bi-emoji-smile"></i>
 				<br />
 				<input
 					id="loved"
@@ -53,6 +57,7 @@ export function Contact() {
 					name="rating"
 				/>
 				<label htmlFor="loved">😍 Loved it!</label>
+				<i className="bi bi-emoji-heart-eyes"></i>
 				<br />
 				<input
 					onSubmit={handleRating}
@@ -71,7 +76,8 @@ export function Contact() {
 					placeholder="Enter First & Last Name"
 				/>
 				<br />
-				<label htmlFor="email">Email Address:</label>
+				<i class="bi bi-envelope-at"></i>
+				<label htmlFor="email">Email:</label>
 				<br />
 				<input
 					id="email"
@@ -123,6 +129,7 @@ export function Contact() {
 					placeholder="Enter Last Name"
 				/>
 				<br />
+				<i class="bi bi-calendar4-week"></i>
 				<label htmlFor="calendar">Phone Appointment:</label>
 				<br />
 				<input
@@ -132,6 +139,7 @@ export function Contact() {
 					type="datetime-local"
 				/>
 				<br />
+				<i class="bi bi-telephone"></i>
 				<label htmlFor="phoneNumber">Phone Number:</label>
 				<br />
 				<input
@@ -143,6 +151,7 @@ export function Contact() {
 					pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
 				/>
 				<br />
+				<i class="bi bi-envelope-at"></i>
 				<label htmlFor="email">Email:</label>
 				<br />
 				<input
