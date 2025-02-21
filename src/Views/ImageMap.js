@@ -2,7 +2,11 @@ import React, { useEffect } from "react";
 import Seasonings from "../../assets/Seasonings.jpg";
 
 export function ImageMap() {
+	const [didMount, setDidMount] = useState(false);
 	useEffect(componentDidMount, []);
+	useEffect(componentDidUpdate);
+	useEffect(componentDidUnmount, []);
+
 	return (
 		<main>
 			<img
@@ -31,6 +35,14 @@ export function ImageMap() {
 	);
 
 	function componentDidMount() {
+		setDidMount(true);
+		console.log("The ImageMap component mounted.");
 		imageMapResize();
+	}
+	function componentDidUpdate() {
+		if (didMount === true) console.log("The ImageMap component updated.");
+	}
+	function componentDidUnmount() {
+		console.log("The ImageMap component unmounted.");
 	}
 }
