@@ -46,6 +46,7 @@ export function Home() {
 			<output id="outputTag"></output>
 		</main>
 	);
+
 	function componentDidMount() {
 		document.title = "Home";
 		console.log("The component has mounted on the Home page.");
@@ -61,3 +62,22 @@ export function Home() {
 		};
 	}
 }
+
+<div className="container">
+	<div className="row">
+		<div className="col">COLUMN</div>
+		<div className="col">COLUMN</div>
+		<div className="col">COLUMN</div>
+		<div className="col">COLUMN</div>
+		<div className="col">COLUMN</div>
+		<div className="col">COLUMN</div>
+		<div className="col">COLUMN</div>
+		<div className="col">COLUMN</div>
+		<div className="col">COLUMN</div>
+		<div className="col">COLUMN</div>
+		<div className="col">COLUMN</div>
+		<div className="col">COLUMN</div>
+		<div className="col">COLUMN</div>
+		<div className="col">COLUMN</div>
+	</div>
+</div>;
