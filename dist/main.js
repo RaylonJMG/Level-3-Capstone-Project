@@ -2594,7 +2594,10 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function ImageMap() {
+  const [didMount, setDidMount] = useState(false);
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidMount, []);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUpdate);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUnmount, []);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
     width: "100%",
     useMap: "#my-image-map",
@@ -2616,7 +2619,15 @@ function ImageMap() {
     target: "_blank"
   })));
   function componentDidMount() {
+    setDidMount(true);
+    console.log("The ImageMap component mounted.");
     imageMapResize();
+  }
+  function componentDidUpdate() {
+    if (didMount === true) console.log("The ImageMap component updated.");
+  }
+  function componentDidUnmount() {
+    console.log("The ImageMap component unmounted.");
   }
 }
 
