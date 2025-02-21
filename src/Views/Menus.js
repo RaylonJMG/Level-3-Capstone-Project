@@ -1,7 +1,4 @@
 import React, { useEffect } from "react";
-// import { ListGroup } from "../utils/ListGroup";
-// import { ListGroupItem } from "../utils/ListGroupItem";
-//import { Alert } from "../utils/Alert";
 
 export function Menus() {
 	useEffect(componentDidMount, []);
@@ -31,9 +28,9 @@ export function Menus() {
 						className="list-group-item"
 						aria-current="true">
 						Chef's Kiss Salad
-						{/* <span className="text-end badge bg-success">
+						<span className="text-end badge bg-success">
 							Customer Rated 10/10 😍
-						</span> */}
+						</span>
 					</li>
 					<li className="list-group-item">Creole Shrimp and Tomato Soup</li>
 					<li className="list-group-item">Seafood Gumbo</li>
@@ -207,3 +204,22 @@ function componentDidUnmount() {
 		console.log("The component has unmounted.");
 	};
 }
+
+<div className="container">
+	<div className="row">
+		<div className="col">COLUMN</div>
+		<div className="col">COLUMN</div>
+		<div className="col">COLUMN</div>
+		<div className="col">COLUMN</div>
+		<div className="col">COLUMN</div>
+		<div className="col">COLUMN</div>
+		<div className="col">COLUMN</div>
+		<div className="col">COLUMN</div>
+		<div className="col">COLUMN</div>
+		<div className="col">COLUMN</div>
+		<div className="col">COLUMN</div>
+		<div className="col">COLUMN</div>
+		<div className="col">COLUMN</div>
+		<div className="col">COLUMN</div>
+	</div>
+</div>;

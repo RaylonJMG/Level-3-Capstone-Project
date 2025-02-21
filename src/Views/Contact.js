@@ -188,3 +188,22 @@ function componentDidUnmount() {
 		console.log("The component has unmounted.");
 	};
 }
+
+<div className="container">
+	<div className="row">
+		<div className="col">COLUMN</div>
+		<div className="col">COLUMN</div>
+		<div className="col">COLUMN</div>
+		<div className="col">COLUMN</div>
+		<div className="col">COLUMN</div>
+		<div className="col">COLUMN</div>
+		<div className="col">COLUMN</div>
+		<div className="col">COLUMN</div>
+		<div className="col">COLUMN</div>
+		<div className="col">COLUMN</div>
+		<div className="col">COLUMN</div>
+		<div className="col">COLUMN</div>
+		<div className="col">COLUMN</div>
+		<div className="col">COLUMN</div>
+	</div>
+</div>;
