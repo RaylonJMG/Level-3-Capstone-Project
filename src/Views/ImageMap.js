@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Seasonings from "../../assets/Seasonings.jpg";
 
 export function ImageMap() {
