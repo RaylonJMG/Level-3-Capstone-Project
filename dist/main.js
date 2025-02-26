@@ -2203,21 +2203,21 @@ function About() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "col"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Site Inspiration:Love of GOOD FOOD! \uD83D\uDE0D I believe that potential employers will wish to hire me based on this website because it pretty much is a functional, informational website. Most people who have no idea about software development may even think that this site represents a real business, even though this is my imagination at work. It shows that I can manage projects until completion, adhering to detailed instruction from leadership, but allows my personality, style, and flair to also be showcased in the work."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Site Features: This website was created using HTML, CSS, Bootstrap, and Javascript. In Level 1, we learned to create and style basic websites, run functions, attach images/videos, create grids and cards. In Level 2 of the course, we have expanded our knowledgebase; we can attach and create image maps, process forms, simulate server responses, extract data from REST APIs, and use SASS styling upgrades, including mixins, transitions and animations --all of which has been integrated into this website."))))));
-}
-function componentDidMount() {
-  setDidMount(true); //if the component mounts then it will log that the component has mounted.
-  console.log("The About component has mounted.");
-  document.title = "About";
-}
-function componentDidUpdate() {
-  if (didMount === true) ; //when the component updates/mounts, it will log that the component has updated.
-  console.log("The About component has updated.");
-}
-function componentDidUnmount() {
-  //when the component unmounts, like when moving to another page, it will log that the component has unmounted.
-  return function () {
-    console.log("The About component has unmounted.");
-  };
+  function componentDidMount() {
+    setDidMount(true); //if the component mounts then it will log that the component has mounted.
+    console.log("The About component has mounted.");
+    document.title = "About";
+  }
+  function componentDidUpdate() {
+    if (didMount === true) ; //when the component updates/mounts, it will log that the component has updated.
+    console.log("The About component has updated.");
+  }
+  function componentDidUnmount() {
+    //when the component unmounts, like when moving to another page, it will log that the component has unmounted.
+    return function () {
+      console.log("The About component has unmounted.");
+    };
+  }
 }
 
 /***/ }),

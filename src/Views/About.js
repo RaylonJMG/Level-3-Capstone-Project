@@ -100,19 +100,20 @@ export function About() {
 			</div>
 		</main>
 	);
-}
-function componentDidMount() {
-	setDidMount(true); //if the component mounts then it will log that the component has mounted.
-	console.log("The About component has mounted.");
-	document.title = "About";
-}
-function componentDidUpdate() {
-	if (didMount === true); //when the component updates/mounts, it will log that the component has updated.
-	console.log("The About component has updated.");
-}
-function componentDidUnmount() {
-	//when the component unmounts, like when moving to another page, it will log that the component has unmounted.
-	return function () {
-		console.log("The About component has unmounted.");
-	};
+
+	function componentDidMount() {
+		setDidMount(true); //if the component mounts then it will log that the component has mounted.
+		console.log("The About component has mounted.");
+		document.title = "About";
+	}
+	function componentDidUpdate() {
+		if (didMount === true); //when the component updates/mounts, it will log that the component has updated.
+		console.log("The About component has updated.");
+	}
+	function componentDidUnmount() {
+		//when the component unmounts, like when moving to another page, it will log that the component has unmounted.
+		return function () {
+			console.log("The About component has unmounted.");
+		};
+	}
 }
