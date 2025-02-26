@@ -21,7 +21,7 @@ export function Home() {
 						<div className="col">
 							{" "}
 							<h1>Good Food Hut</h1>
-							<div>{welcome}</div>//welcome message displayed here
+							<div>{welcome}</div>
 							<h3>Delighting Tastebuds since 1988</h3>
 							<br />
 							<p>
