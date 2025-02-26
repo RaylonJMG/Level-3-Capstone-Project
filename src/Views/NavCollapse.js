@@ -5,7 +5,7 @@ export function NavCollapse() {
 	//debugger;
 	const domain = window.location.hostname;
 	let rootPath = "";
-	if (domain === "RaylonJMG.github.io") rootPath = "good-food-hut";
+	if (domain === "raylonjmg.github.io") rootPath = "good-food-hut";
 
 	return (
 		<nav className="nav-pills navbar navbar-expand-sm bg-body-tertiary">
