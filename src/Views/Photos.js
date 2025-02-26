@@ -91,3 +91,24 @@ function componentDidUnmount() {
 		console.log("The component has unmounted.");
 	};
 }
+
+<div className="container">
+	<div className="row">
+		<div className="col">CARD1</div>
+		<div className="row">
+			<div className="col">CARD2</div>
+		</div>
+		<div className="row">
+			<div className="col">CARD3</div>
+		</div>
+		<div className="row">
+			<div className="col">CARD4</div>
+		</div>
+		<div className="row">
+			<div className="col">CARD5</div>
+		</div>
+		<div className="row">
+			<div className="col">CARD6</div>
+		</div>
+	</div>
+</div>;
