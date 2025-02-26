@@ -2412,8 +2412,15 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function ImageMap() {
+  const [didMount, setDidMount] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidMount, []);
+<<<<<<< HEAD
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+=======
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUpdate);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUnmount, []);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+>>>>>>> addImageMap
     width: "100%",
     useMap: "#my-image-map",
     src: _assets_Seasonings_jpg__WEBPACK_IMPORTED_MODULE_1__,
@@ -2432,9 +2439,17 @@ function ImageMap() {
     coords: "290,123, 386,290",
     href: "https://www.mccormick.com/zatarains/products/spices-and-seasonings/spices-and-extracts/creole-seasoning",
     target: "_blank"
-  }))));
+  })));
   function componentDidMount() {
+    setDidMount(true);
+    console.log("The ImageMap component mounted.");
     imageMapResize();
+  }
+  function componentDidUpdate() {
+    if (didMount === true) console.log("The ImageMap component updated.");
+  }
+  function componentDidUnmount() {
+    console.log("The ImageMap component unmounted.");
   }
 }
 
@@ -3055,6 +3070,7 @@ function output(message = "", outputTag = "outputTag", shouldAppend = true) {
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ "./assets/BestInAmerica.jpg":
 /*!**********************************!*\
   !*** ./assets/BestInAmerica.jpg ***!
@@ -3145,6 +3161,8 @@ module.exports = __webpack_require__.p + "26409df942713808fc14.jpg";
 
 /***/ }),
 
+=======
+>>>>>>> addImageMap
 /***/ "./assets/Seasonings.jpg":
 /*!*******************************!*\
   !*** ./assets/Seasonings.jpg ***!
@@ -3155,6 +3173,7 @@ module.exports = __webpack_require__.p + "2e2a0f2e762a823d4a24.jpg";
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ "./assets/ShrimpPoboy.jpg":
 /*!********************************!*\
   !*** ./assets/ShrimpPoboy.jpg ***!
@@ -3165,6 +3184,8 @@ module.exports = __webpack_require__.p + "7d64e7eec2fa93e8c0b9.jpg";
 
 /***/ }),
 
+=======
+>>>>>>> addImageMap
 /***/ "./node_modules/react-router/dist/development/chunk-SYFQ2XB5.mjs":
 /*!***********************************************************************!*\
   !*** ./node_modules/react-router/dist/development/chunk-SYFQ2XB5.mjs ***!
