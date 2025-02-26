@@ -13,7 +13,7 @@ export function Home() {
 	useEffect(componentDidUnmount, []); //UNMOUNT PHASE
 	return (
 		<>
-			<main>
+			<main id="homeMain">
 				<div className="container">
 					<div className="row">
 						<div className="col">
@@ -49,6 +49,7 @@ export function Home() {
 							<img
 								src={Interior}
 								alt="Good Food Hut Interior"
+								className="img-fluid"
 							/>
 							<p>
 								So whether it's for some quality time with the family,
