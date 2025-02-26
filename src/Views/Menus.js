@@ -1,9 +1,12 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
 export function Menus() {
+	const [didMount, setDidMount] = useState(false);
+
 	useEffect(componentDidMount, []);
-	useEffect(componentDidUpdate, []);
+	useEffect(componentDidUpdate);
 	useEffect(componentDidUnmount, []);
+
 	return (
 		<>
 			<main>
@@ -211,16 +214,17 @@ export function Menus() {
 	);
 }
 function componentDidMount() {
+	setDidMount(true);
+	console.log("The Menus component has mounted.");
 	document.title = "Menus";
-	console.log("The component has mounted on the Menus page.");
-
-	return componentDidUnmount;
 }
 function componentDidUpdate() {
-	console.log("The component has updated.");
+	if (didMount === true) {
+		console.log("The Menus component has updated.");
+	}
 }
 function componentDidUnmount() {
 	return function () {
-		console.log("The component has unmounted.");
+		console.log("The Menus component has unmounted.");
 	};
 }

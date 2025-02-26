@@ -4,13 +4,15 @@ import Interior from "../../assets/Interior.jpg";
 import "../../style.scss";
 
 export function Home() {
-	const [didMount, setDidMount] = useState(false);
+	//destructuring reads the values of the variables stored in the useState hook
+	const [didMount, setDidMount] = useState(false); //useState hook to set the component to mount using variable didMount; updates the setter function with setDidMount
 	const [welcome, setWelcome] = useState(
 		"Hello There Mon Chere'! Swing On By and Taste Our Good Food!"
-	);
-	useEffect(componentDidMount, []); //MOUNT PHASE
-	useEffect(componentDidUpdate, [welcome]); //UPDATE PHASE
-	useEffect(componentDidUnmount, []); //UNMOUNT PHASE
+	); //useState hook to set the welcome message using variable: welcome; updates the setter function with setWelcome
+
+	useEffect(componentDidMount, []); //MOUNT HOOK,
+	useEffect(componentDidUpdate, [welcome]); //UPDATE HOOK
+	useEffect(componentDidUnmount, []); //UNMOUNT HOOK
 	return (
 		<>
 			<main id="homeMain">
@@ -19,7 +21,7 @@ export function Home() {
 						<div className="col">
 							{" "}
 							<h1>Good Food Hut</h1>
-							<div>{welcome}</div>
+							<div>{welcome}</div>//welcome message displayed here
 							<h3>Delighting Tastebuds since 1988</h3>
 							<br />
 							<p>

@@ -1,12 +1,16 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { ImageMap } from "./ImageMap";
 import BestInAmerica from "../../assets/BestInAmerica.jpg";
 import ChefTrophy from "../../assets/ChefTrophy.jpg";
 
 export function About() {
-	useEffect(componentDidMount, []);
-	useEffect(componentDidUpdate, []);
-	useEffect(componentDidUnmount, []);
+	const [didMount, setDidMount] = useState(false); //useState hook to set the component to mount using variable didMount; updates the setter function with setDidMount
+
+	//USE EFFECT SPLITTING, WITH EMPTY DEPENDENCIES WHERE NECESSARY, MEANS IT ONLY RUNS ONCE
+	useEffect(componentDidMount, []); //MOUNT HOOK, ADDS COMPONENT TO SCREEN--RUNS ONCE
+	useEffect(componentDidUpdate); //UPDATE HOOK, CHANGES TO COMPONENT RENDERS ON SCREEN
+	useEffect(componentDidUnmount, []); //UNMOUNT HOOK, REMOVES COMPONENT FROM SCREEN--RUNS ONCE
+
 	return (
 		<main>
 			<div className="container">
@@ -98,14 +102,17 @@ export function About() {
 	);
 }
 function componentDidMount() {
+	setDidMount(true); //if the component mounts then it will log that the component has mounted.
+	console.log("The About component has mounted.");
 	document.title = "About";
-	console.log("The component has mounted on the About page.");
 }
 function componentDidUpdate() {
-	console.log("The component has updated.");
+	if (didMount === true); //when the component updates/mounts, it will log that the component has updated.
+	console.log("The About component has updated.");
 }
 function componentDidUnmount() {
+	//when the component unmounts, like when moving to another page, it will log that the component has unmounted.
 	return function () {
-		console.log("The component has unmounted.");
+		console.log("The About component has unmounted.");
 	};
 }

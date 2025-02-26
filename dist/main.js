@@ -2172,9 +2172,13 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function About() {
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidMount, []);
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUpdate, []);
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUnmount, []);
+  const [didMount, setDidMount] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false); //useState hook to set the component to mount using variable didMount; updates the setter function with setDidMount
+
+  //USE EFFECT SPLITTING, WITH EMPTY DEPENDENCIES WHERE NECESSARY, MEANS IT ONLY RUNS ONCE
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidMount, []); //MOUNT HOOK, ADDS COMPONENT TO SCREEN--RUNS ONCE
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUpdate); //UPDATE HOOK, CHANGES TO COMPONENT RENDERS ON SCREEN
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUnmount, []); //UNMOUNT HOOK, REMOVES COMPONENT FROM SCREEN--RUNS ONCE
+
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "container"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
@@ -2201,15 +2205,18 @@ function About() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Site Inspiration:Love of GOOD FOOD! \uD83D\uDE0D I believe that potential employers will wish to hire me based on this website because it pretty much is a functional, informational website. Most people who have no idea about software development may even think that this site represents a real business, even though this is my imagination at work. It shows that I can manage projects until completion, adhering to detailed instruction from leadership, but allows my personality, style, and flair to also be showcased in the work."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Site Features: This website was created using HTML, CSS, Bootstrap, and Javascript. In Level 1, we learned to create and style basic websites, run functions, attach images/videos, create grids and cards. In Level 2 of the course, we have expanded our knowledgebase; we can attach and create image maps, process forms, simulate server responses, extract data from REST APIs, and use SASS styling upgrades, including mixins, transitions and animations --all of which has been integrated into this website."))))));
 }
 function componentDidMount() {
+  setDidMount(true); //if the component mounts then it will log that the component has mounted.
+  console.log("The About component has mounted.");
   document.title = "About";
-  console.log("The component has mounted on the About page.");
 }
 function componentDidUpdate() {
-  console.log("The component has updated.");
+  if (didMount === true) ; //when the component updates/mounts, it will log that the component has updated.
+  console.log("The About component has updated.");
 }
 function componentDidUnmount() {
+  //when the component unmounts, like when moving to another page, it will log that the component has unmounted.
   return function () {
-    console.log("The component has unmounted.");
+    console.log("The About component has unmounted.");
   };
 }
 
@@ -2322,8 +2329,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function Contact() {
+  const [didMount, setDidMount] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidMount, []);
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUpdate, []);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUpdate);
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUnmount, []);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "container"
@@ -2468,16 +2476,18 @@ function Contact() {
   }))))))));
 }
 function componentDidMount() {
+  setDidMount(true);
+  console.log("The Contact component has mounted.");
   document.title = "Contact";
-  console.log("The component has mounted on the Contact page.");
-  return componentDidUnmount;
 }
 function componentDidUpdate() {
-  console.log("The component has updated.");
+  if (didMount === true) {
+    console.log("The Contact component has updated.");
+  }
 }
 function componentDidUnmount() {
   return function () {
-    console.log("The component has unmounted.");
+    console.log("The Contact component has unmounted.");
   };
 }
 
@@ -2555,11 +2565,13 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function Home() {
-  const [didMount, setDidMount] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
-  const [welcome, setWelcome] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)("Hello There Mon Chere'! Swing On By and Taste Our Good Food!");
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidMount, []); //MOUNT PHASE
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUpdate, [welcome]); //UPDATE PHASE
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUnmount, []); //UNMOUNT PHASE
+  //destructuring reads the values of the variables stored in the useState hook
+  const [didMount, setDidMount] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false); //useState hook to set the component to mount using variable didMount; updates the setter function with setDidMount
+  const [welcome, setWelcome] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)("Hello There Mon Chere'! Swing On By and Taste Our Good Food!"); //useState hook to set the welcome message using variable: welcome; updates the setter function with setWelcome
+
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidMount, []); //MOUNT HOOK,
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUpdate, [welcome]); //UPDATE HOOK
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUnmount, []); //UNMOUNT HOOK
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", {
     id: "homeMain"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
@@ -2568,7 +2580,7 @@ function Home() {
     className: "row"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "col"
-  }, " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, "Good Food Hut"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, welcome), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", null, "Delighting Tastebuds since 1988"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Visit our Sesame Street Location and try all that the Good Food Hut has to offer. We have been sharing our Good Food Philosophy for over 20 years and you haven't seen nor tasted anything yet!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("hr", null))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  }, " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, "Good Food Hut"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, welcome), "//welcome message displayed here", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", null, "Delighting Tastebuds since 1988"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Visit our Sesame Street Location and try all that the Good Food Hut has to offer. We have been sharing our Good Food Philosophy for over 20 years and you haven't seen nor tasted anything yet!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("hr", null))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "row"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "col"
@@ -2679,8 +2691,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 
 function Menus() {
+  const [didMount, setDidMount] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidMount, []);
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUpdate, []);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUpdate);
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUnmount, []);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "container"
@@ -2898,16 +2911,18 @@ function Menus() {
   }, "Ice Cold Beverages"))));
 }
 function componentDidMount() {
+  setDidMount(true);
+  console.log("The Menus component has mounted.");
   document.title = "Menus";
-  console.log("The component has mounted on the Menus page.");
-  return componentDidUnmount;
 }
 function componentDidUpdate() {
-  console.log("The component has updated.");
+  if (didMount === true) {
+    console.log("The Menus component has updated.");
+  }
 }
 function componentDidUnmount() {
   return function () {
-    console.log("The component has unmounted.");
+    console.log("The Menus component has unmounted.");
   };
 }
 
@@ -2932,7 +2947,7 @@ function NavCollapse() {
   //debugger;
   const domain = window.location.hostname;
   let rootPath = "";
-  if (domain === "RaylonJMG.github.io") rootPath = "good-food-hut";
+  if (domain === "raylonjmg.github.io") rootPath = "good-food-hut";
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("nav", {
     className: "nav-pills navbar navbar-expand-sm bg-body-tertiary"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
@@ -3005,15 +3020,15 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function Photos() {
-  debugger;
+  const [didMount, setDidMount] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidMount, []);
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUpdate, []);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUpdate);
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUnmount, []);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, "Good Food Hall of Fame"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Carousel__WEBPACK_IMPORTED_MODULE_9__.Carousel, null));
   function componentDidMount() {
-    document.title = "Photos";
+    setDidMount(true);
     console.log("The component has mounted on the Photos page.");
-    return componentDidUnmount;
+    document.title = "Photos";
 
     //OBJECTS WITH PROPERTIES IN A CARD W / IMAGE
     // 	const card1 = { ""}
@@ -3073,7 +3088,9 @@ function Photos() {
   }
 }
 function componentDidUpdate() {
-  console.log("The component has updated.");
+  if (didMount === true) {
+    console.log("The component has updated.");
+  }
 }
 function componentDidUnmount() {
   return function () {

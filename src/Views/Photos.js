@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { convertCard } from "../controllers/convertCard";
 import { output } from "../utils/output";
 import FriedFishBasket from "../../assets/FriedFishBasket.jpg";
@@ -10,9 +10,9 @@ import ShrimpPoboy from "../../assets/ShrimpPoboy.jpg";
 import { Carousel } from "./Carousel";
 
 export function Photos() {
-	debugger;
+	const [didMount, setDidMount] = useState(false);
 	useEffect(componentDidMount, []);
-	useEffect(componentDidUpdate, []);
+	useEffect(componentDidUpdate);
 	useEffect(componentDidUnmount, []);
 	return (
 		<main>
@@ -21,10 +21,9 @@ export function Photos() {
 		</main>
 	);
 	function componentDidMount() {
-		document.title = "Photos";
+		setDidMount(true);
 		console.log("The component has mounted on the Photos page.");
-
-		return componentDidUnmount;
+		document.title = "Photos";
 
 		//OBJECTS WITH PROPERTIES IN A CARD W / IMAGE
 		// 	const card1 = { ""}
@@ -84,7 +83,9 @@ export function Photos() {
 	}
 }
 function componentDidUpdate() {
-	console.log("The component has updated.");
+	if (didMount === true) {
+		console.log("The component has updated.");
+	}
 }
 function componentDidUnmount() {
 	return function () {

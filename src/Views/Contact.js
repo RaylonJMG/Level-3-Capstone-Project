@@ -1,11 +1,12 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { handleRating } from "../controllers/handleRating";
 import { handleSubmit } from "../controllers/handleSubmit";
 import { handleForm } from "../controllers/handleForm";
 
 export function Contact() {
+	const [didMount, setDidMount] = useState(false);
 	useEffect(componentDidMount, []);
-	useEffect(componentDidUpdate, []);
+	useEffect(componentDidUpdate);
 	useEffect(componentDidUnmount, []);
 
 	return (
@@ -202,16 +203,17 @@ export function Contact() {
 	);
 }
 function componentDidMount() {
+	setDidMount(true);
+	console.log("The Contact component has mounted.");
 	document.title = "Contact";
-	console.log("The component has mounted on the Contact page.");
-
-	return componentDidUnmount;
 }
 function componentDidUpdate() {
-	console.log("The component has updated.");
+	if (didMount === true) {
+		console.log("The Contact component has updated.");
+	}
 }
 function componentDidUnmount() {
 	return function () {
-		console.log("The component has unmounted.");
+		console.log("The Contact component has unmounted.");
 	};
 }
