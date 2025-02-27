@@ -201,19 +201,20 @@ export function Contact() {
 			</main>
 		</>
 	);
-}
-function componentDidMount() {
-	setDidMount(true);
-	console.log("The Contact component has mounted.");
-	document.title = "Contact";
-}
-function componentDidUpdate() {
-	if (didMount === true) {
-		console.log("The Contact component has updated.");
+
+	function componentDidMount() {
+		setDidMount(true);
+		console.log("The Contact component has mounted.");
+		document.title = "Contact";
 	}
-}
-function componentDidUnmount() {
-	return function () {
-		console.log("The Contact component has unmounted.");
-	};
+	function componentDidUpdate() {
+		if (didMount === true) {
+			console.log("The Contact component has updated.");
+		}
+	}
+	function componentDidUnmount() {
+		return function () {
+			console.log("The Contact component has unmounted.");
+		};
+	}
 }
