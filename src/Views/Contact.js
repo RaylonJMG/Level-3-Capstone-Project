@@ -29,47 +29,50 @@ export function Contact() {
 								<section id="ratings">
 									<h5>Rate your food experience</h5>
 									<form>
-										<input
-											id="hated it"
-											type="radio"
-											name="rating"
-										/>
-										<label for="hated it">🤢Hated it!</label>
-										<br />
-										<input
-											id="disliked"
-											type="radio"
-											name="rating"
-										/>
-										<label for="disliked">😓Disliked it.</label>
-										<br />
-										<input
-											id="okay"
-											type="radio"
-											name="rating"
-										/>
-										<label for="okay">😔Meh...it was just okay.</label>
-										<br />
-										<input
-											id="liked"
-											type="radio"
-											name="rating"
-										/>
-										<label for="liked">😋Liked it.</label>
-										<br />
-										<input
-											id="loved"
-											type="radio"
-											name="rating"
-										/>
-										<label for="loved">😍 Loved it!</label>
-										<br />
-										<input
-											onSubmit={handleRating}
-											type="submit"
-											className="btn btn-sm rounded-3 bg-primary"
-											id="mixin-input"
-										/>
+										<fieldset>
+											<legend>Rating:</legend>
+											<input
+												id="hated it"
+												type="radio"
+												name="rating"
+											/>
+											<label htmlFor="hated it">🤢Hated it!</label>
+											<br />
+											<input
+												id="disliked"
+												type="radio"
+												name="rating"
+											/>
+											<label htmlFor="disliked">😓Disliked it.</label>
+											<br />
+											<input
+												id="okay"
+												type="radio"
+												name="rating"
+											/>
+											<label htmlFor="okay">😔Meh...it was just okay.</label>
+											<br />
+											<input
+												id="liked"
+												type="radio"
+												name="rating"
+											/>
+											<label htmlFor="liked">😋Liked it.</label>
+											<br />
+											<input
+												id="loved"
+												type="radio"
+												name="rating"
+											/>
+											<label htmlFor="loved">😍 Loved it!</label>
+											<br />
+											<input
+												onSubmit={handleRating}
+												type="submit"
+												className="btn btn-sm rounded-3 bg-primary"
+												id="mixin-input"
+											/>
+										</fieldset>
 									</form>{" "}
 								</section>
 								<hr />
@@ -79,7 +82,8 @@ export function Contact() {
 							<div className="col">
 								<section id="comments">
 									<form onSubmit={handleSubmit}>
-										<label for="fullName">Full Name:</label>
+										<p>Send Us a Message</p>
+										<label htmlFor="fullName">Full Name:</label>
 										<br />
 										<input
 											id="fullName"
@@ -87,7 +91,7 @@ export function Contact() {
 											placeholder="Enter First & Last Name"
 										/>
 										<br />
-										<label for="email">Email Address:</label>
+										<label htmlFor="email">Email Address:</label>
 										<br />
 										<input
 											id="email"
@@ -96,7 +100,7 @@ export function Contact() {
 											required
 										/>
 										<br />
-										<label for="message">Message:</label>
+										<label htmlFor="message">Message:</label>
 										<br />
 										<textarea id="message"></textarea>
 										<br />
@@ -112,6 +116,7 @@ export function Contact() {
 							</div>
 						</div>
 						<div className="row">
+							<h3>Catering</h3>
 							<div className="col">
 								<section id="catering">
 									<p>
@@ -125,7 +130,7 @@ export function Contact() {
 									</p>
 									<hr />
 									<form onSubmit={handleForm}>
-										<label for="firstName"> First Name:</label>
+										<label htmlFor="firstName"> First Name:</label>
 										<br />
 										<input
 											id="firstName"
@@ -135,7 +140,7 @@ export function Contact() {
 											placeholder="Enter First Name"
 										/>
 										<br />
-										<label for="lastName"> Last Name:</label>
+										<label htmlFor="lastName"> Last Name:</label>
 										<br />
 										<input
 											id="lastName"
@@ -145,7 +150,7 @@ export function Contact() {
 											placeholder="Enter Last Name"
 										/>
 										<br />
-										<label for="calendar">Phone Appointment:</label>
+										<label htmlFor="calendar">Phone Appointment:</label>
 										<br />
 										<input
 											id="calendar"
@@ -154,7 +159,7 @@ export function Contact() {
 											type="datetime-local"
 										/>
 										<br />
-										<label for="phoneNumber">Phone Number:</label>
+										<label htmlFor="phoneNumber">Phone Number:</label>
 										<br />
 										<input
 											id="phoneNumber"
@@ -165,7 +170,7 @@ export function Contact() {
 											pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
 										/>
 										<br />
-										<label for="email">Email:</label>
+										<label htmlFor="email">Email:</label>
 										<br />
 										<input
 											id="email"
@@ -175,7 +180,7 @@ export function Contact() {
 											placeholder="Enter Email Address"
 										/>
 										<br />
-										<label for="message">Optional Message:</label>
+										<label htmlFor="message">Optional Message:</label>
 										<br />
 										<textarea
 											name="message"
@@ -201,19 +206,20 @@ export function Contact() {
 			</main>
 		</>
 	);
-}
-function componentDidMount() {
-	setDidMount(true);
-	console.log("The Contact component has mounted.");
-	document.title = "Contact";
-}
-function componentDidUpdate() {
-	if (didMount === true) {
-		console.log("The Contact component has updated.");
+
+	function componentDidMount() {
+		setDidMount(true);
+		console.log("The Contact component has mounted.");
+		document.title = "Contact";
 	}
-}
-function componentDidUnmount() {
-	return function () {
-		console.log("The Contact component has unmounted.");
-	};
+	function componentDidUpdate() {
+		if (didMount === true) {
+			console.log("The Contact component has updated.");
+		}
+	}
+	function componentDidUnmount() {
+		return function () {
+			console.log("The Contact component has unmounted.");
+		};
+	}
 }
