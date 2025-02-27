@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
-import { convertCard } from "../controllers/convertCard";
-import { output } from "../utils/output";
-import FriedFishBasket from "../../assets/FriedFishBasket.jpg";
-import CheeseBurger from "../../assets/CheeseBurger.jpg";
-import ChefsKissSalad from "../../assets/ChefsKissSalad.jpg";
-import SeafoodGumbo from "../../assets/SeafoodGumbo.jpg";
-import ChickenBasket from "../../assets/ChickenBasket.jpg";
-import ShrimpPoboy from "../../assets/ShrimpPoboy.jpg";
+// import { convertCard } from "../controllers/convertCard";
+// import { output } from "../utils/output";
+// import FriedFishBasket from "../../assets/FriedFishBasket.jpg";
+// import CheeseBurger from "../../assets/CheeseBurger.jpg";
+// import ChefsKissSalad from "../../assets/ChefsKissSalad.jpg";
+// import SeafoodGumbo from "../../assets/SeafoodGumbo.jpg";
+// import ChickenBasket from "../../assets/ChickenBasket.jpg";
+// import ShrimpPoboy from "../../assets/ShrimpPoboy.jpg";
 import { Carousel } from "./Carousel";
 
 export function Photos() {
@@ -20,29 +20,29 @@ export function Photos() {
 			<Carousel />
 			<div className="container">
 				<div className="row">
-					<div className="col">CARD1</div>
-					<div className="row">
-						<div className="col">CARD2</div>
-					</div>
-					<div className="row">
-						<div className="col">CARD3</div>
-					</div>
-					<div className="row">
-						<div className="col">CARD4</div>
-					</div>
-					<div className="row">
-						<div className="col">CARD5</div>
-					</div>
-					<div className="row">
-						<div className="col">CARD6</div>
-					</div>
+					<div className="col-6">CARD1</div>
+				</div>
+				<div className="row">
+					<div className="col-6">CARD2</div>
+				</div>
+				<div className="row">
+					<div className="col-6">CARD3</div>
+				</div>
+				<div className="row">
+					<div className="col-6">CARD4</div>
+				</div>
+				<div className="row">
+					<div className="col-6">CARD5</div>
+				</div>
+				<div className="row">
+					<div className="col-6">CARD6</div>
 				</div>
 			</div>
 		</main>
 	);
 	function componentDidMount() {
 		setDidMount(true);
-		console.log("The component has mounted on the Photos page.");
+		console.log("The Photos component has mounted.");
 		document.title = "Photos";
 
 		//OBJECTS WITH PROPERTIES IN A CARD W / IMAGE
@@ -101,15 +101,14 @@ export function Photos() {
 		//             output(cardString);
 		//         }
 	}
-
-	function componentDidUpdate() {
-		if (didMount === true) {
-			console.log("The component has updated.");
-		}
+}
+function componentDidUpdate() {
+	if (didMount === true) {
+		console.log("The Photos component has updated.");
 	}
-	function componentDidUnmount() {
-		return function () {
-			console.log("The component has unmounted.");
-		};
-	}
+}
+function componentDidUnmount() {
+	return function () {
+		console.log("The Photos component has unmounted.");
+	};
 }
