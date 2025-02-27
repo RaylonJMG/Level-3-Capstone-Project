@@ -17,29 +17,35 @@ export function Photos() {
 	return (
 		<main>
 			<h1>Good Food Hall of Fame</h1>
-			<Carousel />
+
 			<div className="container">
 				<div className="row">
-					<div className="col-6">CARD1</div>
+					<div className="col-8 col-md-10 col-lg-12">
+						<Carousel />
+					</div>
 				</div>
 				<div className="row">
-					<div className="col-6">CARD2</div>
+					<div className="col-6 col-md-6 col-lg-12">CARD1</div>
 				</div>
 				<div className="row">
-					<div className="col-6">CARD3</div>
+					<div className="col-6 col-md-6 col-lg-12">CARD2</div>
 				</div>
 				<div className="row">
-					<div className="col-6">CARD4</div>
+					<div className="col-6 col-md-6 col-lg-12">CARD3</div>
 				</div>
 				<div className="row">
-					<div className="col-6">CARD5</div>
+					<div className="col-6 col-md-6 col-lg-12">CARD4</div>
 				</div>
 				<div className="row">
-					<div className="col-6">CARD6</div>
+					<div className="col-6 col-md-6 col-lg-12">CARD5</div>
+				</div>
+				<div className="row">
+					<div className="col-6 col-md-6 col-lg-12">CARD6</div>
 				</div>
 			</div>
 		</main>
 	);
+
 	function componentDidMount() {
 		setDidMount(true);
 		console.log("The Photos component has mounted.");
@@ -101,14 +107,15 @@ export function Photos() {
 		//             output(cardString);
 		//         }
 	}
-}
-function componentDidUpdate() {
-	if (didMount === true) {
-		console.log("The Photos component has updated.");
+
+	function componentDidUpdate() {
+		if (didMount === true) {
+			console.log("The Photos component has updated.");
+		}
 	}
-}
-function componentDidUnmount() {
-	return function () {
-		console.log("The Photos component has unmounted.");
-	};
+	function componentDidUnmount() {
+		return function () {
+			console.log("The Photos component has unmounted.");
+		};
+	}
 }
