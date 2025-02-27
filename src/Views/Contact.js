@@ -27,8 +27,8 @@ export function Contact() {
 						<div className="row">
 							<div className="col">
 								<section id="ratings">
-									<h5>Rate your food experience</h5>
-									<form>
+									<form id="ratingsForm">
+										<p>How was your food experience?</p>{" "}
 										<fieldset>
 											<legend>Rating:</legend>
 											<input
@@ -81,7 +81,9 @@ export function Contact() {
 						<div className="row">
 							<div className="col">
 								<section id="comments">
-									<form onSubmit={handleSubmit}>
+									<form
+										onSubmit={handleSubmit}
+										id="commentsForm">
 										<p>Send Us a Message</p>
 										<label htmlFor="fullName">Full Name:</label>
 										<br />
@@ -121,15 +123,15 @@ export function Contact() {
 								<section id="catering">
 									<p>
 										Looking to eat Good Food at your next family, corporate, or
-										festival event?
-									</p>
-									<p>
-										We offer catering services for events of any size!
+										festival event? We offer catering services for events of any
+										size!
 										<br /> Schedule a phone appointment with our Good Food Hosts
 										to book today!
 									</p>
 									<hr />
-									<form onSubmit={handleForm}>
+									<form
+										onSubmit={handleForm}
+										id="cateringForm">
 										<label htmlFor="firstName"> First Name:</label>
 										<br />
 										<input
@@ -190,11 +192,13 @@ export function Contact() {
 											id="mixin-button"
 											type="submit"
 											value="Submit"
+											className="btn btn-sm rounded-3 bg-primary"
 										/>
 										<input
 											id="mixin-button"
 											type="reset"
 											value="Reset form"
+											className="btn btn-sm rounded-3 bg-primary"
 										/>
 									</form>
 									<output id="outputTag"></output>
