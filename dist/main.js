@@ -2944,7 +2944,10 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function NavCollapse() {
+<<<<<<< HEAD
   //debugger;
+=======
+>>>>>>> NavCollapse
   const domain = window.location.hostname;
   let rootPath = "";
   if (domain === "raylonjmg.github.io") rootPath = "good-food-hut";
