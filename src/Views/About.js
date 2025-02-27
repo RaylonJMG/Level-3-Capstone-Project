@@ -15,7 +15,7 @@ export function About() {
 		<main>
 			<div className="container">
 				<div className="row">
-					<div className="col">
+					<div className="col-12">
 						<section>
 							<h1>About Us</h1>
 							<img

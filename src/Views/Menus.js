@@ -12,11 +12,11 @@ export function Menus() {
 			<main>
 				<div className="container">
 					<div className="row">
-						<div className="col">
+						<div className="col-12">
 							<h1>Full Menu</h1>
 							<p> ASK ABOUT OUR DAILY SPECIALS!</p>
 						</div>
-						<div className="col">
+						<div className="col-6">
 							<section>
 								<h2 id="appetizers">Appetizers</h2>
 								<ul className="list-group text-primary border border-5 border-primary">
@@ -33,7 +33,7 @@ export function Menus() {
 								</ul>
 							</section>
 						</div>
-						<div className="col">
+						<div className="col-6">
 							<section>
 								<h3 id="soups">Soups, Salads, and Gumbos</h3>
 								<p>
@@ -60,7 +60,7 @@ export function Menus() {
 								<hr />
 							</section>
 						</div>
-						<div className="col">
+						<div className="col-6">
 							<section>
 								<h3 id="poboys">
 									Overstuffed Po-Boys
@@ -88,7 +88,7 @@ export function Menus() {
 								<hr />
 							</section>
 						</div>
-						<div className="col">
+						<div className="col-6">
 							<h3 id="baskets">Baskets</h3>
 							<ul className="list-group text-primary border border-5 border-primary">
 								<li className="list-group-item">Shrimp Basket</li>
@@ -103,7 +103,7 @@ export function Menus() {
 							</ul>
 							<hr />
 						</div>
-						<div className="col">
+						<div className="col-6">
 							<h3 id="burgers">Burgers</h3>
 							<p className="text-center fs-6">
 								Served with choice of Fries, Onion Rings, or Tater tots
@@ -128,7 +128,7 @@ export function Menus() {
 							</ul>
 							<hr />
 						</div>
-						<div className="col">
+						<div className="col-6">
 							<h3
 								id="snacks"
 								className="text-center">
@@ -143,7 +143,7 @@ export function Menus() {
 							<hr />
 						</div>
 						<div className="row">
-							<div className="col">
+							<div className="col-6">
 								<h3
 									id="drinks"
 									className="text-center">
@@ -163,7 +163,7 @@ export function Menus() {
 									<li className="list-group-item">Strawberry Lemonade</li>
 								</ul>
 							</div>
-							<div className="col">
+							<div className="col-6">
 								<h3
 									id="alcoholic"
 									className="text-center">

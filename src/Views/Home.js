@@ -18,7 +18,7 @@ export function Home() {
 			<main id="homeMain">
 				<div className="container">
 					<div className="row">
-						<div className="col">
+						<div className="col-12">
 							{" "}
 							<h1>Good Food Hut</h1>
 							<div>{welcome}</div>
@@ -33,7 +33,7 @@ export function Home() {
 						</div>
 					</div>
 					<div className="row">
-						<div className="col">
+						<div className="col-12">
 							<h2>Our Mission</h2>
 							<p>
 								Our mission is to provide a comfortable, fun, and welcoming
@@ -47,12 +47,14 @@ export function Home() {
 
 				<div className="container">
 					<div className="row">
-						<div className="col">
+						<div className="col-8">
 							<img
 								src={Interior}
 								alt="Good Food Hut Interior"
 								className="img-fluid"
 							/>
+						</div>
+						<div className="col-4">
 							<p>
 								So whether it's for some quality time with the family,
 								"chillaxation" time with your friends, or decompression time

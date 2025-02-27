@@ -2184,7 +2184,7 @@ function About() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "row"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "col"
+    className: "col-12"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, "About Us"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
     alt: "America's Best Food Award logo",
     src: _assets_BestInAmerica_jpg__WEBPACK_IMPORTED_MODULE_2__,
@@ -2338,8 +2338,10 @@ function Contact() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "row"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "col"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, "Contact Us!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("hr", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "We love hearing from our customers. Please feel free to leave a rating, comments, suggestions, or ask any inquiries in the form below. Thank you in advance. We look forward to serving you again soon.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "col-12"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, "Contact Us!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("hr", null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "col-12"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "We love hearing from our customers. Please feel free to leave a rating, comments, suggestions, or ask any inquiries in the form below. Thank you in advance. We look forward to serving you again soon.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "row"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "col"
@@ -2383,7 +2385,7 @@ function Contact() {
   })), " "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("hr", null))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "row"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "col"
+    className: "col-12"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
     id: "comments"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("form", {
@@ -2413,7 +2415,7 @@ function Contact() {
   }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("hr", null))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "row"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "col"
+    className: "col-12"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
     id: "catering"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Looking to eat Good Food at your next family, corporate, or festival event?"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "We offer catering services for events of any size!", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), " Schedule a phone appointment with our Good Food Hosts to book today!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("hr", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("form", {
@@ -2579,22 +2581,24 @@ function Home() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "row"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "col"
-  }, " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, "Good Food Hut"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, welcome), "//welcome message displayed here", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", null, "Delighting Tastebuds since 1988"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Visit our Sesame Street Location and try all that the Good Food Hut has to offer. We have been sharing our Good Food Philosophy for over 20 years and you haven't seen nor tasted anything yet!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("hr", null))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "col-12"
+  }, " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, "Good Food Hut"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, welcome), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", null, "Delighting Tastebuds since 1988"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Visit our Sesame Street Location and try all that the Good Food Hut has to offer. We have been sharing our Good Food Philosophy for over 20 years and you haven't seen nor tasted anything yet!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("hr", null))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "row"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "col"
+    className: "col-12"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", null, "Our Mission"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Our mission is to provide a comfortable, fun, and welcoming environment for our guests to enjoy good food, good music, and good vibes. We are committed to providing the best service and quality food that will keep you coming back for more.")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "container"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "row"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "col"
+    className: "col-8"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
     src: _assets_Interior_jpg__WEBPACK_IMPORTED_MODULE_2__,
     alt: "Good Food Hut Interior",
     className: "img-fluid"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "So whether it's for some quality time with the family, \"chillaxation\" time with your friends, or decompression time with the colleagues...we have created a space that honors a relaxed and authentic vibe that'll make you feel like you belong here, because you do!\uD83D\uDE09"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h4", null, "Welcome home, Suga'!"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("hr", null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "col-4"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "So whether it's for some quality time with the family, \"chillaxation\" time with your friends, or decompression time with the colleagues...we have created a space that honors a relaxed and authentic vibe that'll make you feel like you belong here, because you do!\uD83D\uDE09"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h4", null, "Welcome home, Suga'!"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("hr", null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "text-center"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
     onClick: _controllers_handleAdvice__WEBPACK_IMPORTED_MODULE_1__.handleAdvice,
@@ -2700,9 +2704,9 @@ function Menus() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "row"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "col"
+    className: "col-12"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, "Full Menu"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, " ASK ABOUT OUR DAILY SPECIALS!")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "col"
+    className: "col-6"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
     id: "appetizers"
   }, "Appetizers"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
@@ -2720,7 +2724,7 @@ function Menus() {
   }, "Shrimp Pistolette", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
     className: "badge bg-success"
   }, "Customer Rated 10/10 \uD83D\uDE0D"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "col"
+    className: "col-6"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
     id: "soups"
   }, "Soups, Salads, and Gumbos"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "All Soups/Gumbos served with Potato Salad or Side Salad and Crackers"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
@@ -2741,7 +2745,7 @@ function Menus() {
   }, "Seafood Gumbo"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
     className: "list-group-item"
   }, "Chicken and Sausage Gumbo")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("hr", null))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "col"
+    className: "col-6"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
     id: "poboys"
   }, "Overstuffed Po-Boys", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), " (Half or Whole)"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
@@ -2769,7 +2773,7 @@ function Menus() {
   }, "Hamburger"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
     className: "list-group-item"
   }, "Cheeseburger")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("hr", null))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "col"
+    className: "col-6"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
     id: "baskets"
   }, "Baskets"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
@@ -2789,7 +2793,7 @@ function Menus() {
   }, "Chicken Tender Basket"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
     className: "list-group-item"
   }, "Kid's Basket (with fries and roll)")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("hr", null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "col"
+    className: "col-6"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
     id: "burgers"
   }, "Burgers"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
@@ -2811,7 +2815,7 @@ function Menus() {
   }, " ", "Customer Rated 10/10 \uD83D\uDE0D")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
     className: "list-group-item"
   }, "Shrimp, Catfish, or Crawfish Burger")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("hr", null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "col"
+    className: "col-6"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
     id: "snacks",
     className: "text-center"
@@ -2828,7 +2832,7 @@ function Menus() {
   }, "Onion Rings")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("hr", null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "row"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "col"
+    className: "col-6"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
     id: "drinks",
     className: "text-center"
@@ -2857,7 +2861,7 @@ function Menus() {
   }, "Lemonade"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
     className: "list-group-item"
   }, "Strawberry Lemonade"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "col"
+    className: "col-6"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
     id: "alcoholic",
     className: "text-center"
@@ -2945,9 +2949,10 @@ __webpack_require__.r(__webpack_exports__);
 
 function NavCollapse() {
   //debugger;
-  const domain = window.location.hostname;
-  let rootPath = "";
-  if (domain === "raylonjmg.github.io") rootPath = "good-food-hut";
+  // const domain = window.location.hostname;
+  // let rootPath = "";
+  // if (domain === "raylonjmg.github.io") rootPath = "good-food-hut";
+
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("nav", {
     className: "nav-pills navbar navbar-expand-sm bg-body-tertiary"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
@@ -3000,34 +3005,52 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _controllers_convertCard__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../controllers/convertCard */ "./src/controllers/convertCard.js");
-/* harmony import */ var _utils_output__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../utils/output */ "./src/utils/output.js");
-/* harmony import */ var _assets_FriedFishBasket_jpg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../assets/FriedFishBasket.jpg */ "./assets/FriedFishBasket.jpg");
-/* harmony import */ var _assets_CheeseBurger_jpg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../assets/CheeseBurger.jpg */ "./assets/CheeseBurger.jpg");
-/* harmony import */ var _assets_ChefsKissSalad_jpg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../assets/ChefsKissSalad.jpg */ "./assets/ChefsKissSalad.jpg");
-/* harmony import */ var _assets_SeafoodGumbo_jpg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../assets/SeafoodGumbo.jpg */ "./assets/SeafoodGumbo.jpg");
-/* harmony import */ var _assets_ChickenBasket_jpg__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../assets/ChickenBasket.jpg */ "./assets/ChickenBasket.jpg");
-/* harmony import */ var _assets_ShrimpPoboy_jpg__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../assets/ShrimpPoboy.jpg */ "./assets/ShrimpPoboy.jpg");
-/* harmony import */ var _Carousel__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./Carousel */ "./src/Views/Carousel.js");
+/* harmony import */ var _Carousel__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Carousel */ "./src/Views/Carousel.js");
 
-
-
-
-
-
-
-
-
+// import { convertCard } from "../controllers/convertCard";
+// import { output } from "../utils/output";
+// import FriedFishBasket from "../../assets/FriedFishBasket.jpg";
+// import CheeseBurger from "../../assets/CheeseBurger.jpg";
+// import ChefsKissSalad from "../../assets/ChefsKissSalad.jpg";
+// import SeafoodGumbo from "../../assets/SeafoodGumbo.jpg";
+// import ChickenBasket from "../../assets/ChickenBasket.jpg";
+// import ShrimpPoboy from "../../assets/ShrimpPoboy.jpg";
 
 function Photos() {
   const [didMount, setDidMount] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidMount, []);
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUpdate);
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUnmount, []);
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, "Good Food Hall of Fame"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Carousel__WEBPACK_IMPORTED_MODULE_9__.Carousel, null));
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, "Good Food Hall of Fame"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Carousel__WEBPACK_IMPORTED_MODULE_1__.Carousel, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "container"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "row"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "col-6"
+  }, "CARD1")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "row"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "col-6"
+  }, "CARD2")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "row"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "col-6"
+  }, "CARD3")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "row"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "col-6"
+  }, "CARD4")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "row"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "col-6"
+  }, "CARD5")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "row"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "col-6"
+  }, "CARD6"))));
   function componentDidMount() {
     setDidMount(true);
-    console.log("The component has mounted on the Photos page.");
+    console.log("The Photos component has mounted.");
     document.title = "Photos";
 
     //OBJECTS WITH PROPERTIES IN A CARD W / IMAGE
@@ -3089,71 +3112,13 @@ function Photos() {
 }
 function componentDidUpdate() {
   if (didMount === true) {
-    console.log("The component has updated.");
+    console.log("The Photos component has updated.");
   }
 }
 function componentDidUnmount() {
   return function () {
-    console.log("The component has unmounted.");
+    console.log("The Photos component has unmounted.");
   };
-}
-/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-  className: "container"
-}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-  className: "row"
-}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-  className: "col"
-}, "CARD1"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-  className: "row"
-}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-  className: "col"
-}, "CARD2")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-  className: "row"
-}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-  className: "col"
-}, "CARD3")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-  className: "row"
-}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-  className: "col"
-}, "CARD4")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-  className: "row"
-}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-  className: "col"
-}, "CARD5")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-  className: "row"
-}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-  className: "col"
-}, "CARD6"))));
-
-/***/ }),
-
-/***/ "./src/controllers/convertCard.js":
-/*!****************************************!*\
-  !*** ./src/controllers/convertCard.js ***!
-  \****************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   convertCard: () => (/* binding */ convertCard)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-
-
-//CONVERTS BOOSTSTRAP OBJECT CARDS INTO A TEMPLATE STRING
-function convertCard(cardObject) {
-  const cardString = `<div class="card">
-            <img
-              class="card-body"
-              alt="${cardObject.alt}"
-              src="${cardObject.src}"
-              height="500px" width="500px"
-            />
-            <h3 class="card-title">${cardObject.title}</h3> 
-            <h4 class="card-summary">${cardObject.summary}</h4>
-          </div>`;
-  return cardString;
 }
 
 /***/ }),
@@ -3787,16 +3752,6 @@ module.exports = __webpack_require__.p + "2c6486d21ae1ee762ae2.jpg";
 
 /***/ }),
 
-/***/ "./assets/ChickenBasket.jpg":
-/*!**********************************!*\
-  !*** ./assets/ChickenBasket.jpg ***!
-  \**********************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "6b505ce079ad40e05da8.jpg";
-
-/***/ }),
-
 /***/ "./assets/FriedFishBasket.jpg":
 /*!************************************!*\
   !*** ./assets/FriedFishBasket.jpg ***!
@@ -3827,16 +3782,6 @@ module.exports = __webpack_require__.p + "5da0086a61c3e65e3712.jpg";
 
 /***/ }),
 
-/***/ "./assets/SeafoodGumbo.jpg":
-/*!*********************************!*\
-  !*** ./assets/SeafoodGumbo.jpg ***!
-  \*********************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "26409df942713808fc14.jpg";
-
-/***/ }),
-
 /***/ "./assets/Seasonings.jpg":
 /*!*******************************!*\
   !*** ./assets/Seasonings.jpg ***!
@@ -3844,16 +3789,6 @@ module.exports = __webpack_require__.p + "26409df942713808fc14.jpg";
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 module.exports = __webpack_require__.p + "2e2a0f2e762a823d4a24.jpg";
-
-/***/ }),
-
-/***/ "./assets/ShrimpPoboy.jpg":
-/*!********************************!*\
-  !*** ./assets/ShrimpPoboy.jpg ***!
-  \********************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "7d64e7eec2fa93e8c0b9.jpg";
 
 /***/ }),
 

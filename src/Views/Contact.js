@@ -14,9 +14,11 @@ export function Contact() {
 			<main>
 				<div className="container">
 					<div className="row">
-						<div className="col">
+						<div className="col-12">
 							<h1>Contact Us!</h1>
 							<hr />
+						</div>
+						<div className="col-12">
 							<p>
 								We love hearing from our customers. Please feel free to leave a
 								rating, comments, suggestions, or ask any inquiries in the form
@@ -76,7 +78,7 @@ export function Contact() {
 							</div>
 						</div>
 						<div className="row">
-							<div className="col">
+							<div className="col-12">
 								<section id="comments">
 									<form onSubmit={handleSubmit}>
 										<label for="fullName">Full Name:</label>
@@ -112,7 +114,7 @@ export function Contact() {
 							</div>
 						</div>
 						<div className="row">
-							<div className="col">
+							<div className="col-12">
 								<section id="catering">
 									<p>
 										Looking to eat Good Food at your next family, corporate, or
