@@ -18,6 +18,26 @@ export function Photos() {
 		<main>
 			<h1>Good Food Hall of Fame</h1>
 			<Carousel />
+			<div className="container">
+				<div className="row">
+					<div className="col">CARD1</div>
+					<div className="row">
+						<div className="col">CARD2</div>
+					</div>
+					<div className="row">
+						<div className="col">CARD3</div>
+					</div>
+					<div className="row">
+						<div className="col">CARD4</div>
+					</div>
+					<div className="row">
+						<div className="col">CARD5</div>
+					</div>
+					<div className="row">
+						<div className="col">CARD6</div>
+					</div>
+				</div>
+			</div>
 		</main>
 	);
 	function componentDidMount() {
@@ -81,35 +101,15 @@ export function Photos() {
 		//             output(cardString);
 		//         }
 	}
-}
-function componentDidUpdate() {
-	if (didMount === true) {
-		console.log("The component has updated.");
+
+	function componentDidUpdate() {
+		if (didMount === true) {
+			console.log("The component has updated.");
+		}
+	}
+	function componentDidUnmount() {
+		return function () {
+			console.log("The component has unmounted.");
+		};
 	}
 }
-function componentDidUnmount() {
-	return function () {
-		console.log("The component has unmounted.");
-	};
-}
-
-<div className="container">
-	<div className="row">
-		<div className="col">CARD1</div>
-		<div className="row">
-			<div className="col">CARD2</div>
-		</div>
-		<div className="row">
-			<div className="col">CARD3</div>
-		</div>
-		<div className="row">
-			<div className="col">CARD4</div>
-		</div>
-		<div className="row">
-			<div className="col">CARD5</div>
-		</div>
-		<div className="row">
-			<div className="col">CARD6</div>
-		</div>
-	</div>
-</div>;

@@ -3023,7 +3023,33 @@ function Photos() {
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidMount, []);
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUpdate);
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUnmount, []);
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, "Good Food Hall of Fame"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Carousel__WEBPACK_IMPORTED_MODULE_9__.Carousel, null));
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, "Good Food Hall of Fame"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Carousel__WEBPACK_IMPORTED_MODULE_9__.Carousel, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "container"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "row"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "col"
+  }, "CARD1"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "row"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "col"
+  }, "CARD2")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "row"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "col"
+  }, "CARD3")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "row"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "col"
+  }, "CARD4")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "row"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "col"
+  }, "CARD5")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "row"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "col"
+  }, "CARD6")))));
   function componentDidMount() {
     setDidMount(true);
     console.log("The component has mounted on the Photos page.");
@@ -3085,44 +3111,17 @@ function Photos() {
     //             output(cardString);
     //         }
   }
-}
-function componentDidUpdate() {
-  if (didMount === true) {
-    console.log("The component has updated.");
+  function componentDidUpdate() {
+    if (didMount === true) {
+      console.log("The component has updated.");
+    }
+  }
+  function componentDidUnmount() {
+    return function () {
+      console.log("The component has unmounted.");
+    };
   }
 }
-function componentDidUnmount() {
-  return function () {
-    console.log("The component has unmounted.");
-  };
-}
-/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-  className: "container"
-}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-  className: "row"
-}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-  className: "col"
-}, "CARD1"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-  className: "row"
-}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-  className: "col"
-}, "CARD2")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-  className: "row"
-}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-  className: "col"
-}, "CARD3")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-  className: "row"
-}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-  className: "col"
-}, "CARD4")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-  className: "row"
-}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-  className: "col"
-}, "CARD5")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-  className: "row"
-}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-  className: "col"
-}, "CARD6"))));
 
 /***/ }),
 
