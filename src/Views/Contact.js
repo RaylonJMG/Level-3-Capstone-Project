@@ -11,16 +11,14 @@ export function Contact() {
 
 	return (
 		<>
-			<main>
-				<div className="container-fluid">
+			<main style={{ textAlign: "center" }}>
+				<div className="container">
 					<div className="row">
-						<div
-							className="col-12 col-md-6"
-							style={{ textAlign: "center" }}>
-							<h1>Contact Us!</h1>
+						<div className="col-12 col-md-10 col-lg-12 ">
+							<h1> Contact Us! </h1>
 							<hr />
 						</div>
-						<div className="col-12 col-md-6"></div>
+						<div className="col-12 col-md-6 col-lg-12"></div>
 						<p>
 							We love hearing from our customers. Please feel free to leave a
 							rating, comments, suggestions, or ask any inquiries in the form
@@ -29,8 +27,10 @@ export function Contact() {
 						</p>
 					</div>
 					<div className="row">
-						<div className="col-12 col-md-6 ">
-							<section id="ratings">
+						<div className="col-12 col-md-10 col-lg-12">
+							<section
+								id="ratings"
+								style={{ textAlign: "center" }}>
 								<h5>Rate your food experience</h5>
 								<form>
 									<input
@@ -80,10 +80,10 @@ export function Contact() {
 						</div>
 					</div>
 					<div className="row">
-						<div
-							className="col-12 col-md-6"
-							style={{ textAlign: "center" }}>
-							<section id="comments">
+						<div className="col-12 col-md-10 col-lg-12">
+							<section
+								id="comments"
+								style={{ textAlign: "center" }}>
 								<form onSubmit={handleSubmit}>
 									<label for="fullName">Full Name:</label>
 									<br />
@@ -118,7 +118,7 @@ export function Contact() {
 						</div>
 					</div>
 					<div className="row">
-						<div className="col-12 col-md-6">
+						<div className="col-12 col-md-10 col-lg-12">
 							<section
 								id="catering"
 								style={{ textAlign: "center" }}>
