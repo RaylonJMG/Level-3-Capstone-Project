@@ -2909,21 +2909,21 @@ function Menus() {
   }, "Snack Bites"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
     href: "#drinks"
   }, "Ice Cold Beverages"))));
-}
-function componentDidMount() {
-  setDidMount(true);
-  console.log("The Menus component has mounted.");
-  document.title = "Menus";
-}
-function componentDidUpdate() {
-  if (didMount === true) {
-    console.log("The Menus component has updated.");
+  function componentDidMount() {
+    setDidMount(true);
+    console.log("The Menus component has mounted.");
+    document.title = "Menus";
   }
-}
-function componentDidUnmount() {
-  return function () {
-    console.log("The Menus component has unmounted.");
-  };
+  function componentDidUpdate() {
+    if (didMount === true) {
+      console.log("The Menus component has updated.");
+    }
+  }
+  function componentDidUnmount() {
+    return function () {
+      console.log("The Menus component has unmounted.");
+    };
+  }
 }
 
 /***/ }),
