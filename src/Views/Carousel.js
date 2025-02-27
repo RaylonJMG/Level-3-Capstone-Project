@@ -1,4 +1,7 @@
 import React from "react";
+import CheeseBurger from "../../assets/CheeseBurger.jpg";
+import Gumbo from "../../assets/Gumbo.jpg";
+import ChefsKissSalad from "../../assets/ChefsKissSalad.jpg";
 
 export function Carousel() {
 	return (
@@ -30,21 +33,21 @@ export function Carousel() {
 			<div className="carousel-inner">
 				<div className="carousel-item active">
 					<img
-						src={src}
+						src={CheeseBurger}
 						className="d-block w-100"
 						alt="CheeseBurger"
 					/>
 				</div>
 				<div className="carousel-item">
 					<img
-						src={src}
+						src={Gumbo}
 						className="d-block w-100"
 						alt="Gumbo"
 					/>
 				</div>
 				<div className="carousel-item">
 					<img
-						src={src}
+						src={ChefsKissSalad}
 						className="d-block w-100"
 						alt="ChefsKissSalad"
 					/>
