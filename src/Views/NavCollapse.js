@@ -3,9 +3,9 @@ import { NavLink } from "react-router";
 
 export function NavCollapse() {
 	//debugger;
-	// const domain = window.location.hostname;
-	// let rootPath = "";
-	// if (domain === "raylonjmg.github.io") rootPath = "good-food-hut";
+	const domain = window.location.hostname;
+	let rootPath = "";
+	if (domain === "raylonjmg.github.io") rootPath = "good-food-hut";
 
 	return (
 		<nav className="nav-pills navbar navbar-expand-sm bg-body-tertiary">

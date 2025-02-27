@@ -16,14 +16,15 @@ export function Home() {
 	return (
 		<>
 			<main id="homeMain">
-				<div className="container">
+				<div className="container-fluid">
 					<div className="row">
 						<div className="col-12">
-							{" "}
 							<h1>Good Food Hut</h1>
-							<div>{welcome}</div>
 							<h3>Delighting Tastebuds since 1988</h3>
 							<br />
+							<h4>{welcome}</h4>
+							<br />
+							<hr />
 							<p>
 								Visit our Sesame Street Location and try all that the Good Food
 								Hut has to offer. We have been sharing our Good Food Philosophy
@@ -44,37 +45,45 @@ export function Home() {
 						</div>
 					</div>
 				</div>
-
-				<div className="container">
+				<div className="container-fluid">
 					<div className="row">
-						<div className="col-8">
+						<div className="col-12">
+							<h2>Our Space</h2>
 							<img
 								src={Interior}
 								alt="Good Food Hut Interior"
 								className="img-fluid"
+								style={{ width: "100%" }}
 							/>
 						</div>
-						<div className="col-4">
-							<p>
-								So whether it's for some quality time with the family,
-								"chillaxation" time with your friends, or decompression time
-								with the colleagues...we have created a space that honors a
-								relaxed and authentic vibe that'll make you feel like you belong
-								here, because you do!😉
-							</p>
-							<h4>Welcome home, Suga'!</h4>
+						<div className="row">
+							<div className="col-12">
+								<h2>Our Vibe</h2>
+								<p>
+									So whether it's for some quality time with the family,
+									"chillaxation" time with your friends, or decompression time
+									with the colleagues...we have created a space that honors a
+									relaxed and authentic vibe that'll make you feel like you
+									belong here, because you do!😉
+								</p>
+								<h4>Welcome home, Suga'!</h4>
+							</div>
 						</div>
 					</div>
 					<hr />
 				</div>
-				<div className="text-center">
-					<button
-						onClick={handleAdvice}
-						className="btn btn-sm rounded-3 bg-primary"
-						id="mixin-button">
-						Get Random Advice Here
-					</button>
+				<div className="row">
+					<div className="col-12"></div>
+					<div className="text-center">
+						<button
+							onClick={handleAdvice}
+							className="btn btn-sm rounded-3 bg-primary"
+							id="mixin-button">
+							Get Random Advice Here
+						</button>
+					</div>
 				</div>
+				<br />
 				<output id="outputTag"></output>
 			</main>
 		</>
