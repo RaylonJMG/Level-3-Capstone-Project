@@ -2976,10 +2976,10 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function NavCollapse() {
-  debugger;
+  //debugger;
   const domain = window.location.hostname;
   let rootPath = "";
-  if (domain === "raylonjmg.github.io") rootPath = "/Level-3-Capstone-Project";
+  if (domain === "raylonjmg.github.io") rootPath = "/Level-3-Capstone-Project/";
   //console.log(` The domain is ${domain}`);
 
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("nav", {
@@ -14321,6 +14321,11 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+
+// const domain = window.location.hostname;
+// let rootPath = "";
+// if (domain === "raylonjmg.github.io") rootPath = "/Level-3-Capstone-Project";
 
 const bodyTag = document.getElementById("bodyTag");
 const root = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_1__.createRoot)(bodyTag);
