@@ -2345,7 +2345,7 @@ function Contact() {
     className: "row"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "col-12 col-md-10 col-lg-12 "
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, " Contact Us! "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("hr", null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, " Contact Us! "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("hr", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "We love hearing from our customers. Please feel free to leave a rating, comments, suggestions, or ask any inquiries in the form below. Thank you in advance. We look forward to serving you again soon.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "row"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "col-12 col-md-6 col-lg-12"
@@ -2359,31 +2359,41 @@ function Contact() {
     name: "rating"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
     htmlFor: "hated it"
-  }, "\uD83E\uDD22Hated it!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
+  }, "\uD83E\uDD22Hated it!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("i", {
+    className: "bi bi-emoji-tear"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
     id: "disliked",
     type: "radio",
     name: "rating"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
     htmlFor: "disliked"
-  }, "\uD83D\uDE13Disliked it."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
+  }, "\uD83D\uDE13Disliked it."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("i", {
+    className: "bi bi-emoji-frown"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
     id: "okay",
     type: "radio",
     name: "rating"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
     htmlFor: "okay"
-  }, "\uD83D\uDE14Meh...it was just okay."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
+  }, "\uD83D\uDE14Meh...it was just okay."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("i", {
+    className: "bi bi-emoji-neutral"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
     id: "liked",
     type: "radio",
     name: "rating"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
     htmlFor: "liked"
-  }, "\uD83D\uDE0BLiked it."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
+  }, "\uD83D\uDE0BLiked it."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("i", {
+    className: "bi bi-emoji-smile"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
     id: "loved",
     type: "radio",
     name: "rating"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
     htmlFor: "loved"
-  }, "\uD83D\uDE0D Loved it!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
+  }, "\uD83D\uDE0D Loved it!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("i", {
+    className: "bi bi-emoji-heart-eyes"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
     onSubmit: _controllers_handleRating__WEBPACK_IMPORTED_MODULE_1__.handleRating,
     type: "submit",
     className: "btn btn-sm rounded-3 bg-primary",
@@ -2403,7 +2413,9 @@ function Contact() {
     id: "fullName",
     type: "text",
     placeholder: "Enter First & Last Name"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("i", {
+    className: "bi bi-envelope-at"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
     htmlFor: "email"
   }, "Email Address:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
     id: "email",
@@ -2444,14 +2456,18 @@ function Contact() {
     name: "lastName",
     type: "text",
     placeholder: "Enter Last Name"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("i", {
+    className: "bi bi-calendar4-week"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
     htmlFor: "calendar"
   }, "Phone Appointment:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
     id: "calendar",
     required: true,
     name: "calendar",
     type: "datetime-local"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("i", {
+    className: "bi bi-telephone"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
     htmlFor: "phoneNumber"
   }, "Phone Number:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
     id: "phoneNumber",
@@ -2460,7 +2476,9 @@ function Contact() {
     type: "tel",
     placeholder: "###-###-####",
     pattern: "[0-9]{3}-[0-9]{3}-[0-9]{4}"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("i", {
+    className: "bi bi-envelope-at"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
     htmlFor: "email"
   }, "Email:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
     id: "email",
