@@ -6,17 +6,18 @@ export function Menus() {
 	useEffect(componentDidMount, []);
 	useEffect(componentDidUpdate);
 	useEffect(componentDidUnmount, []);
-
+	//Responsive design: using "col-6 col-md-12 col-lg-12" to set the column width to 6 or half for mobile/small screens, and entire size of screen for medium and large screens
 	return (
 		<>
-			<main>
+			<main style={{ textAlign: "center" }}>
 				<div className="container">
 					<div className="row">
-						<div className="col">
+						<div className="col-12">
 							<h1>Full Menu</h1>
 							<p> ASK ABOUT OUR DAILY SPECIALS!</p>
+							<hr />
 						</div>
-						<div className="col">
+						<div className="col-6 col-md-12 col-lg-12 ">
 							<section>
 								<h2 id="appetizers">Appetizers</h2>
 								<ul className="list-group text-primary border border-5 border-primary">
@@ -32,8 +33,9 @@ export function Menus() {
 									</li>
 								</ul>
 							</section>
+							<hr />
 						</div>
-						<div className="col">
+						<div className="col-6 col-md-12 col-lg-12">
 							<section>
 								<h3 id="soups">Soups, Salads, and Gumbos</h3>
 								<p>
@@ -57,10 +59,10 @@ export function Menus() {
 									<li className="list-group-item">Seafood Gumbo</li>
 									<li className="list-group-item">Chicken and Sausage Gumbo</li>
 								</ul>
-								<hr />
 							</section>
+							<hr />
 						</div>
-						<div className="col">
+						<div className="col-6 col-md-12 col-lg-12">
 							<section>
 								<h3 id="poboys">
 									Overstuffed Po-Boys
@@ -85,10 +87,10 @@ export function Menus() {
 									<li className="list-group-item">Hamburger</li>
 									<li className="list-group-item">Cheeseburger</li>
 								</ul>
-								<hr />
 							</section>
+							<hr />
 						</div>
-						<div className="col">
+						<div className="col-6 col-md-12 col-lg-12">
 							<h3 id="baskets">Baskets</h3>
 							<ul className="list-group text-primary border border-5 border-primary">
 								<li className="list-group-item">Shrimp Basket</li>
@@ -103,15 +105,15 @@ export function Menus() {
 							</ul>
 							<hr />
 						</div>
-						<div className="col">
+						<div className="col-6 col-md-12 col-lg-12">
 							<h3 id="burgers">Burgers</h3>
 							<p className="text-center fs-6">
 								Served with choice of Fries, Onion Rings, or Tater tots
 							</p>
 							<ul className="list-group text-primary border border-5 border-primary">
-								<span className="badge bg-primary">
-									Gluten Free Buns available by Request
-								</span>
+								<div className=" badge bg-primary">
+									Gluten Free Buns available
+								</div>
 								<li className="list-group-item">Hamburger</li>
 								<li className="list-group-item">Cheeseburger</li>
 								<li className="list-group-item">1/4 lb Hamburger</li>
@@ -128,7 +130,7 @@ export function Menus() {
 							</ul>
 							<hr />
 						</div>
-						<div className="col">
+						<div className="col-6 col-md-12 col-lg-12">
 							<h3
 								id="snacks"
 								className="text-center">
@@ -143,7 +145,7 @@ export function Menus() {
 							<hr />
 						</div>
 						<div className="row">
-							<div className="col">
+							<div className="col-6 col-md-12 col-lg-12">
 								<h3
 									id="drinks"
 									className="text-center">
@@ -162,10 +164,11 @@ export function Menus() {
 									<li className="list-group-item">Lemonade</li>
 									<li className="list-group-item">Strawberry Lemonade</li>
 								</ul>
+								<hr />
 							</div>
-							<div className="col">
+							<div className="col-6 col-md-12 col-lg-12">
 								<h3
-									id="alcoholic"
+									id="alcohol"
 									className="text-center">
 									Beer & Wine
 								</h3>
@@ -208,23 +211,26 @@ export function Menus() {
 					<a href="#snacks">Snack Bites</a>
 					<br />
 					<a href="#drinks">Ice Cold Beverages</a>
+					<br />
+					<a href="#alcohol">Beer & Wine</a>
 				</nav>
 			</footer>
 		</>
 	);
-}
-function componentDidMount() {
-	setDidMount(true);
-	console.log("The Menus component has mounted.");
-	document.title = "Menus";
-}
-function componentDidUpdate() {
-	if (didMount === true) {
-		console.log("The Menus component has updated.");
+
+	function componentDidMount() {
+		setDidMount(true);
+		console.log("The Menus component has mounted.");
+		document.title = "Menus";
 	}
-}
-function componentDidUnmount() {
-	return function () {
-		console.log("The Menus component has unmounted.");
-	};
+	function componentDidUpdate() {
+		if (didMount === true) {
+			console.log("The Menus component has updated.");
+		}
+	}
+	function componentDidUnmount() {
+		return function () {
+			console.log("The Menus component has unmounted.");
+		};
+	}
 }
