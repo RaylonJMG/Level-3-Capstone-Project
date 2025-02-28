@@ -12,7 +12,7 @@ import { Footer } from "./Views/Footer";
 
 // const domain = window.location.hostname;
 // let rootPath = "";
-// if (domain === "raylonjmg.github.io") rootPath = "/Level-3-Capstone-Project";
+// if (domain === "raylonjmg.github.io") rootPath = "/Level-3-Capstone-Project/";
 
 const bodyTag = document.getElementById("bodyTag");
 const root = createRoot(bodyTag);
@@ -25,27 +25,31 @@ root.render(
 				element={<Home />}
 			/>
 			<Route
-				path="/index.html"
+				path="/Level-3-Capstone-Project/index.html"
 				element={<Home />}
 			/>
 			<Route
+				path="/Level-3-Capstone-Project"
+				element={<Home />}
+			/>
+			{/* <Route
 				path="/Level-3-Capstone-Project/"
 				element={<Home />}
-			/>
+			/> */}
 			<Route
-				path="/photos"
+				path="/Level-3-Capstone-Project/photos/"
 				element={<Photos />}
 			/>
 			<Route
-				path="/about"
+				path="/Level-3-Capstone-Project/about/"
 				element={<About />}
 			/>
 			<Route
-				path="/contact"
+				path="/Level-3-Capstone-Project/contact/"
 				element={<Contact />}
 			/>
 			<Route
-				path="/menus"
+				path="/Level-3-Capstone-Project/menus/"
 				element={<Menus />}
 			/>
 			<Route

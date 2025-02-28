@@ -2979,9 +2979,7 @@ function NavCollapse() {
   //debugger;
   const domain = window.location.hostname;
   let rootPath = "";
-  if (domain === "raylonjmg.github.io") rootPath = "/Level-3-Capstone-Project/";
-  //console.log(` The domain is ${domain}`);
-
+  if (domain === "raylonjmg.github.io") rootPath = "/Level-3-Capstone-Project";
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("nav", {
     className: "nav-pills navbar navbar-expand-sm bg-body-tertiary"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
@@ -14325,7 +14323,7 @@ __webpack_require__.r(__webpack_exports__);
 
 // const domain = window.location.hostname;
 // let rootPath = "";
-// if (domain === "raylonjmg.github.io") rootPath = "/Level-3-Capstone-Project";
+// if (domain === "raylonjmg.github.io") rootPath = "/Level-3-Capstone-Project/";
 
 const bodyTag = document.getElementById("bodyTag");
 const root = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_1__.createRoot)(bodyTag);
@@ -14333,22 +14331,22 @@ root.render(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElem
   path: "/",
   element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Views_Home__WEBPACK_IMPORTED_MODULE_2__.Home, null)
 }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_10__.Route, {
-  path: "/index.html",
+  path: "/Level-3-Capstone-Project/index.html",
   element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Views_Home__WEBPACK_IMPORTED_MODULE_2__.Home, null)
 }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_10__.Route, {
-  path: "/Level-3-Capstone-Project/",
+  path: "/Level-3-Capstone-Project",
   element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Views_Home__WEBPACK_IMPORTED_MODULE_2__.Home, null)
 }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_10__.Route, {
-  path: "/photos",
+  path: "/Level-3-Capstone-Project/photos/",
   element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Views_Photos__WEBPACK_IMPORTED_MODULE_4__.Photos, null)
 }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_10__.Route, {
-  path: "/about",
+  path: "/Level-3-Capstone-Project/about/",
   element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Views_About__WEBPACK_IMPORTED_MODULE_3__.About, null)
 }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_10__.Route, {
-  path: "/contact",
+  path: "/Level-3-Capstone-Project/contact/",
   element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Views_Contact__WEBPACK_IMPORTED_MODULE_6__.Contact, null)
 }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_10__.Route, {
-  path: "/menus",
+  path: "/Level-3-Capstone-Project/menus/",
   element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Views_Menus__WEBPACK_IMPORTED_MODULE_5__.Menus, null)
 }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_10__.Route, {
   path: "/imagemap",
