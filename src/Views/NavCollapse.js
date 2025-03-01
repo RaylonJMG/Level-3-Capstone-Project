@@ -25,6 +25,7 @@ export function NavCollapse() {
 					id="navbarNavAltMarkup">
 					<div className="navbar-nav">
 						<NavLink
+							end
 							className="nav-link"
 							aria-current="page"
 							to={`${rootPath}/`}>

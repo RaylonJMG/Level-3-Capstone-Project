@@ -3020,6 +3020,7 @@ function NavCollapse() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "navbar-nav"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_2__.NavLink, {
+    end: true,
     className: "nav-link",
     "aria-current": "page",
     to: `${rootPath}/`
