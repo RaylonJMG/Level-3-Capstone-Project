@@ -2992,7 +2992,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router */ "./node_modules/react-router/dist/development/chunk-SYFQ2XB5.mjs");
-/* harmony import */ var _SignInModal__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./SignInModal */ "./src/Views/SignInModal.js");
+/* harmony import */ var _SignInArea__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./SignInArea */ "./src/Views/SignInArea.js");
 
 
 
@@ -3036,7 +3036,7 @@ function NavCollapse() {
   }, "Menus"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_2__.NavLink, {
     className: "nav-link",
     to: `${rootPath}/contact`
-  }, "Contact"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_SignInModal__WEBPACK_IMPORTED_MODULE_1__.SignInModal, null)))));
+  }, "Contact"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_SignInArea__WEBPACK_IMPORTED_MODULE_1__.SignInArea, null)))));
 }
 
 /***/ }),
@@ -3254,6 +3254,63 @@ function Photos() {
 
 /***/ }),
 
+/***/ "./src/Views/SignInArea.js":
+/*!*********************************!*\
+  !*** ./src/Views/SignInArea.js ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   SignInArea: () => (/* binding */ SignInArea)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _SignInModal__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./SignInModal */ "./src/Views/SignInModal.js");
+/* harmony import */ var _SignOutModal__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./SignOutModal */ "./src/Views/SignOutModal.js");
+
+
+
+function SignInArea() {
+  const [didMount, setDidMount] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
+  const [button, setButton] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null));
+  const [isSignedIn, setIsSignedIn] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(true);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidMount, []);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUpdate, [isSignedIn]);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, button);
+
+  //TOGGLE BUTTONS: IF SIGNED IN, THE SIGNOUT BUTTON WILL RENDER; IF SIGNED OUT, THE SIGN IN BUTTON WILL RENDER
+  function componentDidMount() {
+    console.log("MOUNT PHASE: SignInArea");
+    if (isSignedIn) setButton(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_SignOutModal__WEBPACK_IMPORTED_MODULE_2__.SignOutModal, {
+      onSignOut: handleSignOut
+    }));else setButton(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_SignInModal__WEBPACK_IMPORTED_MODULE_1__.SignInModal, {
+      onSignIn: handleSignIn
+    }));
+    setDidMount(true);
+  }
+  function componentDidUpdate() {
+    if (didMount) {
+      console.log("UPDATE PHASE: SignInArea");
+      if (isSignedIn) setButton(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_SignOutModal__WEBPACK_IMPORTED_MODULE_2__.SignOutModal, {
+        onSignOut: handleSignOut
+      }));else setButton(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_SignInModal__WEBPACK_IMPORTED_MODULE_1__.SignInModal, {
+        onSignIn: handleSignIn
+      }));
+    }
+  }
+  //The handleSignIn/handleSignOut functions let SignInModal know if the user is signed in or not
+
+  function handleSignIn() {
+    setIsSignedIn(true);
+  }
+  function handleSignOut() {
+    setIsSignedIn(false);
+  }
+}
+
+/***/ }),
+
 /***/ "./src/Views/SignInContent.js":
 /*!************************************!*\
   !*** ./src/Views/SignInContent.js ***!
@@ -3303,12 +3360,14 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-function SignInModal() {
+function SignInModal(props) {
+  const onSignIn = props.onSignIn; //gives access to handleSignIn function that will allow the site to know if a user is signed in
+
   const [errorMessage, setErrorMessage] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(""); //state variable that sets the error message to be displayed
 
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
     type: "button",
-    className: "btn btn-primary",
+    className: "btn btn-secondary",
     "data-bs-toggle": "modal",
     "data-bs-target": "#signInModal"
   }, "Sign In"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("form", {
@@ -3349,7 +3408,75 @@ function SignInModal() {
   }, "Sign In"))))));
   function handleSubmit(event) {
     debugger;
-    (0,_controllers_handleSignIn__WEBPACK_IMPORTED_MODULE_2__.handleSignIn)(event, setErrorMessage); //passes the event and setErrorMessage function to handleSignIn
+    (0,_controllers_handleSignIn__WEBPACK_IMPORTED_MODULE_2__.handleSignIn)(event, setErrorMessage, onSignIn); //passes the event ,setErrorMessage, and onSignIn function to handleSignIn
+    //onSignIn when signed out;
+  }
+}
+
+/***/ }),
+
+/***/ "./src/Views/SignOutModal.js":
+/*!***********************************!*\
+  !*** ./src/Views/SignOutModal.js ***!
+  \***********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   SignOutModal: () => (/* binding */ SignOutModal)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+function SignOutModal(props) {
+  const onSignOut = props.onSignOut; //gives access to handleSignOut function that will allow the site to know if a user is signed out
+
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+    type: "button",
+    className: "btn btn-secondary",
+    "data-bs-toggle": "modal",
+    "data-bs-target": "#signOutModal"
+  }, "Sign Out"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("form", {
+    onSubmit: handleSubmit,
+    className: "modal fade",
+    id: "signOutModal",
+    tabIndex: "-1",
+    "aria-labelledby": "signInModalLabel",
+    "aria-hidden": "true"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "modal-dialog"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "modal-content"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "modal-header"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", {
+    className: "modal-title fs-5",
+    id: "signOutModalLabel"
+  }, "Sign Out"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+    type: "button",
+    className: "btn-close",
+    "data-bs-dismiss": "modal",
+    "aria-label": "Close"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "modal-body"
+  }, "Are you sure you want to sign out?"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "modal-footer"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+    id: "signOutCloseButton",
+    type: "button",
+    className: "btn btn-secondary",
+    "data-bs-dismiss": "modal"
+  }, "Close"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+    type: "submit",
+    className: "btn btn-primary"
+  }, "Sign Out"))))));
+  function handleSubmit(event = new Event()) {
+    event.preventDefault();
+    const inputs = event.target;
+    const closeButton = inputs[1];
+    closeButton.click();
+    onSignOut();
+    debugger;
   }
 }
 
@@ -3458,7 +3585,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _modules_authentication__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../modules/authentication */ "./src/modules/authentication.js");
 
-function handleSignIn(event = new Event(), setErrorMessage) {
+function handleSignIn(event = new Event(), setErrorMessage, onSignIn) {
   debugger;
   event.preventDefault(); //stops the page from reloading
 
@@ -3471,9 +3598,11 @@ function handleSignIn(event = new Event(), setErrorMessage) {
   const password = passwordInput.value; //password is the value of the password input
 
   const isAuthenticated = (0,_modules_authentication__WEBPACK_IMPORTED_MODULE_0__.authentication)(email, password); //checks if email/password are correct
+  const closeButton = inputs[0];
   if (isAuthenticated) {
     closeButton.click(); //closes the form
-    inputs.reset(); //resets the form
+    inputs.reset(); //resets the form/modal
+    onSignIn(); //activates the handler function
   } else setErrorMessage("The email and/or password is incorrect!");
   //sets the error message if the email/password are incorrect
 }
@@ -3555,16 +3684,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   logins: () => (/* binding */ logins)
 /* harmony export */ });
-const logins = [[{
+const logins = [{
   email: "abc@logins.com",
   password: "aaa"
-}], [{
+}, {
   email: "123@logins.com",
   password: "bbb"
-}], [{
+}, {
   email: "abc123@logins.com",
   password: "ccc"
-}]];
+}];
 
 /***/ }),
 
@@ -14642,25 +14771,25 @@ if (domain === "raylonjmg.github.io") rootPath = "/Level-3-Capstone-Project";
 const bodyTag = document.getElementById("bodyTag");
 const root = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_1__.createRoot)(bodyTag);
 root.render(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_10__.BrowserRouter, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Views_Header__WEBPACK_IMPORTED_MODULE_8__.Header, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_10__.Routes, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_10__.Route, {
-  path: "/",
+  path: `${rootPath}/`,
   element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Views_Home__WEBPACK_IMPORTED_MODULE_2__.Home, null)
 }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_10__.Route, {
-  path: "/Level-3-Capstone-Project/index.html",
+  path: `${rootPath}/index.html`,
   element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Views_Home__WEBPACK_IMPORTED_MODULE_2__.Home, null)
 }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_10__.Route, {
-  path: "/Level-3-Capstone-Project",
+  path: `${rootPath}/home`,
   element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Views_Home__WEBPACK_IMPORTED_MODULE_2__.Home, null)
 }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_10__.Route, {
   path: `${rootPath}/photos`,
   element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Views_Photos__WEBPACK_IMPORTED_MODULE_4__.Photos, null)
 }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_10__.Route, {
-  path: "/Level-3-Capstone-Project/about/",
+  path: `${rootPath}/about`,
   element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Views_About__WEBPACK_IMPORTED_MODULE_3__.About, null)
 }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_10__.Route, {
-  path: "/Level-3-Capstone-Project/contact/",
+  path: `${rootPath}/contact`,
   element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Views_Contact__WEBPACK_IMPORTED_MODULE_6__.Contact, null)
 }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_10__.Route, {
-  path: "/Level-3-Capstone-Project/menus/",
+  path: `${rootPath}/menus`,
   element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Views_Menus__WEBPACK_IMPORTED_MODULE_5__.Menus, null)
 }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_10__.Route, {
   path: "/imagemap",

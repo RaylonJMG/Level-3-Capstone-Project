@@ -1,6 +1,6 @@
 import { authentication } from "../modules/authentication";
 
-export function handleSignIn(event = new Event(), setErrorMessage) {
+export function handleSignIn(event = new Event(), setErrorMessage, onSignIn) {
 	debugger;
 	event.preventDefault(); //stops the page from reloading
 
@@ -13,9 +13,12 @@ export function handleSignIn(event = new Event(), setErrorMessage) {
 	const password = passwordInput.value; //password is the value of the password input
 
 	const isAuthenticated = authentication(email, password); //checks if email/password are correct
+	const closeButton = inputs[0];
+
 	if (isAuthenticated) {
 		closeButton.click(); //closes the form
-		inputs.reset(); //resets the form
+		inputs.reset(); //resets the form/modal
+		onSignIn(); //activates the handler function
 	} else setErrorMessage("The email and/or password is incorrect!");
 	//sets the error message if the email/password are incorrect
 }

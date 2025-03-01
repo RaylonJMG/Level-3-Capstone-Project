@@ -21,15 +21,15 @@ root.render(
 		<Header />
 		<Routes>
 			<Route
-				path="/"
+				path={`${rootPath}/`}
 				element={<Home />}
 			/>
 			<Route
-				path="/Level-3-Capstone-Project/index.html"
+				path={`${rootPath}/index.html`}
 				element={<Home />}
 			/>
 			<Route
-				path="/Level-3-Capstone-Project"
+				path={`${rootPath}/home`}
 				element={<Home />}
 			/>
 			{/* <Route
@@ -42,15 +42,15 @@ root.render(
 			/>
 
 			<Route
-				path="/Level-3-Capstone-Project/about/"
+				path={`${rootPath}/about`}
 				element={<About />}
 			/>
 			<Route
-				path="/Level-3-Capstone-Project/contact/"
+				path={`${rootPath}/contact`}
 				element={<Contact />}
 			/>
 			<Route
-				path="/Level-3-Capstone-Project/menus/"
+				path={`${rootPath}/menus`}
 				element={<Menus />}
 			/>
 			<Route
