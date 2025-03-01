@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { handleAdvice } from "../controllers/handleAdvice";
 import Interior from "../../assets/Interior.jpg";
 import "../../style.scss";
+import { Carousel } from "./Carousel";
 
 export function Home() {
 	//destructuring reads the values of the variables stored in the useState hook
@@ -20,11 +21,13 @@ export function Home() {
 			<main id="homeMain">
 				<div className="container">
 					<div className="row">
-						<div className="col-12 col-md-12 col-lg-12">
+						<div className="col-12 col-md-6 col-lg-6">
 							<h1>Good Food Hut</h1>
 							<h3>Delighting Tastebuds since 1988</h3>
 							<br />
 							<h4>{welcome}</h4>
+							<br />
+							<Carousel />
 							<br />
 							<hr />
 							<p>
@@ -36,7 +39,7 @@ export function Home() {
 						</div>
 					</div>
 					<div className="row">
-						<div className="col-12 col-md-12 col-lg-12">
+						<div className="col-12 col-md-6 col-lg-6">
 							<h2>Our Mission</h2>
 							<p>
 								Our mission is to provide a comfortable, fun, and welcoming
@@ -75,7 +78,7 @@ export function Home() {
 					<hr />
 				</div>
 				<div className="row">
-					<div className="col-12 col-md-12 col-lg-12"></div>
+					<div className="col-12 col-md-6 col-lg-6"></div>
 					<div className="text-center">
 						<button
 							onClick={handleAdvice}
@@ -98,9 +101,7 @@ export function Home() {
 	}
 
 	function componentDidUpdate() {
-		if (didMount === true) {
-			console.log("The Home component has updated.");
-		}
+		if (didMount) console.log("The Home component has updated.");
 	}
 	function componentDidUnmount() {
 		return function () {
