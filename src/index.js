@@ -10,9 +10,9 @@ import { ImageMap } from "./Views/ImageMap";
 import { Header } from "./Views/Header";
 import { Footer } from "./Views/Footer";
 
-// const domain = window.location.hostname;
-// let rootPath = "";
-// if (domain === "raylonjmg.github.io") rootPath = "/Level-3-Capstone-Project/";
+const domain = window.location.hostname;
+let rootPath = "";
+if (domain === "raylonjmg.github.io") rootPath = "/Level-3-Capstone-Project";
 
 const bodyTag = document.getElementById("bodyTag");
 const root = createRoot(bodyTag);
@@ -37,9 +37,10 @@ root.render(
 				element={<Home />}
 			/> */}
 			<Route
-				path="/Level-3-Capstone-Project/photos/"
+				path={`${rootPath}/photos`}
 				element={<Photos />}
 			/>
+
 			<Route
 				path="/Level-3-Capstone-Project/about/"
 				element={<About />}
