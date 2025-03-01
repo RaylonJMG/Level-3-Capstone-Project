@@ -1,8 +1,8 @@
 import React from "react";
 import { NavLink } from "react-router";
+import { SignInModal } from "./SignInModal";
 
 export function NavCollapse() {
-	//debugger;
 	const domain = window.location.hostname;
 	let rootPath = "";
 	if (domain === "raylonjmg.github.io") rootPath = "/Level-3-Capstone-Project";
@@ -50,6 +50,7 @@ export function NavCollapse() {
 							to={`${rootPath}/contact`}>
 							Contact
 						</NavLink>
+						<SignInModal />
 					</div>
 				</div>
 			</div>
