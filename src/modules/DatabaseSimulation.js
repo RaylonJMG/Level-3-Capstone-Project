@@ -11,5 +11,5 @@ export class DatabaseSimulation {
         if (doesMatch)this.isConnected = true; //if the apiKey matches , isConnected will be true
     }
 }
-//A CLASS IS A TEMPLATE OF AN OBJECT, NOT THE ACTUAL OBJECT
+//A CLASS IS A TEMPLATE/BLUEPRINT OF AN OBJECT, NOT THE ACTUAL OBJECT
 //REQUIRES KEYWORD this TO ACCESS THE PROPERTIES

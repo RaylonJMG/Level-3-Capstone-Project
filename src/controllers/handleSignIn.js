@@ -1,4 +1,4 @@
-import { authentication } from "../modules/authentication";
+//import { authentication } from "../modules/authentication";
 
 export function handleSignIn(event = new Event(), setErrorMessage, onSignIn) {
 	debugger;
