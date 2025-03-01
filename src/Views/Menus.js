@@ -9,7 +9,9 @@ export function Menus() {
 	//Responsive design: using "col-6 col-md-12 col-lg-12" to set the column width to 6 or half for mobile/small screens, and entire size of screen for medium and large screens
 	return (
 		<>
-			<main style={{ textAlign: "center" }}>
+			<main
+				main
+				style={{ textAlign: "center" }}>
 				<div className="container">
 					<div className="row">
 						<div className="col-12">
@@ -190,8 +192,8 @@ export function Menus() {
 						</div>
 					</div>
 				</div>
-				<hr />
 			</main>
+			<hr />
 			<footer
 				id="menusFooter"
 				style={{ textAlign: "center", border: 5, border: "primary" }}>
