@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router";
-import { SignInModal } from "./SignInModal";
+import { SignInArea } from "./SignInArea";
 
 export function NavCollapse() {
 	const domain = window.location.hostname;
@@ -50,7 +50,7 @@ export function NavCollapse() {
 							to={`${rootPath}/contact`}>
 							Contact
 						</NavLink>
-						<SignInModal />
+						<SignInArea />
 					</div>
 				</div>
 			</div>
