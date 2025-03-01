@@ -1,14 +1,14 @@
 import { logins } from "./logins.js";
 
+//RETURNS TRUE IF THE EMAIL AND PASSWORD MATCHES A LOGIN
+// RETURNS FALSE IF THE EMAIL AND PASSWORD DO NOT MATCH A LOGIN
+
 export function authentication(email = "", password = "") {
-	for (let position = 0; position < logins.length; position++) {
-		const login = logins[position]; //
+	for (const login of logins) {
+		debugger;
 		const currentEmail = login.email;
 		const currentPassword = login.password;
-		if (email === currentEmail && password === currentPassword) {
-			return true;
-		} else {
-			return false;
-		}
+		if (currentEmail === email && currentPassword === password) return true;
 	}
+	return false;
 }

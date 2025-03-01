@@ -3201,6 +3201,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _SignInContent__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./SignInContent */ "./src/Views/SignInContent.js");
+/* harmony import */ var _controllers_handleSignIn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../controllers/handleSignIn */ "./src/controllers/handleSignIn.js");
+
 
 
 function SignInModal() {
@@ -3247,24 +3249,9 @@ function SignInModal() {
     type: "submit",
     className: "btn btn-primary"
   }, "Sign In"))))));
-  function handleSubmit(event = new Event()) {
+  function handleSubmit(event) {
     debugger;
-    event.preventDefault(); //stops the page from reloading
-
-    //extracts email and password
-    const inputs = event.target; //inputs is the form element
-    const emailInput = inputs[1]; //emailInput is the first input element
-    const passwordInput = inputs[2]; //passwordInput is the second input element
-    const email = emailInput.value; //email is the value of the email input
-    const password = passwordInput.value; //password is the value of the password input
-
-    const isAuthenticated = true; //checks if email/password are correct
-    if (isAuthenticated) {
-      const closeButton = document.getElementById("signInCloseButton"); //gets the close button
-      closeButton.click(); //closes the form
-      inputs.reset(); //resets the form
-    } else setErrorMessage("The email and/or password is incorrect!");
-    //sets the error message if the email/password are incorrect
+    (0,_controllers_handleSignIn__WEBPACK_IMPORTED_MODULE_2__.handleSignIn)(event, setErrorMessage); //passes the event and setErrorMessage function to handleSignIn
   }
 }
 
@@ -3361,6 +3348,40 @@ function handleRating() {
 
 /***/ }),
 
+/***/ "./src/controllers/handleSignIn.js":
+/*!*****************************************!*\
+  !*** ./src/controllers/handleSignIn.js ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   handleSignIn: () => (/* binding */ handleSignIn)
+/* harmony export */ });
+/* harmony import */ var _modules_authentication__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../modules/authentication */ "./src/modules/authentication.js");
+
+function handleSignIn(event = new Event(), setErrorMessage) {
+  debugger;
+  event.preventDefault(); //stops the page from reloading
+
+  //EXTRACTS EMAIL AND PASSWORD FROM THE FORM AND CHECKS IF THEY ARE CORRECT.  IF THEY ARE VALID, CLOSES THE FORM AND RESETS IT, OTHERWISE SETS AN ERROR MESSAGE
+
+  const inputs = event.target; //inputs = the form element
+  const emailInput = inputs[1]; //emailInput is the first input element
+  const passwordInput = inputs[2]; //passwordInput is the second input element
+  const email = emailInput.value; //email is the value of the email input
+  const password = passwordInput.value; //password is the value of the password input
+
+  const isAuthenticated = (0,_modules_authentication__WEBPACK_IMPORTED_MODULE_0__.authentication)(email, password); //checks if email/password are correct
+  if (isAuthenticated) {
+    closeButton.click(); //closes the form
+    inputs.reset(); //resets the form
+  } else setErrorMessage("The email and/or password is incorrect!");
+  //sets the error message if the email/password are incorrect
+}
+
+/***/ }),
+
 /***/ "./src/controllers/handleSubmit.js":
 /*!*****************************************!*\
   !*** ./src/controllers/handleSubmit.js ***!
@@ -3395,6 +3416,57 @@ function handleSubmit(event = new Event()) {
     (0,_utils_output__WEBPACK_IMPORTED_MODULE_1__.output)(resolveValue);
   }
 }
+
+/***/ }),
+
+/***/ "./src/modules/authentication.js":
+/*!***************************************!*\
+  !*** ./src/modules/authentication.js ***!
+  \***************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   authentication: () => (/* binding */ authentication)
+/* harmony export */ });
+/* harmony import */ var _logins_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./logins.js */ "./src/modules/logins.js");
+
+
+//RETURNS TRUE IF THE EMAIL AND PASSWORD MATCHES A LOGIN
+// RETURNS FALSE IF THE EMAIL AND PASSWORD DO NOT MATCH A LOGIN
+
+function authentication(email = "", password = "") {
+  for (const login of _logins_js__WEBPACK_IMPORTED_MODULE_0__.logins) {
+    debugger;
+    const currentEmail = login.email;
+    const currentPassword = login.password;
+    if (currentEmail === email && currentPassword === password) return true;
+  }
+  return false;
+}
+
+/***/ }),
+
+/***/ "./src/modules/logins.js":
+/*!*******************************!*\
+  !*** ./src/modules/logins.js ***!
+  \*******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   logins: () => (/* binding */ logins)
+/* harmony export */ });
+const logins = [[{
+  email: "abc@logins.com",
+  password: "aaa"
+}], [{
+  email: "123@logins.com",
+  password: "bbb"
+}], [{
+  email: "abc123@logins.com",
+  password: "ccc"
+}]];
 
 /***/ }),
 

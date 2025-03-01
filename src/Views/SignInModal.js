@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { SignInContent } from "./SignInContent";
+import { handleSignIn } from "../controllers/handleSignIn";
 
 export function SignInModal() {
 	const [errorMessage, setErrorMessage] = useState(""); //state variable that sets the error message to be displayed
@@ -59,23 +60,8 @@ export function SignInModal() {
 		</>
 	);
 
-	function handleSubmit(event = new Event()) {
+	function handleSubmit(event) {
 		debugger;
-		event.preventDefault(); //stops the page from reloading
-
-		//extracts email and password
-		const inputs = event.target; //inputs is the form element
-		const emailInput = inputs[1]; //emailInput is the first input element
-		const passwordInput = inputs[2]; //passwordInput is the second input element
-		const email = emailInput.value; //email is the value of the email input
-		const password = passwordInput.value; //password is the value of the password input
-
-		const isAuthenticated = true; //checks if email/password are correct
-		if (isAuthenticated) {
-			const closeButton = document.getElementById("signInCloseButton"); //gets the close button
-			closeButton.click(); //closes the form
-			inputs.reset(); //resets the form
-		} else setErrorMessage("The email and/or password is incorrect!");
-		//sets the error message if the email/password are incorrect
+		handleSignIn(event, setErrorMessage); //passes the event and setErrorMessage function to handleSignIn
 	}
 }
