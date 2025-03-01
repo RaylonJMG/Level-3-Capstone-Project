@@ -6,7 +6,7 @@ import FriedFishBasket from "../../assets/FriedFishBasket.jpg";
 export function Carousel() {
 	return (
 		<div
-			id=" myPictures"
+			id="myPictures"
 			className="carousel slide">
 			<div className="carousel-indicators">
 				<button

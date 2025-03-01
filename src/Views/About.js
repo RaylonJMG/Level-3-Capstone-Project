@@ -15,7 +15,7 @@ export function About() {
 		<main>
 			<div className="container">
 				<div className="row">
-					<div className="col">
+					<div className="col-12">
 						<section>
 							<h1>About Us</h1>
 							<img
@@ -68,9 +68,9 @@ export function About() {
 						<hr />
 					</div>
 				</div>
-				<div className="row">
-					<div className="col">
-						<section>
+				<section>
+					<div className="row">
+						<div className="col-12 col-sm-6 col-md-6">
 							<p>
 								Site Inspiration:Love of GOOD FOOD! 😍 I believe that potential
 								employers will wish to hire me based on this website because it
@@ -83,20 +83,22 @@ export function About() {
 								in the work.
 							</p>
 							<br />
-							<p>
-								Site Features: This website was created using HTML, CSS,
-								Bootstrap, and Javascript. In Level 1, we learned to create and
-								style basic websites, run functions, attach images/videos,
-								create grids and cards. In Level 2 of the course, we have
-								expanded our knowledgebase; we can attach and create image maps,
-								process forms, simulate server responses, extract data from REST
-								APIs, and use SASS styling upgrades, including mixins,
-								transitions and animations --all of which has been integrated
-								into this website.
-							</p>
-						</section>
+							<div className="col-12 col-sm-6 col-md-6">
+								<p>
+									Site Features: This website was created using HTML, CSS,
+									Bootstrap, and Javascript. In Level 1, we learned to create
+									and style basic websites, run functions, attach images/videos,
+									create grids and cards. In Level 2 of the course, we have
+									expanded our knowledgebase; we can attach and create image
+									maps, process forms, simulate server responses, extract data
+									from REST APIs, and use SASS styling upgrades, including
+									mixins, transitions and animations --all of which has been
+									integrated into this website.
+								</p>
+							</div>
+						</div>
 					</div>
-				</div>
+				</section>
 			</div>
 		</main>
 	);
