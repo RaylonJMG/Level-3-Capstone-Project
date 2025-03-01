@@ -109,8 +109,8 @@ export function About() {
 		document.title = "About";
 	}
 	function componentDidUpdate() {
-		if (didMount === true); //when the component updates/mounts, it will log that the component has updated.
-		console.log("The About component has updated.");
+		//when the component updates/mounts, it will log that the component has updated.
+		if (didMount) console.log("The About component has updated.");
 	}
 	function componentDidUnmount() {
 		//when the component unmounts, like when moving to another page, it will log that the component has unmounted.
