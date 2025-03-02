@@ -8,7 +8,7 @@
  * Use Redirect.js to redirect to the path where the 404 occured.
  **************************************************************/
 
-const rootPath = "/Level-3-Capstone-Project";
+const rootPath = "/Level-3-Capstone-Project/";
 const path = window.location.pathname; //path of URL
 window.localStorage.setItem("redirect", path); //setItem stores a key/value pair of the URL into the browser
 window.location.replace(rootPath); //method that replaces/redirects to the URL for the homepage
