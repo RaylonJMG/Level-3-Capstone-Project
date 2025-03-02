@@ -27,6 +27,4 @@ export function HandleRefresh(props) {
 		} else setDidMount(true);
 	}
 }
-//local storage object contains methods, getItem and setItem
-//getItem method returns the value of the key into the browser
-//setItem stores the key and value into the browser
+//HandleRefresh has all of the contents of BrowserRouter as children; when there's a pathname, navigate to the URL and clear the pathname after a short delay to load everything
