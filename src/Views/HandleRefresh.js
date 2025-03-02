@@ -9,20 +9,24 @@ import { useNavigate } from "react-router";
  * In redirect.js, properly set the root path.
  */
 export function HandleRefresh(props) {
-  const children = props.children;
-  const navigateTo = useNavigate();
-  const [didMount, setDidMount] = useState(false);
-  useEffect(componentDidMount, []);
+	const children = props.children;
+	const navigateTo = useNavigate();
+	const [didMount, setDidMount] = useState(false);
+	useEffect(componentDidMount, []);
 
-  if (didMount) return <>{children}</>;
-  else return <></>;
+	if (didMount) return <>{children}</>;
+	else return <></>;
 
-  function componentDidMount() {
-    const redirectPath = localStorage.getItem("redirect");
-    if (redirectPath) {
-      navigateTo(redirectPath);
-      localStorage.setItem("redirect", "");
-      setTimeout(() => setDidMount(true), 1000);
-    } else setDidMount(true);
-  }
+	//local storage object contains methods, getItem and setItem
+	//getItem method returns the value of the key into the browser
+	//setItem stores the key and value into the browser
+	function componentDidMount() {
+		const redirectPath = localStorage.getItem("redirect");
+
+		if (redirectPath) {
+			navigateTo(redirectPath);
+			localStorage.setItem("redirect", "");
+			setTimeout(() => setDidMount(true), 1000);
+		} else setDidMount(true);
+	}
 }
