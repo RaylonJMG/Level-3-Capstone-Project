@@ -17,9 +17,6 @@ export function HandleRefresh(props) {
 	if (didMount) return <>{children}</>;
 	else return <></>;
 
-	//local storage object contains methods, getItem and setItem
-	//getItem method returns the value of the key into the browser
-	//setItem stores the key and value into the browser
 	function componentDidMount() {
 		const redirectPath = localStorage.getItem("redirect");
 
@@ -30,3 +27,6 @@ export function HandleRefresh(props) {
 		} else setDidMount(true);
 	}
 }
+//local storage object contains methods, getItem and setItem
+//getItem method returns the value of the key into the browser
+//setItem stores the key and value into the browser
