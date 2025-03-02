@@ -18,13 +18,13 @@ export function HandleRefresh(props) {
 	else return <></>;
 
 	function componentDidMount() {
-		const redirectPath = localStorage.getItem("redirect");
+		const redirectPath = window.localStorage.getItem("redirect");
 
 		if (redirectPath) {
 			navigateTo(redirectPath);
-			localStorage.setItem("redirect", "");
+			window.localStorage.setItem("redirect", "");
 			setTimeout(() => setDidMount(true), 1000);
 		} else setDidMount(true);
 	}
 }
-//HandleRefresh has all of the contents of BrowserRouter as children; when there's a pathname, navigate to the URL and clear the pathname after a short delay
+//HandleRefresh has all of the contents of BrowserRouter as children; when there's a pathname, navigate to the URL and clear the pathname after a short delay to load everything
