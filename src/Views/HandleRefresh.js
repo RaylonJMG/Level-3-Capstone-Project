@@ -18,11 +18,11 @@ export function HandleRefresh(props) {
 	else return <></>;
 
 	function componentDidMount() {
-		const redirectPath = window.localStorage.getItem("redirect");
+		const redirectPath = localStorage.getItem("redirect");
 
 		if (redirectPath) {
 			navigateTo(redirectPath);
-			window.localStorage.setItem("redirect", "");
+			localStorage.setItem("redirect", "");
 			setTimeout(() => setDidMount(true), 1000);
 		} else setDidMount(true);
 	}

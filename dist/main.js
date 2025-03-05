@@ -2578,10 +2578,10 @@ function HandleRefresh(props) {
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidMount, []);
   if (didMount) return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, children);else return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null);
   function componentDidMount() {
-    const redirectPath = window.localStorage.getItem("redirect");
+    const redirectPath = localStorage.getItem("redirect");
     if (redirectPath) {
       navigateTo(redirectPath);
-      window.localStorage.setItem("redirect", "");
+      localStorage.setItem("redirect", "");
       setTimeout(() => setDidMount(true), 1000);
     } else setDidMount(true);
   }
@@ -14809,9 +14809,11 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-const domain = window.location.hostname;
-let rootPath = "";
-if (domain === "raylonjmg.github.io") rootPath = "/Level-3-Capstone-Project";
+
+// const domain = window.location.hostname;
+// let rootPath = "";
+// if (domain === "raylonjmg.github.io") rootPath = "/Level-3-Capstone-Project";
+
 const bodyTag = document.getElementById("bodyTag");
 const root = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_1__.createRoot)(bodyTag);
 root.render(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_11__.BrowserRouter, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Views_HandleRefresh__WEBPACK_IMPORTED_MODULE_10__.HandleRefresh, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Views_Header__WEBPACK_IMPORTED_MODULE_8__.Header, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_11__.Routes, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_11__.Route, {
