@@ -1,12 +1,13 @@
 import { describe, expect, it } from "@jest/globals";
+import { authenticationAWS } from "./authenticationAWS";
 
-describe("The authenticationDB function", () => {
+describe("The authenticationAWS function", () => {
 	it("authenticates when email and password are correct", async () => {
 		//ARRANGE
 		const email = "abc@logins.com";
 		const password = "aaa";
 		//ACT
-		const isAuthenticated = await authenticationDB(email, password);
+		const isAuthenticated = await authenticationAWS(email, password);
 		//ASSERT
 		expect(isAuthenticated).toBe(true);
 	});
@@ -15,7 +16,7 @@ describe("The authenticationDB function", () => {
 		const email = "acb@logins.com";
 		const password = "acb";
 		//ACT
-		const isAuthenticated = await authenticationDB(email, password);
+		const isAuthenticated = await authenticationAWS(email, password);
 		//ASSERT
 		expect(isAuthenticated).toBe(false);
 	});
@@ -24,7 +25,7 @@ describe("The authenticationDB function", () => {
 		const email = "abc@logins.com";
 		const password = "acb";
 		//ACT
-		const isAuthenticated = await authenticationDB(email, password);
+		const isAuthenticated = await authenticationAWS(email, password);
 		//ASSERT
 		expect(isAuthenticated).toBe(false);
 	});
@@ -33,7 +34,7 @@ describe("The authenticationDB function", () => {
 		const email = "acb@logins.com";
 		const password = "aaa";
 		//ACT
-		const isAuthenticated = await authenticationDB(email, password);
+		const isAuthenticated = await authenticationAWS(email, password);
 		//ASSERT
 		expect(isAuthenticated).toBe(false);
 	});
@@ -42,7 +43,7 @@ describe("The authenticationDB function", () => {
 		const email = "";
 		const password = "aaa";
 		//ACT
-		const isAuthenticated = await authenticationDB(email, password);
+		const isAuthenticated = await authenticationAWS(email, password);
 		//ASSERT
 		expect(isAuthenticated).toBe(false);
 	});
@@ -51,7 +52,7 @@ describe("The authenticationDB function", () => {
 		const email = "abc@logins.com";
 		const password = "";
 		//ACT
-		const isAuthenticated = await authenticationDB(email, password);
+		const isAuthenticated = await authenticationAWS(email, password);
 		//ASSERT
 		expect(isAuthenticated).toBe(false);
 	});
@@ -60,7 +61,7 @@ describe("The authenticationDB function", () => {
 		const email = "lmnop@logins.com";
 		const password = "lmnop";
 		//ACT
-		const isAuthenticated = await authenticationDB(email, password);
+		const isAuthenticated = await authenticationAWS(email, password);
 		//ASSERT
 		expect(isAuthenticated).toBe(false);
 	});
@@ -69,7 +70,7 @@ describe("The authenticationDB function", () => {
 		const email = "lmnop@logins.com";
 		const password = "aaa";
 		//ACT
-		const isAuthenticated = await authenticationDB(email, password);
+		const isAuthenticated = await authenticationAWS(email, password);
 		//ASSERT
 		expect(isAuthenticated).toBe(false);
 	});
@@ -78,7 +79,7 @@ describe("The authenticationDB function", () => {
 		const email = "abc@logins.com";
 		const password = "";
 		//ACT
-		const isAuthenticated = await authenticationDB(email, password);
+		const isAuthenticated = await authenticationAWS(email, password);
 		//ASSERT
 		expect(isAuthenticated).toBe(false);
 	});
@@ -87,7 +88,7 @@ describe("The authenticationDB function", () => {
 		const email = "abc@logins.com";
 		const password = "12345678";
 		//ACT
-		const isAuthenticated = await authenticationDB(email, password);
+		const isAuthenticated = await authenticationAWS(email, password);
 		//ASSERT
 		expect(isAuthenticated).toBe(false);
 	});

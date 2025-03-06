@@ -26,6 +26,7 @@ export async function authenticationAWS(email = "", password = "") {
 
 	//AUTHENTICATE
 	const loginMatch = response.Item; //extracts login from the response
+	//const isAuthenticated = email === loginMatch.email; //checks if email from user matches email from the response
 	const isAuthenticated = password === loginMatch.password; //checks if password from user matches password from the response
 	return isAuthenticated; //returns authentication response
 }
