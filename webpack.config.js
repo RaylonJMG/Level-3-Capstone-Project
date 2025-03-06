@@ -5,7 +5,7 @@ export default {
 			//RULES ARE A LIST OF WAYS TO PROCESS THE MODULES
 			{
 				test: /\.js/, //COMPILE JS FILES
-				exclude: /\.(scss|css|otf|ttf|jpg|jpeg)/, //DON'T COMPILE THESE NON-JAVASCRIPT FILES/STYLE MODULES
+				exclude: /\.(scss|css|otf|ttf|jpg|jpeg|json)/, //DON'T COMPILE THESE NON-JAVASCRIPT FILES/STYLE MODULES
 				use: "babel-loader", //USE THIS LOADER TO COMPILE OTHER MODULES
 			},
 			{
